@@ -76,7 +76,7 @@ module.exports = (app) => {
       .then((sigeco) => res.json(sigeco));
   });
 
-  app.route("/user/validate/:hash").get(function (req, res) {
+  app.route("/users/validate/:hash").get(function (req, res) {
     db.users
       .update(
         { active: true },
@@ -91,6 +91,26 @@ module.exports = (app) => {
           res.redirect("http://iagenedu.unam.mx/");
         } else {
           res.redirect("https://bunam.unam.mx/");
+        }
+      });
+  });
+
+  app.route("/users/login").post(function (req, res) {
+    db.users
+      .findOne({
+        where: {
+          email: req.body.email,
+          password: crypto.createHash("sha256", secret)
+            .update(req.body.password)
+            .digest("hex"),
+          active: true,
+        },
+      })
+      .then((user) => {
+        if (user) {
+          res.json(user);
+        } else {
+          res.json({ error: "Usuario o contraseña incorrectos" });
         }
       });
   });
