@@ -52,5 +52,5 @@ module.exports = (app) => {
         },
       })
       .then((sigeco) => res.json(sigeco));
-  }
+  })
 };

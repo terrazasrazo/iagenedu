@@ -26,13 +26,12 @@ db.workshops = require('./models/workshops')(sequelize, Sequelize);
 db.speakers = require('./models/speakers')(sequelize, Sequelize);
 db.users = require('./models/users')(sequelize, Sequelize);
 db.sigecos = require('./models/sigecos')(sequelize, Sequelize);
-db.workshopassistants = require('./models/workshopassistants')(sequelize, Sequelize);
 /*
 db.workshops.belongsToMany(db.keywords, { through: 'workshopkeywords' });
 db.keywords.belongsToMany(db.workshops, { through: 'workshopkeywords' });
 */
-db.workshops.hasOne(db.speakers);
-db.speakers.belongsTo(db.workshops);
+db.workshops.belongsToMany(db.speakers, { through: 'workshopspeakers' });
+db.speakers.belongsToMany(db.workshops, { through: 'workshopspeakers' });
 
 db.users.hasOne(db.sigecos);
 db.sigecos.belongsTo(db.users);

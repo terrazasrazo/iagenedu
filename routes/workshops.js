@@ -8,7 +8,13 @@ module.exports = (app) => {
   });
 
   app.route("/workshops").get(function (req, res) {
-    db.workshops.findAll().then((workshops) => res.json(workshops));
+    db.workshops.findAll({
+      include: [
+        {
+          model: db.speakers,
+        },
+      ],
+    }).then((workshops) => res.json(workshops));
   });
 
   app.route("/workshopassistants").get(function (req, res) {
@@ -27,13 +33,22 @@ module.exports = (app) => {
             ],
           ],
         },
-        order: [[db.Sequelize.literal("assistantsCount"), "DESC"]],
+        order: [["level", "DESC"]]
       })
       .then((workshops) => res.json(workshops));
   });
 
   app.route("/workshops/:id").get(function (req, res) {
-    db.workshops.findByPk(req.params.id).then((workshop) => res.json(workshop));
+    db.workshops.findAll({
+      where: {
+        id: req.params.id,
+      },
+      include: [
+        {
+          model: db.speakers,
+        },
+      ],
+    }).then((workshop) => res.json(workshop))
   });
 
   app.route("/workshops").post(function (req, res) {
