@@ -22,15 +22,15 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.workshops = require('./models/workshops')(sequelize, Sequelize);
-db.keywords = require('./models/keywords')(sequelize, Sequelize);
+// db.keywords = require('./models/keywords')(sequelize, Sequelize);
 db.speakers = require('./models/speakers')(sequelize, Sequelize);
 db.users = require('./models/users')(sequelize, Sequelize);
 db.sigecos = require('./models/sigecos')(sequelize, Sequelize);
 db.workshopassistants = require('./models/workshopassistants')(sequelize, Sequelize);
-
+/*
 db.workshops.belongsToMany(db.keywords, { through: 'workshopkeywords' });
 db.keywords.belongsToMany(db.workshops, { through: 'workshopkeywords' });
-
+*/
 db.workshops.hasOne(db.speakers);
 db.speakers.belongsTo(db.workshops);
 
@@ -41,7 +41,7 @@ db.workshops.belongsToMany(db.users, { through: 'workshopassistants' });
 db.users.belongsToMany(db.workshops, { through: 'workshopassistants' });
 
 sequelize.sync({
-        force: false
+        force: true
     })
     .then(() => {
         console.log('Database & tables created!')

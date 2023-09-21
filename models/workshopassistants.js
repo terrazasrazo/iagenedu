@@ -1,3 +1,3 @@
 module.exports = (sequelize, type) => {
-  return sequelize.define("keywords", {});
+  return sequelize.define("workshopsassistants", {});
 };

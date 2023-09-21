@@ -9,6 +9,7 @@ module.exports = (sequelize, type) => {
     themes: type.STRING,
     product: type.STRING,
     references: type.STRING,
+    keywords: type.STRING,
     participants: type.INTEGER,
     zoomSession: type.STRING
   });
