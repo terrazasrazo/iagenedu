@@ -1,0 +1,33 @@
+{
+  "name": "iagenedu",
+  "version": "1.0.0",
+  "description": "API for IA Generative Edu UNAM",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrazasrazo/iagenedu.git"
+  },
+  "keywords": [
+    "IA Generative",
+    "Education",
+    "UNAM"
+  ],
+  "author": "Omar Terrazas R",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/terrazasrazo/iagenedu/issues"
+  },
+  "homepage": "https://github.com/terrazasrazo/iagenedu#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.33.0"
+  }
+}
