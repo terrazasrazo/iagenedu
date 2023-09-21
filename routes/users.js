@@ -43,4 +43,14 @@ module.exports = (app) => {
       })
       .then((user) => res.json(user));
   });
+
+  app.route("/sigeco/:id").put(function (req, res) {
+    db.sigecos
+      .update(req.body, {
+        where: {
+          userId: req.params.id,
+        },
+      })
+      .then((sigeco) => res.json(sigeco));
+  }
 };
