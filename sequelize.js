@@ -41,7 +41,7 @@ db.workshops.belongsToMany(db.users, { through: 'workshopassistants' });
 db.users.belongsToMany(db.workshops, { through: 'workshopassistants' });
 
 sequelize.sync({
-        force: true
+        force: false
     })
     .then(() => {
         console.log('Database & tables created!')
