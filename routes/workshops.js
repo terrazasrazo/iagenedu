@@ -2,6 +2,8 @@ const express = require("express"),
   db = require("../sequelize"),
   app = express();
 
+  const { QueryTypes } = require('sequelize');
+
 module.exports = (app) => {
   app.route("/").get(function (req, res) {
     res.json({ hello: "world" });
@@ -33,7 +35,7 @@ module.exports = (app) => {
             ],
           ],
         },
-        order: [["level", "DESC"]]
+        order: [["ocurrenceDay", "ASC"],["level", "ASC"]]
       })
       .then((workshops) => res.json(workshops));
   });
@@ -66,4 +68,9 @@ module.exports = (app) => {
       .destroy({ where: { id: req.params.id } })
       .then((workshop) => res.json(workshop));
   });
+
+  app.route("/workshopassistants/:id").get(function (req, res) {
+    db.query(`SELECT COUNT(*) FROM workshopassistants WHERE workshopassistants.workshopId = ${req.params.id}`, { type: QueryTypes.SELECT }).then((workshopassistants) => res.json(workshopassistants));
+  });
+
 };

@@ -4,13 +4,14 @@ module.exports = (sequelize, type) => {
     tools: type.TEXT,
     level: type.INTEGER,
     educationLevel: type.STRING,
-    knodledgeArea: type.STRING,
+    knowledgeArea: type.STRING,
     purpouse: type.TEXT,
     themes: type.TEXT,
     product: type.TEXT,
     references: type.TEXT,
     keywords: type.STRING,
     participants: type.INTEGER,
-    zoomSession: type.STRING
+    zoomSession: type.STRING,
+    ocurrenceDay: type.STRING
   });
 };
