@@ -1,0 +1,38 @@
+.basic {
+    @apply border-blue-400;
+}
+.basic header {
+    @apply border-blue-400;
+}
+.basic header h1 {
+    @apply text-blue-400;
+}
+.basic footer {
+    @apply bg-blue-400;
+}
+
+.intermediate {
+    @apply border-blue-600;
+}
+.intermediate header {
+    @apply border-blue-600;
+}
+.intermediate header h1 {
+    @apply text-blue-600;
+}
+.intermediate footer {
+    @apply bg-blue-600;
+}
+
+.advanced {
+    @apply border-blue-900;
+}
+.advanced header {
+    @apply border-blue-900;
+}
+.advanced header h1 {
+    @apply text-blue-900;
+}
+.advanced footer {
+    @apply bg-blue-900;
+}
