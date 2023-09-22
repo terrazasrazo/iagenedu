@@ -1,0 +1,6 @@
+#workshop-details {
+    @apply bg-gray-50 p-4;
+}
+#workshop-details h2 {
+    @apply text-2xl mt-4 mb-1;
+}
