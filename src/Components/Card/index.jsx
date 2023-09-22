@@ -6,6 +6,14 @@ const Card = (data) => {
   if(data.data.level === 1) level = 'basic'
   if(data.data.level === 2) level = 'intermediate'
   if(data.data.level === 3) level = 'advanced'
+
+  const availableSeats = data.data.participants - data.data.assistantsCount
+  
+  let availableSeatsColor = ''
+  if(availableSeats > 20) availableSeatsColor = 'bg-green-500'
+  if(availableSeats > 10 && availableSeats < 20) availableSeatsColor = 'bg-yellow-500'
+  if(availableSeats < 10) availableSeatsColor = 'bg-red-500'
+
   return (
     <article className={`${level} m-6 shadow-sm bg-gray-50 rounded border-t-4 relative pb-20`}>
       <NavLink to={`/iagenedu/workshops/${data.data.id}`}>
@@ -18,6 +26,8 @@ const Card = (data) => {
           }
         </header>
         <main className="p-2 py-4 text-gray-700">
+          <p className="text-right mb-4"><span className="rounded text-gray-50 text-sm p-2">{data.data.ocurrenceDay}</span></p>
+          <p className="text-right mb-6 -mr-2"><span className={`${availableSeatsColor} text-gray-50 p-1 rounded-l`}>{availableSeats} lugares disponibles</span></p>
           <p>{data.data.purpouse}</p>
         </main>
         <footer className="text-gray-100 p-2 rounded-b absolute bottom-0 w-full">

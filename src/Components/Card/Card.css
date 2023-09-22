@@ -1,3 +1,6 @@
+.workshop-levels span {
+    @apply rounded text-gray-50 p-2;
+}
 .basic {
     @apply border-blue-400;
 }
@@ -8,6 +11,9 @@
     @apply text-blue-400;
 }
 .basic footer {
+    @apply bg-blue-400;
+}
+.basic main > p:first-child > span {
     @apply bg-blue-400;
 }
 
@@ -23,6 +29,9 @@
 .intermediate footer {
     @apply bg-blue-600;
 }
+.intermediate main > p:first-child > span {
+    @apply bg-blue-600;
+}
 
 .advanced {
     @apply border-blue-900;
@@ -34,5 +43,8 @@
     @apply text-blue-900;
 }
 .advanced footer {
+    @apply bg-blue-900;
+}
+.advanced main > p:first-child > span {
     @apply bg-blue-900;
 }
