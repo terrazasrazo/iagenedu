@@ -1,0 +1,15 @@
+#register label {
+    @apply block;
+}
+#register input, #register select {
+    @apply w-full rounded p-2 shadow-sm mt-1;
+}
+#register input[type="submit"] {
+    @apply bg-blue-900 text-white w-auto cursor-pointer m-4 px-4;
+}
+#register select {
+    @apply bg-white;
+}
+#register input[type="checkbox"] {
+    @apply inline-block w-auto;
+}
