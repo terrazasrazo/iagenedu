@@ -1,14 +1,15 @@
+import './Navbar.css';
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="w-1/2 text-right">
       <ul>
         <li>
-          <NavLink to="/iagenedu">Home</NavLink>
+          <NavLink to="/iagenedu/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink to="/iagenedu/workshops">Workshops</NavLink>
+          <NavLink to="/iagenedu/workshops/">Talleres</NavLink>
         </li>
       </ul>
     </nav>
