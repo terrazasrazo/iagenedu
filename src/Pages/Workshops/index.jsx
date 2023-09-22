@@ -1,8 +1,22 @@
+import { useState, useEffect } from 'react'
+import Card from '../../Components/Card'
 function Workshops() {
+  const [items, setItems] = useState(null)
+
+  useEffect(() => {
+    fetch('http://localhost:6600/workshops')
+      .then(response => response.json())
+      .then(data => setItems(data))
+  }, [])
   return (
-    <>
-      <h1>Workshops</h1>
-    </>
+    <section className="container grid grid-cols-4  mx-auto">
+      {
+        
+        items?.map(item => {
+          return <Card key={item.id} data={item} />
+        })
+      }
+    </section>
   );
 }
 
