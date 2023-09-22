@@ -5,7 +5,7 @@ import Speaker from "../../Components/Speaker";
 import LoginForm from "../../Components/LoginForm";
 
 const showLoginForm = () => {
-  const loginForm = document.getElementById("login-form");
+  const loginForm = document.getElementById("loginform-container");
   loginForm.classList.remove("hidden");
 };
 
@@ -74,7 +74,7 @@ function WorkshopDetails() {
                       <p>
                         <a
                           onClick={showLoginForm}
-                          className="bg-green-500 text-gray-50 p-4 rounded"
+                          className="bg-green-500 text-gray-50 p-4 rounded cursor-pointer"
                         >
                           registrarse al taller
                         </a>
