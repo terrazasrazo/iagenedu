@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <h1 className="text-gray-600 text-2xl">Hello from home</h1>
+      <img src="images/iagen-logo.svg" alt="Inteligencia Artificial Generativa en Educación" width={600} className="block mx-auto" />
     </>
   )
 }
