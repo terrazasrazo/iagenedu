@@ -14,9 +14,9 @@ function Workshops() {
       <div className="workshop-levels bg-white p-4 shadow-sm rounded">
         <p>
           Nivel de conocimiento de IAGen que se requiere para el taller:{" "}
-          <span className="bg-blue-400">Elemental</span>{" "}
-          <span className="bg-blue-600">Intermedio</span>{" "}
-          <span className="bg-blue-900">Avanzado</span>
+          <span className="bg-blue-400 ml-2">Elemental</span>{" "}
+          <span className="bg-blue-600 ml-2">Intermedio</span>{" "}
+          <span className="bg-blue-900 ml-2">Avanzado</span>
         </p>
       </div>
       <section className="container grid grid-cols-4 mx-auto">
