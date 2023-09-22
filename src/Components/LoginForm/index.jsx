@@ -41,7 +41,7 @@ function LoginForm() {
           </form>
           <div>
             <p className="text-sm">¿Aún no tienes cuenta? <NavLink
-            to="/iagenedu/register"
+            to="/register/"
             className={"text-gray-600 underline"}
           >
             Registrate aquí

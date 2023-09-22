@@ -6,10 +6,10 @@ const Navbar = () => {
     <nav className="w-1/2 text-right">
       <ul>
         <li>
-          <NavLink to="/iagenedu/">Inicio</NavLink>
+          <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink to="/iagenedu/workshops/">Talleres</NavLink>
+          <NavLink to="/workshops/">Talleres</NavLink>
         </li>
       </ul>
     </nav>

@@ -16,7 +16,7 @@ const Card = (data) => {
 
   return (
     <article className={`${level} m-6 shadow-sm bg-gray-50 rounded border-t-4 relative pb-20`}>
-      <NavLink to={`/iagenedu/workshops/${data.data.id}`}>
+      <NavLink to={`/workshops/${data.data.id}`}>
         <header className="p-4 border-b">
           <h1 className="text-2xl mb-4">{data.data.title}</h1>
           {

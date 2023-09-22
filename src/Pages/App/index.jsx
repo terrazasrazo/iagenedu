@@ -11,10 +11,10 @@ import './App.css'
 
 const AppRoutes = () => {
   return useRoutes([
-    { path: '/iagenedu/', element: <Home /> },
-    { path: '/iagenedu/workshops', element: <Workshops /> },
-    { path: '/iagenedu/workshops/:id', element: <WorkshopDetails />},
-    { path: '/iagenedu/register', element: <Register />},
+    { path: '/', element: <Home /> },
+    { path: '/workshops', element: <Workshops /> },
+    { path: '/workshops/:id', element: <WorkshopDetails />},
+    { path: '/register', element: <Register />},
     { path: '*', element: <NotFound /> }
   ]);
 }
@@ -26,7 +26,7 @@ function App() {
         <header className='flex flex-row w-full items-center mb-6'>
           <div className='w-1/2'>
             <h1>
-              <NavLink to="/iagenedu/">
+              <NavLink to="/">
                 <img src="/images/iagen-icon.svg" width="120" alt="" />
               </NavLink>
             </h1>
