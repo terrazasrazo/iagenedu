@@ -5,11 +5,11 @@ const express = require("express"),
   secret = "iagenedu";
 
 module.exports = (app) => {
-  app.route("/users").get(function (req, res) {
+  app.route("/iagen-api/users").get(function (req, res) {
     db.users.findAll().then((users) => res.json(users));
   });
 
-  app.route("/users/:id").get(function (req, res) {
+  app.route("/iagen-api/users/:id").get(function (req, res) {
     db.users
       .findAll({
         where: {
@@ -24,7 +24,7 @@ module.exports = (app) => {
       .then((user) => res.json(user));
   });
 
-  app.route("/users").post(function (req, res) {
+  app.route("/iagen-api/users").post(function (req, res) {
     const hash = crypto.createHash("sha256", secret)
       .update(req.body.email+req.body.password)
       .digest("hex");
@@ -56,7 +56,7 @@ module.exports = (app) => {
       });
   });
 
-  app.route("/users/:id").put(function (req, res) {
+  app.route("/iagen-api/users/:id").put(function (req, res) {
     db.users
       .update(req.body, {
         where: {
@@ -66,7 +66,7 @@ module.exports = (app) => {
       .then((user) => res.json(user));
   });
 
-  app.route("/sigeco/:id").put(function (req, res) {
+  app.route("/iagen-api/sigeco/:id").put(function (req, res) {
     db.sigecos
       .update(req.body, {
         where: {
@@ -76,7 +76,7 @@ module.exports = (app) => {
       .then((sigeco) => res.json(sigeco));
   });
 
-  app.route("/users/validate/:hash").get(function (req, res) {
+  app.route("/iagen-api/users/validate/:hash").get(function (req, res) {
     db.users
       .update(
         { active: true },
@@ -95,7 +95,7 @@ module.exports = (app) => {
       });
   });
 
-  app.route("/users/login").post(function (req, res) {
+  app.route("/iagen-api/users/login").post(function (req, res) {
     db.users
       .findOne({
         where: {
