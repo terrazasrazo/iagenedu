@@ -10,7 +10,6 @@
 }
 #home h2 {
     @apply text-2xl mt-4 my-2;
-    text-decoration: line-through;
     font-weight: 500;
 }
 #home > header h2 {
