@@ -1,6 +1,7 @@
 import './Register.css'
 
 function Register() {
+  document.getElementById("loginform-container").classList.add("hidden");
   return (
     <>
       <section id='register'>

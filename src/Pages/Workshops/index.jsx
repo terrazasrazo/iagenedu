@@ -5,7 +5,7 @@ function Workshops() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:6600/workshopassistants")
+    fetch("https://ada.bunam.unam.mx/iagen-api/workshopassistants")
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, []);

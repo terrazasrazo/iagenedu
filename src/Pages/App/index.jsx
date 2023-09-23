@@ -7,6 +7,7 @@ import WorkshopDetails from '../WorkshopDetails'
 import Register from '../Register'
 import NotFound from '../NotFound'
 import Navbar from '../../Components/Navbar'
+import LoginForm from '../../Components/LoginForm'
 import './App.css'
 
 const AppRoutes = () => {
@@ -33,8 +34,8 @@ function App() {
           </div>
           <Navbar />
         </header>
-        
         <AppRoutes />
+        <LoginForm />
       </BrowserRouter>
     </WorkshopProvider>
   )

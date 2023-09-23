@@ -46,10 +46,10 @@ function Home() {
         <div className="w-1/4">
           <ul>
             <li>
-              <NavLink to={`/register/`}>Registro como participante</NavLink>
+              <NavLink to={`/register/`} className="hover:text-orange-600 underline">Registro como participante</NavLink>
             </li>
             <li>
-              <NavLink to={`/call-for/`}>
+              <NavLink to={`/call-for/`} className="hover:text-orange-600 underline">
                 Convocatoria para el envío de trabajos de docentes y estudiantes
               </NavLink>
             </li>

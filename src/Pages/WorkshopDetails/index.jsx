@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./WorkshopDetails.css";
 import Speaker from "../../Components/Speaker";
-import LoginForm from "../../Components/LoginForm";
 
 const showLoginForm = () => {
   const loginForm = document.getElementById("loginform-container");
@@ -14,14 +13,13 @@ function WorkshopDetails() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:6600/workshops/${id}`)
+    fetch(`https://ada.bunam.unam.mx/iagen-api/workshops/${id}`)
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, [id]);
 
   return (
     <>
-      <LoginForm />
       {items &&
         items.map((item) => {
           let speakerLabel = "Tallerista";

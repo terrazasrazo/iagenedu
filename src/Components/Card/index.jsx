@@ -12,7 +12,8 @@ const Card = (data) => {
   let availableSeatsColor = ''
   if(availableSeats > 20) availableSeatsColor = 'bg-green-500'
   if(availableSeats > 10 && availableSeats < 20) availableSeatsColor = 'bg-yellow-500'
-  if(availableSeats < 10) availableSeatsColor = 'bg-red-500'
+  if(availableSeats < 10) availableSeatsColor = 'bg-orange-500'
+  if(availableSeats == 0) availableSeatsColor = 'bg-red-500'
 
   return (
     <article className={`${level} m-6 shadow-sm bg-gray-50 rounded border-t-4 relative pb-20`}>
