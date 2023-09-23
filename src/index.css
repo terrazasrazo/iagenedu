@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap');
+
 body {
-    background: url("/images/background.jpg") no-repeat center center fixed
+    background: url("/images/background.jpg") no-repeat center center fixed;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    @apply text-blue_unam;
 }
