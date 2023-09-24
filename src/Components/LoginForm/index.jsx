@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
+import Cookies from "universal-cookie";
 import "./LoginForm.css";
+
+const cookies = new Cookies();
 
 const hideLoginForm = () => {
   const loginForm = document.getElementById("loginform-container");
@@ -42,7 +45,12 @@ const sendLogin = () => {
         displayLoginMessage(data.error);
         return;
       }
-      console.log(data)
+      cookies.set("id", data.id, { path: "/" });
+      cookies.set("name", data.name, { path: "/" });
+      cookies.set("lastname", data.lastname, { path: "/" });
+      cookies.set("email", data.email, { path: "/" });
+      cookies.set("worshopsCount", data.worshopsCount, { path: "/" });
+      window.location.reload();
     })
     .catch((error) => {
       console.log(error);

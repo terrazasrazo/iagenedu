@@ -1,5 +1,5 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom'
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom'
 import { WorkshopProvider } from '../../Context'
 import Home from '../Home'
 import Workshops from '../Workshops'
