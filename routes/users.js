@@ -49,10 +49,15 @@ module.exports = (app) => {
             studyLevel: req.body.studyLevel,
           })
           .then((sigeco) => {
-            user.sendWelcomeEmail().then(() => {
-              res.json(user);
+            user.sendWelcomeEmail()
+              .then((sendMail) => {
+                if (sendMail.accepted) {
+                  res.json({ messageId: sendMail.messageId });
+                } else {
+                  res.json({error: "Error to send email messages"})
+                }
+              });
             });
-          });
       });
   });
 
@@ -105,11 +110,38 @@ module.exports = (app) => {
             .digest("hex"),
           active: true,
         },
+        attributes: {
+          include: [
+            'id', 'email', 'active', 'createdAt', 'updatedAt',
+            [
+              db.Sequelize.literal(`(
+                    SELECT COUNT(*)
+                    FROM workshopassistants
+                    WHERE
+                        workshopassistants.userId = id
+                )`),
+              "workshopsCount",
+            ],
+          ],
+        },   
       })
       .then((user) => {
         if (user) {
-          res.json(user);
-        } else {
+          db.sigecos.findOne({
+              where: {
+                userId: user.id,
+              }
+            }
+          ).then((sigeco) => {
+            res.json({
+              id: user.id,
+              email: user.email,
+              name: sigeco.name,
+              lastname: sigeco.lastname,
+              worshopsCount: user.get('workshopsCount'),
+            });
+          });
+       } else {
           res.json({ error: "Usuario o contraseña incorrectos" });
         }
       });

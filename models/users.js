@@ -33,8 +33,10 @@ module.exports = (sequelize, type) => {
     try {
       const info = await transporter.sendMail(mailOptions);
       console.log("Message sent: %s", info.messageId);
+      return info;
     } catch (error) {
       console.log("Error to send email messages", error);
+      return error;
     }
   };
 
