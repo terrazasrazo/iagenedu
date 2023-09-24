@@ -6,6 +6,16 @@ const hideLoginForm = () => {
   loginForm.classList.add("hidden");
 };
 
+const displayLoginMessage = (message) => {
+  let loginMessage = document.getElementById("loginform-message");
+  loginMessage.getElementsByTagName("p")[0].textContent = "";
+  loginMessage.getElementsByTagName("p")[0].textContent = message;
+  loginMessage.classList.remove("hidden");
+  setTimeout(() => {
+    loginMessage.classList.add("hidden");
+  }, 5000);
+};
+
 const sendLogin = () => {
   const emailTag = document.getElementById("username");
   const passwordTag = document.getElementById("password");
@@ -25,23 +35,18 @@ const sendLogin = () => {
     },
   };
 
-  fetch("https://ada.bunam.unam.mx/iagen-api/users/login", options)
+  fetch("https://ada.bunam.unam.mx/iagen-api/users/login/", options)
     .then((response) => response.json())
     .then((data) => {
       if (data.error) {
-        console.log(`Error message ${data.error}`);
-        let formMessage = document.getElementById("loginform-message");
-        formMessage.getElementsByTagName("p")[0].textContent = data.error;
-        formMessage.classList.remove("hidden");
+        displayLoginMessage(data.error);
+        return;
       }
-      // console.log(data)
+      console.log(data)
     })
     .catch((error) => {
       console.log(error);
-      let formMessage = document.getElementById("loginform-message");
-      formMessage.firstElementChild().textContent = error;
-      // console.log(formMessage.firstElementChild())
-      // console.error(error)
+      displayLoginMessage("Ocurrió un error inesperado. Intente más tarde.");
     });
 };
 
