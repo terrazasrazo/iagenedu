@@ -50,6 +50,19 @@ module.exports = (app) => {
           model: db.speakers,
         },
       ],
+      attributes: {
+        include: [
+          [
+            db.Sequelize.literal(`(
+                  SELECT COUNT(*)
+                  FROM workshopassistants
+                  WHERE
+                      workshopassistants.workshopId = workshops.id
+              )`),
+            "assistantsCount",
+          ],
+        ],
+      },
     }).then((workshop) => res.json(workshop))
   });
 
