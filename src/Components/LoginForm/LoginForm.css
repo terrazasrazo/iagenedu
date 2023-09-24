@@ -3,8 +3,16 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.527);
-    top: 0;
-    left: 0;
+    @apply top-0 left-0;
+}
+#loginform-container span {
+    @apply absolute top-2 right-2 p-2 cursor-pointer text-gray-500;
+}
+#loginform-message {
+    @apply absolute top-2 right-2 bg-white rounded shadow-sm;
+}
+#loginform-message > div {
+    @apply relative p-8 pr-10;
 }
 .loginform-form {
     @apply bg-gray-100 p-10 rounded shadow-sm relative;
@@ -15,6 +23,6 @@
 .loginform-form input[type="text"], .loginform-form input[type="password"] {
     @apply block rounded p-2 shadow-sm w-full;
 }
-.loginform-form input[type="submit"] {
+.loginform-form input[type="button"] {
     @apply inline-block rounded bg-orange-600 text-white p-2 cursor-pointer;
 }
