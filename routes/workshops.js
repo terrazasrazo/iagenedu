@@ -86,4 +86,26 @@ module.exports = (app) => {
     db.query(`SELECT COUNT(*) FROM workshopassistants WHERE workshopassistants.workshopId = ${req.params.id}`, { type: QueryTypes.SELECT }).then((workshopassistants) => res.json(workshopassistants));
   });
 
+  app.route("/workshops/validate/:workshopId/:userId").get(function (req, res) {
+    db.workshops.findAll({
+      where: {
+        id: req.params.workshopId,
+      },
+      attributes: {
+        include: [
+          [
+            db.Sequelize.literal(`(
+                  SELECT COUNT(*)
+                  FROM workshopassistants
+                  WHERE
+                    workshopassistants.workshopId = workshops.id
+                  AND
+                    workshopassistants.userId = ${req.params.userId}
+              )`),
+            "registered",
+          ],
+        ],
+      },
+    }).then((workshop) => res.json({ registered: workshop[0].dataValues.registered}))
+  });
 };
