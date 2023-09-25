@@ -146,4 +146,25 @@ module.exports = (app) => {
         }
       });
   });
+
+  app.route("/users/agenda/:userId").get(function (req, res) {
+    db.users
+      .findAll({
+        where: {
+          id: req.params.userId,
+        },
+        attributes: [
+          'id', 'email'
+        ],
+        include: [
+          {
+            model: db.workshops,
+            attributes: [
+              'id', 'title', 'level', 'purpouse', 'zoomSession', 'ocurrenceDay'
+            ]
+          },
+        ],
+      })
+      .then((user) => res.json(user));
+  });
 };
