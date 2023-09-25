@@ -86,8 +86,8 @@ function LoginForm() {
           />
           <form>
             <div>
-              <label htmlFor="username">usuario</label>
-              <input type="text" name="username" id="username" />
+              <label htmlFor="username">correo electrónico</label>
+              <input type="mail" name="username" id="username" />
             </div>
             <div>
               <label htmlFor="password">contraseña</label>

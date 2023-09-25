@@ -20,7 +20,7 @@
 .loginform-form form div {
     @apply my-4;
 }
-.loginform-form input[type="text"], .loginform-form input[type="password"] {
+.loginform-form input[type="mail"], .loginform-form input[type="password"] {
     @apply block rounded p-2 shadow-sm w-full;
 }
 .loginform-form input[type="button"] {
