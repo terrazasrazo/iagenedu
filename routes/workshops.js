@@ -45,6 +45,16 @@ module.exports = (app) => {
       .then((workshops) => res.json(workshops));
   });
 
+  app.route("/workshopassistants").post(function (req, res) {
+    db.workshops.findByPk(req.body.workshopId).then((workshop) => {
+      db.users.findByPk(req.body.userId).then((user) => {
+        workshop
+          .addUser(user)
+          .then((workshopassistant) => res.json(workshopassistant));
+      });
+    });
+  });
+
   app.route("/workshops/:id").get(function (req, res) {
     db.workshops
       .findAll({
@@ -87,23 +97,6 @@ module.exports = (app) => {
     db.workshops
       .destroy({ where: { id: req.params.id } })
       .then((workshop) => res.json(workshop));
-  });
-
-  app.route("/workshopassistants/:id").get(function (req, res) {
-    db.query(
-      `SELECT COUNT(*) FROM workshopassistants WHERE workshopassistants.workshopId = ${req.params.id}`,
-      { type: QueryTypes.SELECT }
-    ).then((workshopassistants) => res.json(workshopassistants));
-  });
-
-  app.route("/workshopassistants").post(function (req, res) {
-    db.workshops.findByPk(req.body.workshopId).then((workshop) => {
-      db.users.findByPk(req.body.userId).then((user) => {
-        workshop
-          .addUser(user)
-          .then((workshopassistant) => res.json(workshopassistant));
-      });
-    });
   });
 
   app.route("/workshops/validate/:workshopId/:userId").get(function (req, res) {
