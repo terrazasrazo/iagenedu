@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer"),
   mailConfig = require("../config/mailer"),
-  urlDestiny = "http://localhost:6600";
+  urlDestiny = "https://iagenedu.unam.mx";
 
 module.exports = (sequelize, type) => {
   const Users = sequelize.define("users", {
