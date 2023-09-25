@@ -35,6 +35,7 @@ module.exports = (app) => {
       .create({
         email: req.body.email,
         password: password,
+        active: true,
         hash: hash,
       })
       .then((user) => {
