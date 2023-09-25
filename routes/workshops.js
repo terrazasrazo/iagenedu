@@ -2,7 +2,7 @@ const express = require("express"),
   db = require("../sequelize"),
   app = express();
 
-  const { QueryTypes } = require('sequelize');
+const { QueryTypes } = require("sequelize");
 
 module.exports = (app) => {
   app.route("/").get(function (req, res) {
@@ -10,13 +10,15 @@ module.exports = (app) => {
   });
 
   app.route("/workshops").get(function (req, res) {
-    db.workshops.findAll({
-      include: [
-        {
-          model: db.speakers,
-        },
-      ],
-    }).then((workshops) => res.json(workshops));
+    db.workshops
+      .findAll({
+        include: [
+          {
+            model: db.speakers,
+          },
+        ],
+      })
+      .then((workshops) => res.json(workshops));
   });
 
   app.route("/workshopassistants").get(function (req, res) {
@@ -35,35 +37,40 @@ module.exports = (app) => {
             ],
           ],
         },
-        order: [["ocurrenceDay", "ASC"],["level", "ASC"]]
+        order: [
+          ["ocurrenceDay", "ASC"],
+          ["level", "ASC"],
+        ],
       })
       .then((workshops) => res.json(workshops));
   });
 
   app.route("/workshops/:id").get(function (req, res) {
-    db.workshops.findAll({
-      where: {
-        id: req.params.id,
-      },
-      include: [
-        {
-          model: db.speakers,
+    db.workshops
+      .findAll({
+        where: {
+          id: req.params.id,
         },
-      ],
-      attributes: {
         include: [
-          [
-            db.Sequelize.literal(`(
+          {
+            model: db.speakers,
+          },
+        ],
+        attributes: {
+          include: [
+            [
+              db.Sequelize.literal(`(
                   SELECT COUNT(*)
                   FROM workshopassistants
                   WHERE
                       workshopassistants.workshopId = workshops.id
               )`),
-            "assistantsCount",
+              "assistantsCount",
+            ],
           ],
-        ],
-      },
-    }).then((workshop) => res.json(workshop))
+        },
+      })
+      .then((workshop) => res.json(workshop));
   });
 
   app.route("/workshops").post(function (req, res) {
@@ -83,18 +90,32 @@ module.exports = (app) => {
   });
 
   app.route("/workshopassistants/:id").get(function (req, res) {
-    db.query(`SELECT COUNT(*) FROM workshopassistants WHERE workshopassistants.workshopId = ${req.params.id}`, { type: QueryTypes.SELECT }).then((workshopassistants) => res.json(workshopassistants));
+    db.query(
+      `SELECT COUNT(*) FROM workshopassistants WHERE workshopassistants.workshopId = ${req.params.id}`,
+      { type: QueryTypes.SELECT }
+    ).then((workshopassistants) => res.json(workshopassistants));
+  });
+
+  app.route("/workshopassistants").post(function (req, res) {
+    db.workshops.findByPk(req.body.workshopId).then((workshop) => {
+      db.users.findByPk(req.body.userId).then((user) => {
+        workshop
+          .addUser(user)
+          .then((workshopassistant) => res.json(workshopassistant));
+      });
+    });
   });
 
   app.route("/workshops/validate/:workshopId/:userId").get(function (req, res) {
-    db.workshops.findAll({
-      where: {
-        id: req.params.workshopId,
-      },
-      attributes: {
-        include: [
-          [
-            db.Sequelize.literal(`(
+    db.workshops
+      .findAll({
+        where: {
+          id: req.params.workshopId,
+        },
+        attributes: {
+          include: [
+            [
+              db.Sequelize.literal(`(
                   SELECT COUNT(*)
                   FROM workshopassistants
                   WHERE
@@ -102,10 +123,13 @@ module.exports = (app) => {
                   AND
                     workshopassistants.userId = ${req.params.userId}
               )`),
-            "registered",
+              "registered",
+            ],
           ],
-        ],
-      },
-    }).then((workshop) => res.json({ registered: workshop[0].dataValues.registered}))
+        },
+      })
+      .then((workshop) =>
+        res.json({ registered: workshop[0].dataValues.registered })
+      );
   });
 };
