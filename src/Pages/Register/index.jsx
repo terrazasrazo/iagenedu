@@ -69,7 +69,7 @@ const sendRegister = (event) => {
       setTimeout(() => {
         successMessage.classList.add('hidden')
         window.location.href = '/'
-      }, 20000)
+      }, 10000)
     })
     .catch((error) => {
       console.log(error);

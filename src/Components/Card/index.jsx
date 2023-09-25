@@ -1,4 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom"
+import { useContext } from "react"
+import { WorkshopContext } from "../../Context"
 import './Card.css'
 
 const Card = (data) => {
@@ -13,11 +15,13 @@ const Card = (data) => {
   if(availableSeats > 20) availableSeatsColor = 'bg-green-500'
   if(availableSeats > 10 && availableSeats < 20) availableSeatsColor = 'bg-yellow-500'
   if(availableSeats < 10) availableSeatsColor = 'bg-orange-500'
-  if(availableSeats == 0) availableSeatsColor = 'bg-red-500'
+  if(availableSeats === 0) availableSeatsColor = 'bg-red-500'
+
+  const context = useContext(WorkshopContext)
 
   return (
     <article className={`${level} m-6 shadow-sm bg-gray-50 rounded border-t-4 relative pb-20`}>
-      <NavLink to={`/workshops/${data.data.id}`}>
+      <NavLink to={`/workshops/${data.data.id}`} onClick={() => context.setWorkshopData(context.availableSeats = availableSeats)}> 
         <header className="p-4 border-b">
           <h1 className="text-2xl mb-4">{data.data.title}</h1>
           {

@@ -1,3 +1,12 @@
+#registerWorkshopMessage {
+    @apply absolute top-2 right-2 bg-white rounded shadow-sm border-2 border-red-500 text-red-500;
+}
+#registerWorkshopMessage > div {
+    @apply relative p-8 pr-10;
+}
+#registerWorkshopMessage span {
+    @apply absolute top-2 right-2 p-2 cursor-pointer text-gray-500;
+}
 #workshop-details {
     @apply bg-slate-50 p-4;
 }
