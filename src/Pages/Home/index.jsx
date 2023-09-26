@@ -1,6 +1,19 @@
 import { NavLink } from "react-router-dom";
+import Cookies from "universal-cookie";
 import ProgramItem from "../../Components/ProgramItem";
 import "./Home.css";
+
+const cookies = new Cookies();
+
+const registerAnnouncement = () => {
+  if(cookies.get("id") === undefined) {
+    return (
+      <li>
+          <NavLink to={`/register/`} className="hover:text-orange-600 underline">Registro como participante</NavLink>
+      </li>
+    )
+  }
+}
 
 function Home() {
   return (
@@ -45,9 +58,7 @@ function Home() {
         </div>
         <div className="w-1/4">
           <ul>
-            <li>
-              <NavLink to={`/register/`} className="hover:text-orange-600 underline">Registro como participante</NavLink>
-            </li>
+            { registerAnnouncement() }
             <li>
               <NavLink to={`/call-for/`} className="hover:text-orange-600 underline">
                 Convocatoria para el envío de trabajos de docentes y estudiantes

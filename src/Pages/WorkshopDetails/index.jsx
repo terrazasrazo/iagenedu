@@ -83,7 +83,7 @@ const registerToWorkshop = (workshopId) => {
             successMessage.classList.remove('hidden')
             setTimeout(() => {
               successMessage.classList.add('hidden')
-              window.location.href = '/workshops/'
+              window.location.href = '/profile/'
             }, 10000)
           } else {
             displayRegisterWorkshopMessage(

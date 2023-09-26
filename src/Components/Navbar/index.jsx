@@ -14,7 +14,7 @@ const startSession = () => {
   const lastname = cookies.get("lastname")
 
   if(name && lastname) {
-    return (<NavLink to="/workshops">{name} {lastname}</NavLink>)
+    return (<NavLink to="/profile">{name} {lastname}</NavLink>)
   } else {
     return (<a onClick={showLoginForm}>Iniciar sesión</a>)
   }

@@ -5,6 +5,7 @@ import Home from '../Home'
 import Workshops from '../Workshops'
 import WorkshopDetails from '../WorkshopDetails'
 import Register from '../Register'
+import UserProfile from '../UserProfile'
 import NotFound from '../NotFound'
 import Navbar from '../../Components/Navbar'
 import LoginForm from '../../Components/LoginForm'
@@ -16,6 +17,7 @@ const AppRoutes = () => {
     { path: '/workshops', element: <Workshops /> },
     { path: '/workshops/:id', element: <WorkshopDetails />},
     { path: '/register', element: <Register />},
+    { path: '/profile', element: <UserProfile />},
     { path: '*', element: <NotFound /> }
   ]);
 }

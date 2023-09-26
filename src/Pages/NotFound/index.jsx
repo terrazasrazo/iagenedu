@@ -1,4 +1,4 @@
-function Workshops() {
+function NotFound() {
   return (
     <>
       <h1>Not Found</h1>
@@ -6,4 +6,4 @@ function Workshops() {
   );
 }
 
-export default Workshops;
+export default NotFound;

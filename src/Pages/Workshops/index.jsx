@@ -18,6 +18,7 @@ function Workshops() {
           <span className="bg-blue-600 ml-2">Intermedio</span>{" "}
           <span className="bg-blue-900 ml-2">Avanzado</span>
         </p>
+        <p className="mt-6 text-orange-800">Los talleres ocurrirán de manera simultánea de 12:00 a 14:00 horas.</p>
       </div>
       <section className="container grid grid-cols-4 mx-auto">
         {items?.map((item) => {

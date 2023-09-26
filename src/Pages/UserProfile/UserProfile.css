@@ -1,0 +1,15 @@
+#user-profile h1 {
+    @apply text-4xl;
+    font-weight: 600;
+}
+#user-profile h2 {
+    @apply text-2xl mt-8 my-2 text-orange-600;
+    font-weight: 500;
+}
+#user-profile h3 {
+    @apply text-xl mt-4 my-2;
+    font-weight: 500;
+}
+#workshops article{
+    @apply my-4 border p-4 rounded;
+}
