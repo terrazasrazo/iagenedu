@@ -52,7 +52,7 @@ function Home() {
               Las IES y la IA generativa: posturas, retos, avances y
               lineamientos
             </li>
-            <li>AI generativa para docentes y diseñadores curriculares</li>
+            <li>IA generativa para docentes y diseñadores curriculares</li>
             <li>Estudiantes y su uso de la IA generativa</li>
           </ul>
         </div>

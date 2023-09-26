@@ -11,7 +11,7 @@ function CallFor() {
             </div>
         </header>
         <main>
-            <p className="text-center my-4"><strong>que tendrá veriticativo el 23 y 24 de octubre de 2023, en un formato totalmente en línea, y que abordará las siguientes temáticas:</strong></p>
+            <p className="text-center my-4"><strong>que tendrá verificativo el 23 y 24 de octubre de 2023, en un formato totalmente en línea, y que abordará las siguientes temáticas:</strong></p>
             <div className="ml-4 my-4">
                 <ol className="list-disc">
                     <li className="mb-2">Prácticas docentes que incorporan la IA generativa (diseño de experiencias de aprendizaje, evaluación, enriquecimiento curricular, etc.) y</li>
