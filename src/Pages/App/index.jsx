@@ -14,6 +14,7 @@ import './App.css'
 const AppRoutes = () => {
   return useRoutes([
     { path: '/', element: <Home /> },
+    // {path: '/call-for', element: <div>Convocatoria</div>},
     { path: '/workshops', element: <Workshops /> },
     { path: '/workshops/:id', element: <WorkshopDetails />},
     { path: '/register', element: <Register />},

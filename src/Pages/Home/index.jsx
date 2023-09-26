@@ -60,9 +60,9 @@ function Home() {
           <ul>
             { registerAnnouncement() }
             <li>
-              <NavLink to={`/call-for/`} className="hover:text-orange-600 underline">
+              <a href="docs/convocatoria_iagenedu.pdf" target="_blank" className="hover:text-orange-600 underline">
                 Convocatoria para el envío de trabajos de docentes y estudiantes
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
