@@ -2,6 +2,7 @@ import { useRoutes, BrowserRouter } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { WorkshopProvider } from '../../Context'
 import Home from '../Home'
+import CallFor from '../CallFor'
 import Workshops from '../Workshops'
 import WorkshopDetails from '../WorkshopDetails'
 import Register from '../Register'
@@ -14,7 +15,7 @@ import './App.css'
 const AppRoutes = () => {
   return useRoutes([
     { path: '/', element: <Home /> },
-    // {path: '/call-for', element: <div>Convocatoria</div>},
+    {path: '/call-for', element: <CallFor />},
     { path: '/workshops', element: <Workshops /> },
     { path: '/workshops/:id', element: <WorkshopDetails />},
     { path: '/register', element: <Register />},
