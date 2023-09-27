@@ -144,6 +144,11 @@ function WorkshopDetails() {
     return <div dangerouslySetInnerHTML={htmlContent}></div>;
   }
 
+  const workshopTools = (tools) => {
+    const htmlContent = { __html: tools };
+    return <div dangerouslySetInnerHTML={htmlContent}></div>;
+  }
+
   return (
     <>
       <div id="registerWorkshopMessage" className="hidden">
@@ -198,6 +203,10 @@ function WorkshopDetails() {
                     <div>
                       <h2>Área de conocimiento que aborda</h2>
                       <p>{item.knowledgeArea}</p>
+                    </div>
+                    <div id="workshop-tools">
+                      <h2>Herramientas que se usarán en el taller</h2>
+                      {workshopTools(item.tools)}
                     </div>
                     <div>
                       <h2>Palabras clave</h2>
