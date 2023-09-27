@@ -154,9 +154,7 @@ module.exports = (app) => {
         where: {
           id: req.params.userId,
         },
-        attributes: [
-          'id', 'email'
-        ],
+        attributes: {exclude: ['id', 'email','password', 'hash', 'active', 'createdAt', 'updatedAt']},
         include: [
           {
             model: db.workshops,
@@ -166,6 +164,6 @@ module.exports = (app) => {
           },
         ],
       })
-      .then((user) => res.json(user));
+      .then((user) => res.json(user[0].workshops));
   });
 };
