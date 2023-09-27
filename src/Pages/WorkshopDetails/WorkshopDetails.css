@@ -13,3 +13,11 @@
 #workshop-details h2 {
     @apply text-2xl mt-4 mb-1;
 }
+#workshop-content ul {
+    list-style: square;
+    @apply ml-6;
+}
+#workshop-references p {
+    text-indent: 1rem;
+    line-height: 2rem;
+}

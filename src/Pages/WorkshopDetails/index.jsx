@@ -139,6 +139,11 @@ function WorkshopDetails() {
     return <div dangerouslySetInnerHTML={htmlContent}></div>;
   }
 
+  const referencesContent = (content) => {
+    const htmlContent = { __html: content };
+    return <div dangerouslySetInnerHTML={htmlContent}></div>;
+  }
+
   return (
     <>
       <div id="registerWorkshopMessage" className="hidden">
@@ -166,7 +171,7 @@ function WorkshopDetails() {
                       <h2>Propósito del taller</h2>
                       <p>{item.purpouse}</p>
                     </div>
-                    <div>
+                    <div id="workshop-content">
                       <h2>Contenido del taller</h2>
                       { workshopContent(item.themes)}
                     </div>
@@ -174,9 +179,9 @@ function WorkshopDetails() {
                       <h2>Producto del taller</h2>
                       <p>{item.product}</p>
                     </div>
-                    <div>
+                    <div id="workshop-references">
                       <h2>Referencias</h2>
-                      <p className="text-sm">{item.references}</p>
+                      {referencesContent(item.references)}
                     </div>
                     <section className="mt-4">
                       <h2>{speakerLabel}</h2>
