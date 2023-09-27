@@ -134,6 +134,11 @@ function WorkshopDetails() {
       });
   }
 
+  const workshopContent = (content) => {
+    const htmlContent = { __html: content };
+    return <div dangerouslySetInnerHTML={htmlContent}></div>;
+  }
+
   return (
     <>
       <div id="registerWorkshopMessage" className="hidden">
@@ -163,7 +168,7 @@ function WorkshopDetails() {
                     </div>
                     <div>
                       <h2>Contenido del taller</h2>
-                      <div>{item.themes}</div>
+                      { workshopContent(item.themes)}
                     </div>
                     <div>
                       <h2>Producto del taller</h2>
