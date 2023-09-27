@@ -5,6 +5,7 @@ const express = require('express'),
 
 app.use(bodyParser.json())
 app.use(cors())
+app.use("/static", express.static('assets'));
 app.use(bodyParser.urlencoded({
     extended: true
 }));
