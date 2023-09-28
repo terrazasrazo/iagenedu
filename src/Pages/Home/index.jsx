@@ -9,7 +9,7 @@ const registerAnnouncement = () => {
   if(cookies.get("id") === undefined) {
     return (
       <li>
-          <NavLink to={`/register/`} className="hover:text-orange-600 underline">Registro como participante</NavLink>
+          <NavLink to={`/register/`} className="hover:text-orange_unam underline">Registro como participante</NavLink>
       </li>
     )
   }
@@ -60,7 +60,7 @@ function Home() {
           <ul>
             { registerAnnouncement() }
             <li>
-              <NavLink to={`/call-for/`} className="text-orange-600 underline font-semibold">
+              <NavLink to={`/call-for/`} className="text-orange_unam underline font-semibold">
                 Convocatoria para el envío de trabajos de docentes y estudiantes
               </NavLink>
             </li>

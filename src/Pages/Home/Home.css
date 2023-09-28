@@ -23,7 +23,7 @@
 }
 #home h3 {
     font-weight: 500;
-    @apply text-xl my-2 bg-orange-600 text-white p-2;
+    @apply text-xl my-2 bg-orange_unam text-white p-2;
 }
 #home ul li {
     list-style-type: square;
