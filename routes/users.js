@@ -5,6 +5,7 @@ const express = require("express"),
   secret = "iagenedu";
 
 module.exports = (app) => {
+  /*
   app.route("/users").get(function (req, res) {
     db.users.findAll().then((users) => res.json(users));
   });
@@ -23,6 +24,7 @@ module.exports = (app) => {
       })
       .then((user) => res.json(user));
   });
+  */
 
   app.route("/users").post(function (req, res) {
     const hash = crypto
