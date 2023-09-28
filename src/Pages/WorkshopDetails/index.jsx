@@ -52,7 +52,6 @@ const availableRegister = (participants, assistantsCount, workshopId) => {
 };
 
 const registerToWorkshop = (workshopId) => {
-  console.log(cookies.get("worshopsCount"))
   if(cookies.get("worshopsCount") !== undefined) {
     if (cookies.get("worshopsCount") < 2) {
       let registerData = {
@@ -70,24 +69,31 @@ const registerToWorkshop = (workshopId) => {
         },
       };
 
-      fetch("https://ada.bunam.unam.mx/iagen-api/workshopassistants/", options)
+      fetch("http://localhost:6600/workshopassistants/", options)
         .then((response) => response.json())
         .then((data) => {
-          if(data[0].workshopId && data[0].userId) {
-            cookies.set("worshopsCount", cookies.get("worshopsCount") + 1, {
-              path: "/",
-            });
+          if(!data.error) {
+            if(data[0].workshopId && data[0].userId) {
+              cookies.set("worshopsCount", cookies.get("worshopsCount") + 1, {
+                path: "/",
+              });
 
-            window.scroll(0, 0);
-            let successMessage = document.getElementById('successMessage')
-            successMessage.classList.remove('hidden')
-            setTimeout(() => {
-              successMessage.classList.add('hidden')
-              window.location.href = '/profile/'
-            }, 10000)
+              window.scroll(0, 0);
+              let successMessage = document.getElementById('successMessage')
+              successMessage.classList.remove('hidden')
+              setTimeout(() => {
+                successMessage.classList.add('hidden')
+                window.location.href = '/profile/'
+              }, 10000)
+            } else {
+              displayRegisterWorkshopMessage(
+                "Ocurrió un error inesperado. Intente más tarde."
+              );
+            }            
           } else {
+            window.scroll(0, 0);
             displayRegisterWorkshopMessage(
-              "Ocurrió un error inesperado. Intente más tarde."
+              "Ya se encuentra registrado a este taller."
             );
           }
         })

@@ -31,8 +31,6 @@ const sendRegister = (event) => {
     displayRegisterMessage('Las contraseñas no coinciden')
     return
   }
-
-  console.log(emailTag.value)
   
   let formData = {
     email: emailTag.value,
@@ -58,7 +56,6 @@ const sendRegister = (event) => {
   fetch("https://ada.bunam.unam.mx/iagen-api/users/", options)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data)
       if (data.error) {
         displayRegisterMessage(data.error)
         return
@@ -69,7 +66,7 @@ const sendRegister = (event) => {
       setTimeout(() => {
         successMessage.classList.add('hidden')
         window.location.href = '/'
-      }, 10000)
+      }, 5000)
     })
     .catch((error) => {
       console.log(error);
