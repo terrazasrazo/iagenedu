@@ -58,11 +58,12 @@ const sendRegister = (event) => {
     .then((data) => {
       if (data.error) {
         displayRegisterMessage(data.error)
+        window.scroll(0, 0);
         return
       }
-      window.scroll(0, 0);
       let successMessage = document.getElementById('successMessage')
       successMessage.classList.remove('hidden')
+      window.scroll(0, 0);
       setTimeout(() => {
         successMessage.classList.add('hidden')
         window.location.href = '/'
@@ -71,6 +72,7 @@ const sendRegister = (event) => {
     .catch((error) => {
       console.log(error);
       displayRegisterMessage('Ocurrió un error inesperado. Intente más tarde.')
+      window.scroll(0, 0);
     });
 }
 

@@ -69,7 +69,7 @@ const registerToWorkshop = (workshopId) => {
         },
       };
 
-      fetch("http://localhost:6600/workshopassistants/", options)
+      fetch("https://ada.bunam.unam.mx/iagen-api/workshopassistants/", options)
         .then((response) => response.json())
         .then((data) => {
           if(!data.error) {
@@ -154,7 +154,7 @@ function WorkshopDetails() {
         </div>
       </div>
       <div className="bg-green-500 text-white hidden" id='successMessage'>
-        <p className="p-4 text-right">Tu registro al taller se ha completado con éxito.<br />La información de acceso al taller se te enviará en los próximos días vía correo electrónico.</p>
+        <p className="p-4 text-right">Tu registro al taller se ha completado con éxito.<br />La información de acceso al taller la podrás visualizar desde tu perfil en el sitio.</p>
       </div>
       {items &&
         items.map((item) => {
