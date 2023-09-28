@@ -50,7 +50,13 @@ module.exports = (app) => {
       db.users.findByPk(req.body.userId).then((user) => {
         workshop
           .addUser(user)
-          .then((workshopassistant) => res.json(workshopassistant));
+          .then((workshopassistant) => {
+            if(workshopassistant === undefined){
+              res.json({error: "Ya te encuentras registrado en este taller"})
+            } else {
+              res.json(workshopassistant)
+            }
+          });
       });
     });
   });
