@@ -144,7 +144,7 @@ function Register() {
             <div className="flex flex-row">
               <div className="w-1/2 p-4">
                 <label htmlFor="">CURP</label>
-                <input type="text" className="w-full" name="curp" id="curp" required maxLength="18" />
+                <input type="text" className="w-full" name="curp" id="curp" required minLength="18" maxLength="18" />
               </div>
               <div className="w-1/2 p-4">
                 <label htmlFor="">Grado máximo de estudios</label>
