@@ -23,7 +23,7 @@ module.exports = (sequelize, type) => {
     });
 
     const mailOptions = {
-      from: '"Grupo de trabajo sobre inteligencia artificial generativa (IAGen) de la UNAM" <iagenedu@unam.mx>',
+      from: '"Grupo de trabajo sobre Inteligencia Artificial Generativa de la UNAM" <iagenedu@cuaieed.unam.mx>',
       to: this.email,
       subject: "✅ Comencemos validando tu cuenta",
       text: `Te damos la bienvenida al sitio web de la I JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2023. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${urlDestiny}/`,
