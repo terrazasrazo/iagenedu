@@ -139,16 +139,6 @@ function WorkshopDetails() {
     return <div dangerouslySetInnerHTML={htmlContent}></div>;
   }
 
-  const referencesContent = (content) => {
-    const htmlContent = { __html: content };
-    return <div dangerouslySetInnerHTML={htmlContent}></div>;
-  }
-
-  const workshopTools = (tools) => {
-    const htmlContent = { __html: tools };
-    return <div dangerouslySetInnerHTML={htmlContent}></div>;
-  }
-
   return (
     <>
       <div id="registerWorkshopMessage" className="hidden">
@@ -174,19 +164,19 @@ function WorkshopDetails() {
                   <section className="w-2/3 p-2">
                     <div>
                       <h2>Propósito del taller</h2>
-                      <p>{item.purpouse}</p>
+                      {workshopContent(item.purpouse)}
                     </div>
                     <div id="workshop-content">
                       <h2>Contenido del taller</h2>
-                      { workshopContent(item.themes)}
+                      {workshopContent(item.themes)}
                     </div>
                     <div>
                       <h2>Producto del taller</h2>
-                      <p>{item.product}</p>
+                      {workshopContent(item.product)}
                     </div>
                     <div id="workshop-references">
                       <h2>Referencias</h2>
-                      {referencesContent(item.references)}
+                      {workshopContent(item.references)}
                     </div>
                     <section className="mt-4">
                       <h2>{speakerLabel}</h2>
@@ -206,7 +196,7 @@ function WorkshopDetails() {
                     </div>
                     <div id="workshop-tools">
                       <h2>Herramientas que se usarán en el taller</h2>
-                      {workshopTools(item.tools)}
+                      {workshopContent(item.tools)}
                     </div>
                     <div>
                       <h2>Palabras clave</h2>

@@ -13,9 +13,22 @@
 #workshop-details h2 {
     @apply text-2xl mt-4 mb-1;
 }
-#workshop-content ul, #workshop-content ol, #workshop-tools ul {
+#workshop-details a {
+    @apply underline;
+}
+#workshop-details ul {
     list-style: square;
     @apply ml-6;
+}
+#workshop-details ol {
+    list-style: decimal;
+    @apply ml-6;
+}
+#workshop-details ol[type="a"] {
+    list-style: lower-alpha;
+}
+#workshop-details li {
+    @apply my-2;
 }
 #workshop-references p {
     text-indent: 1rem;
