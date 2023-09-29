@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         blue_unam: "#10223a",
-        yellow_unam: "#eea149"
+        yellow_unam: "#eea149",
+        orange_unam: "#db7a4b"
       }
     },
   },

@@ -25,10 +25,9 @@ const availableRegister = (participants, assistantsCount, workshopId) => {
   const availableSeats = participants - assistantsCount;
   let availableSeatsColor = "";
   if (availableSeats > 20) availableSeatsColor = "bg-green-500";
-  if (availableSeats > 10 && availableSeats < 20)
+  if (availableSeats > 10 && availableSeats <= 20)
     availableSeatsColor = "bg-yellow-500";
-  if (availableSeats < 10) availableSeatsColor = "bg-orange-500";
-
+  if (availableSeats <= 10) availableSeatsColor = "bg-orange-500";
   if (availableSeats > 0) {
     return (
       <a

@@ -9,12 +9,13 @@ const Card = (data) => {
   if(data.data.level === 2) level = 'intermediate'
   if(data.data.level === 3) level = 'advanced'
 
-  const availableSeats = data.data.participants - data.data.assistantsCount
+  let availableSeats = data.data.participants - data.data.assistantsCount
+  if(availableSeats < 0) availableSeats = 0
   
   let availableSeatsColor = ''
   if(availableSeats > 20) availableSeatsColor = 'bg-green-500'
-  if(availableSeats > 10 && availableSeats < 20) availableSeatsColor = 'bg-yellow-500'
-  if(availableSeats < 10) availableSeatsColor = 'bg-orange-500'
+  if(availableSeats > 10 && availableSeats <= 20) availableSeatsColor = 'bg-yellow-500'
+  if(availableSeats <= 10) availableSeatsColor = 'bg-orange-500'
   if(availableSeats === 0) availableSeatsColor = 'bg-red-500'
 
   const context = useContext(WorkshopContext)
