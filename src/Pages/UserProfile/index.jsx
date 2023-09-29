@@ -5,6 +5,15 @@ import "./UserProfile.css";
 
 const cookies = new Cookies();
 
+const closeSession = () => {
+  cookies.remove("id", { path: "/" });
+  cookies.remove("name", { path: "/" });
+  cookies.remove("lastname", { path: "/" });
+  cookies.remove("email", { path: "/" });
+  cookies.remove("worshopsCount", { path: "/" });
+  window.location.href = "./";
+}
+
 function UserProfile() {
   const [agendaItems, setAgendaItems] = useState(null);
 
@@ -19,6 +28,9 @@ function UserProfile() {
   return (
     <section id="user-profile">
       <h1>Agenda de {`${cookies.get("name")}  ${cookies.get("lastname")}`}</h1>
+      <p className="text-right">
+        <a onClick={closeSession} className="bg-orange_unam p-2 rounded text-white cursor-pointer hover:bg-yellow_unam">Cerrar sesión</a>
+      </p>
       <h2>Sesiones principales</h2>
       <h3>Lunes 23 de octubre de 2023</h3>
       <article className="my-4 border p-4 rounded">

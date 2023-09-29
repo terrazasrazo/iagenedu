@@ -1,3 +1,6 @@
+#user-profile {
+    @apply mb-10;
+}
 #user-profile h1 {
     @apply text-4xl;
     font-weight: 600;
