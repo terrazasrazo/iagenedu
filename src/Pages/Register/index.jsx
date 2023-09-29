@@ -147,6 +147,7 @@ function Register() {
               <div className="w-1/2 p-4">
                 <label htmlFor="">CURP</label>
                 <input type="text" className="w-full" name="curp" id="curp" required minLength="18" maxLength="18" />
+                <p className="text-sm text-red-800">Favor de verificar, si está incorrecta, no se emitirá constancia</p>
               </div>
               <div className="w-1/2 p-4">
                 <label htmlFor="">Grado máximo de estudios</label>
