@@ -16,7 +16,7 @@ const startSession = () => {
   if(name && lastname) {
     return (<NavLink to="/profile">{name} {lastname}</NavLink>)
   } else {
-    return (<a onClick={showLoginForm}>Iniciar sesión</a>)
+    return (<a onClick={showLoginForm} className="cursor-pointer" id="login">Iniciar sesión</a>)
   }
 }
 

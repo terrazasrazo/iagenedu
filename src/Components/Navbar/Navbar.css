@@ -4,3 +4,6 @@ nav {
 nav li {
     @apply inline-block mx-4
 }
+nav a:hover {
+    @apply underline text-orange_unam;
+}

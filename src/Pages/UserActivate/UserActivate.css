@@ -1,0 +1,10 @@
+#user-activate {
+    @apply flex flex-col items-center place-content-center;
+    min-height: calc(100vh - 300px);
+}
+.trigger-login {
+    @apply bg-orange_unam text-white rounded px-4 py-2 cursor-pointer hover:bg-blue_unam ml-6;
+}
+.goto-home {
+    @apply bg-green-700 text-white rounded px-4 py-2 cursor-pointer hover:bg-yellow-500;
+}

@@ -7,6 +7,7 @@ import Workshops from '../Workshops'
 import WorkshopDetails from '../WorkshopDetails'
 import Register from '../Register'
 import UserProfile from '../UserProfile'
+import UserActivate from '../UserActivate'
 import NotFound from '../NotFound'
 import Navbar from '../../Components/Navbar'
 import LoginForm from '../../Components/LoginForm'
@@ -20,6 +21,7 @@ const AppRoutes = () => {
     { path: '/workshops/:id', element: <WorkshopDetails />},
     { path: '/register', element: <Register />},
     { path: '/profile', element: <UserProfile />},
+    { path: '/activate/:userHash', element: <UserActivate />},
     { path: '*', element: <NotFound /> }
   ]);
 }
@@ -42,7 +44,7 @@ function App() {
           <AppRoutes />
         </main>
         <LoginForm />
-        <footer className="p-6 text-sm text-white bg-orange_unam">
+        <footer className="p-6 mt-8 text-sm text-white bg-orange_unam">
           <div className="container mx-auto flex flex-row">
             <div className="w-1/4">
               <p>Desarrollado por</p>
