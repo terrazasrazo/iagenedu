@@ -22,7 +22,7 @@ const validateAccount = (userHash) => {
           setJsx(
             <>
               <h2 className="text-2xl mb-12">Tu cuenta ha sido activada</h2>
-              <p>Ahora puedes:</p>
+              <p>Te invitamos a consultar nuestra <NavLink to="/workshops/">oferta de talleres</NavLink> y si ya tienes alguna experiencia en el aula con Inteligencia Artificial Generativa puedes participar en las <NavLink to="/call-for/">presentaciones relámpago</NavLink>.</p>
               <p className="mt-8"><NavLink to="/" className="goto-home">ir al inicio</NavLink><a className="trigger-login" onClick={triggerLogin}>iniciar sesión</a></p>
             </>
           );
