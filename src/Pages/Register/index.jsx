@@ -102,7 +102,7 @@ function Register() {
           <div className="bg-green-500 text-white hidden" id='successMessage'>
             <p className="p-4 text-center">Registro exitoso. Revisa tu correo electrónico para activar tu cuenta.</p>
           </div>
-          <form action="" method="POST" onSubmit={sendRegister}>
+          <form action="" method="POST" onSubmit={sendRegister} autoComplete="off">
             <div className="flex flex-row">
               <div className="w-1/2 p-4">
                 <label htmlFor="">Correo electrónico</label>

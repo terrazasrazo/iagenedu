@@ -7,6 +7,16 @@ const cookies = new Cookies();
 const showLoginForm = () => {
   const loginForm = document.getElementById("loginform-container");
   loginForm.classList.remove("hidden");
+  
+  const loginFormFields = document.getElementsByClassName("loginform-field");
+  for (let element of loginFormFields) {
+    element.classList.remove("hidden");
+  }
+
+  const recoveryFormFields = document.getElementsByClassName("recoveryform");
+  for (let element of recoveryFormFields) {
+    element.classList.add("hidden");
+  }
 };
 
 const startSession = () => {

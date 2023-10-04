@@ -63,6 +63,54 @@ const hideFormMessage = () => {
   formMessage.classList.add("hidden");
 };
 
+const displayRecoveryForm = () => {
+  const loginFormFields = document.getElementsByClassName("loginform-field");
+  for (let element of loginFormFields) {
+    element.classList.add("hidden");
+  }
+  const recoveryFormFields = document.getElementsByClassName("recoveryform");
+  for (let element of recoveryFormFields) {
+    element.classList.remove("hidden");
+  }
+};
+
+const getRecoveryMail = () => {
+  const emailTag = document.getElementById("username");
+
+  let formData = {
+    email: emailTag.value,
+  };
+
+  let dataJSON = JSON.stringify(formData);
+
+  let options = {
+    method: "POST",
+    body: dataJSON,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  fetch("http://localhost:6600/users/recoverypassword/", options)
+  //fetch("https://ada.bunam.unam.mx/iagen-api/users/recoverypassword/", options)
+    .then((response) => response.json())
+    .then((data) => {
+      if (!data.user) {
+        displayLoginMessage('El correo electrónico no está registrado.');
+        return;
+      }
+      const successMessage = document.getElementsByClassName("recoveryform-success")[0];
+      successMessage.classList.remove("hidden");
+      setTimeout(() => {
+        window.location.href = '/'
+      }, 5000)
+    })
+    .catch((error) => {
+      console.log(error);
+      displayLoginMessage("Ocurrió un error inesperado. Intente más tarde.");
+    });
+};
+
 function LoginForm() {
   return (
     <>
@@ -84,20 +132,27 @@ function LoginForm() {
             alt=""
             className="mx-auto"
           />
+          <div className="recoveryform-success bg-green-600 text-white p-4 text-center rounded hidden">
+              <p>Se ha enviado un<br />correo electrónico<br />con las instrucciones para<br />recuperar tu contraseña.</p>
+            </div>
           <form>
             <div>
               <label htmlFor="username">correo electrónico</label>
               <input type="mail" name="username" id="username" />
             </div>
-            <div>
+            <div className="loginform-field">
               <label htmlFor="password">contraseña</label>
               <input type="password" name="password" id="password" />
             </div>
-            <div className="text-right py-2">
-              <input type="button" onClick={sendLogin} value="iniciar sesión" />
+            <div className="text-right py-2 loginform-field">
+              <a className="text-gray-500 underline text-sm mr-4 cursor-pointer" onClick={displayRecoveryForm}> Olvidé mi contraseña</a>
+              <input type="button" onClick={sendLogin} value="Iniciar sesión" />
+            </div>
+            <div className="recoveryform hidden text-right">
+              <input type="button" onClick={getRecoveryMail} value="Recuperar contraseña" />
             </div>
           </form>
-          <div>
+          <div className="loginform-field">
             <p className="text-sm">
               ¿Aún no tienes cuenta?{" "}
               <NavLink to="/register/" className={"text-gray-600 underline"}>
