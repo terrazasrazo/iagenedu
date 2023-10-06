@@ -2,30 +2,58 @@ const express = require("express"),
   db = require("../sequelize"),
   app = express(),
   crypto = require("crypto"),
-  secret = "iagenedu";
+  secret = "iagenedu",
+  nodemailer = require("nodemailer"),
+  mailConfig = require("../config/mailer"),
+  urlDestiny = "https://iagenedu.unam.mx";
+
+const transporter = nodemailer.createTransport({
+  service: "Gmail",
+  auth: {
+    user: mailConfig.user,
+    pass: mailConfig.password,
+  },
+});
+
+const sendRecoveryEmail = async (email, hash) => {
+  const mailOptions = {
+    from: '"Grupo de trabajo sobre Inteligencia Artificial Generativa de la UNAM" <iagenedu@cuaieed.unam.mx>',
+    to: email,
+    subject: "🔐 Has solicitado la recuperación de tu contraseña",
+    text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${urlDestiny}/recovery/${hash}`,
+    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma.</p><p>Para recuperar tu contraseña, por favor accede al siguiente <a href="${urlDestiny}/recovery/${hash}">enlace</a>.</p></div>`,
+  };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Message sent: %s", info.messageId);
+    return info;
+  } catch (error) {
+    console.log("Error to send email messages", error);
+    return error;
+  }
+};
+
+const sendConfirmationChangePassword = async (email) => {
+  const mailOptions = {
+    from: '"Grupo de trabajo sobre Inteligencia Artificial Generativa de la UNAM" <iagenedu@cuaieed.unam.mx>',
+    to: email,
+    subject: "🔑 Has realizado un cambio de tu contraseña",
+    text: `Hemos procesado tu cambio de contraseña. Ahora puedes ingresar a la plataforma con tu nueva contraseña.`,
+    html: `<div style="font-size: 24px"><p>Hemos procesado tu cambio de contraseña.</p><p>Ahora puedes ingresar a la plataforma con tu nueva contraseña.</p><p>Da clic en el siguiente <a href="${urlDestiny}" target="_blank">enlace</a> para ir a la plataforma.</p></div>`,
+  };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Message sent: %s", info.messageId);
+    return info;
+  } catch (error) {
+    console.log("Error to send email messages", error);
+    return error;
+  }
+};
 
 module.exports = (app) => {
-  /*
-  app.route("/users").get(function (req, res) {
-    db.users.findAll().then((users) => res.json(users));
-  });
-
-  app.route("/users/:id").get(function (req, res) {
-    db.users
-      .findAll({
-        where: {
-          id: req.params.id,
-        },
-        include: [
-          {
-            model: db.sigecos,
-          },
-        ],
-      })
-      .then((user) => res.json(user));
-  });
-  */
-
   app.route("/users").post(function (req, res) {
     const hash = crypto
       .createHash("sha256", secret)
@@ -111,7 +139,7 @@ module.exports = (app) => {
       .then((sigeco) => res.json(sigeco));
   });
 
-  app.route("/users/validate/:hash").get(function (req, res) {
+  app.route("/users/activate/:hash").get(function (req, res) {
     db.users
       .update(
         { active: true },
@@ -122,10 +150,10 @@ module.exports = (app) => {
         }
       )
       .then((user) => {
-        if (user) {
-          res.redirect("http://iagenedu.unam.mx/");
+        if (user[0] === 0) {
+          res.json({ user: false });
         } else {
-          res.redirect("https://bunam.unam.mx/");
+          res.json({ user: true });
         }
       });
   });
@@ -179,6 +207,79 @@ module.exports = (app) => {
             });
         } else {
           res.json({ error: "Usuario o contraseña incorrectos" });
+        }
+      });
+  });
+
+  app.route("/users/recoverypassword").post(function (req, res) {
+    const hash = crypto.randomBytes(32).toString ('hex');
+    db.users
+      .update(
+        { hash: hash },
+        {
+          where: {
+            email: req.body.email,
+          },
+        }
+      )
+      .then((user) => {
+        if (user[0] === 0) {
+          res.json({ user: false });
+        } else {
+          sendRecoveryEmail(req.body.email, hash).then((sendMail) => {
+            res.json({ user: sendMail.messageId });
+          });
+        }
+      });
+  });
+
+  app.route("/users/validatehash").post(function (req, res) {
+    db.users
+      .findOne({
+        where: {
+          hash: req.body.hash,
+        },
+      })
+      .then((user) => {
+        if (user) {
+          res.json({ date: user.updatedAt });
+        } else {
+          res.json({ date: false });
+        }
+      });
+  });
+
+  app.route("/users/changepassword").post(function (req, res) {
+    const newHash = crypto.randomBytes(32).toString ('hex');
+    const newPassword = crypto
+    .createHash("sha256", secret)
+    .update(req.body.password)
+    .digest("hex");
+
+    db.users
+      .update(
+        {
+          password: newPassword,
+          hash: newHash,
+        },
+        {
+          where: {
+            hash: req.body.hash,
+            updatedAt: req.body.updatedAt,
+          },
+        }
+      )
+      .then((user) => {
+        if(user[0] === 0){
+          res.json({newPassword: false})
+        } else {
+          db.users.findOne({
+            hash: newHash
+          }).then(user => {
+            sendConfirmationChangePassword(user.email).then(sendMail => {
+              res.json({newPassword: true})
+            })
+          })
         }
       });
   });
