@@ -274,9 +274,11 @@ module.exports = (app) => {
           res.json({newPassword: false})
         } else {
           db.users.findOne({
-            hash: newHash
-          }).then(user => {
-            sendConfirmationChangePassword(user.email).then(sendMail => {
+            where:{
+            hash: newHash,
+            password: newPassword
+          }}).then(sendUser => {
+            sendConfirmationChangePassword(sendUser.email).then(() => {
               res.json({newPassword: true})
             })
           })
