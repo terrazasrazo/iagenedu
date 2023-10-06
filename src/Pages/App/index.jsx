@@ -8,6 +8,7 @@ import WorkshopDetails from '../WorkshopDetails'
 import Register from '../Register'
 import UserProfile from '../UserProfile'
 import UserActivate from '../UserActivate'
+import PasswordRecovery from '../PasswordRecovery'
 import NotFound from '../NotFound'
 import Navbar from '../../Components/Navbar'
 import LoginForm from '../../Components/LoginForm'
@@ -22,6 +23,7 @@ const AppRoutes = () => {
     { path: '/register', element: <Register />},
     { path: '/profile', element: <UserProfile />},
     { path: '/activate/:userHash', element: <UserActivate />},
+    { path: '/recovery/:userHash', element: <PasswordRecovery />},
     { path: '*', element: <NotFound /> }
   ]);
 }
