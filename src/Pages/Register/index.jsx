@@ -100,7 +100,7 @@ function Register() {
         </header>
         <main className='w-3/4 mx-auto bg-slate-50 rounded shadow-sm'>
           <div className="bg-green-500 text-white hidden" id='successMessage'>
-            <p className="p-4 text-center">Registro exitoso. Revisa tu correo electrónico para activar tu cuenta.</p>
+            <p className="p-4 text-center">Registro exitoso. <strong>Revisa tu correo electrónico</strong> para activar tu cuenta.</p>
           </div>
           <form action="" method="POST" onSubmit={sendRegister} autoComplete="off">
             <div className="flex flex-row">
