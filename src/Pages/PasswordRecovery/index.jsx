@@ -87,8 +87,7 @@ const sendNewPassword = (event, items, userHash) => {
       },
     };
 
-    fetch("http://localhost:6600/users/changepassword", options)
-    //fetch("https://ada.bunam.unam.mx/iagen-api/users/changepassword/", options)
+    fetch("https://ada.bunam.unam.mx/iagen-api/users/changepassword/", options)
       .then((response) => response.json())
       .then((data) => {
         if(data.newPassword){
@@ -117,8 +116,7 @@ function PasswordRecovery() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:6600/users/validatehash", options)
-      //fetch("https://ada.bunam.unam.mx/iagen-api/workshopassistants/", options)
+    fetch("https://ada.bunam.unam.mx/iagen-api/users/validatehash/", options)
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, [userHash]);

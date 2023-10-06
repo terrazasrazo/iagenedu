@@ -91,8 +91,7 @@ const getRecoveryMail = () => {
     },
   };
 
-  fetch("http://localhost:6600/users/recoverypassword/", options)
-  //fetch("https://ada.bunam.unam.mx/iagen-api/users/recoverypassword/", options)
+  fetch("https://ada.bunam.unam.mx/iagen-api/users/recoverypassword/", options)
     .then((response) => response.json())
     .then((data) => {
       if (!data.user) {

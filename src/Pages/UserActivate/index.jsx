@@ -15,7 +15,7 @@ const validateAccount = (userHash) => {
   useEffect(() => {
     if (userHash === undefined) return null;
 
-    fetch(`http://localhost:6600/users/activate/${userHash}`)
+    fetch(`https://ada.bunam.unam.mx/iagen-api/users/activate/${userHash}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.user === true) {
