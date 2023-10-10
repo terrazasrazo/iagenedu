@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types';
 import './ProgramItem.css'
 
+const workshopContent = (content) => {
+  const htmlContent = { __html: content };
+  return <div dangerouslySetInnerHTML={htmlContent}></div>;
+}
+
 const ProgramItem = ({ hour, title, description }) => {
   return (
     <div className="program-item">
@@ -11,7 +16,7 @@ const ProgramItem = ({ hour, title, description }) => {
         <p>{title}</p>
       </div>
       <div className="w-2/5">
-        {description}
+        {workshopContent(description)}
       </div>
     </div>
   );

@@ -117,9 +117,9 @@ function Home() {
       <section id="schedule">
         <div className="w-1/2">
           <h3>Lunes 23 de octubre</h3>
-          <ProgramItem hour="9:00" title="Bienvenida e inauguración" description="" />
-          <ProgramItem hour="9:30" title={`Mesa: "IA generativa para el aprendizaje"`} description="" />
-          <ProgramItem hour="10:45" title={`Mesa: "Experiencias educativas de IA generativa en la UNAM"`} description="" />
+          <ProgramItem hour="9:00" title="Bienvenida e inauguración" description="<p>Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv) y Dr. Héctor Benítez (DGTIC)</p>" />
+          <ProgramItem hour="9:30" title={`Mesa: "IA generativa para el aprendizaje"`} description={`<p>Ponentes: Dra. Marina Kriscautzky (DGTIC), Dra. Janneth Trejo (IISUE), Dra. Jimena Olveres (CECAv), Dra. Guadalupe Vadillo (CUAIEED)</p><p class="text-sm text-gray-700">Moderadora: Dra. Jackeline Bucio (CUAIEED)</p> `} />
+          <ProgramItem hour="10:45" title={`Mesa: "Experiencias educativas de IA generativa en la UNAM"`} description={`<p>Ponentes: Dr. Guillermo Barrios (IER), Dr. Gustavo de la Cruz (ICAT), Dr. Everardo Bárcenas (FI), Dr. Antonio Sánchez Pereyra (DGBSIE)</p><p class="text-sm text-gray-700">Moderador: Dr. Erik Carbajal-Degante (CUAIEED)</p>`} />
           <div className="program-item">
             <div className="w-1/5">
               <p>12:00</p>
@@ -128,13 +128,13 @@ function Home() {
               <p>Talleres</p>
             </div>
           </div>
-          <ProgramItem hour="16:00" title="Presentaciones relámpago" description="" />
+          <ProgramItem hour="16:00" title="Presentaciones relámpago" description={`<p class="text-sm text-gray-700">Moderadores: Dr. Tomás Bautista (CUAIEED), Dra. Ana Yuri Ramírez (DGTIC), Mtro. Federico Turnbull (DGBSIE), Mtro. Ricardo Tavira (DGBSIE)</p>`} />
         </div>
         <div className="w-1/2">
           <h3>Martes 24 de octubre</h3>
-          <ProgramItem hour="9:00" title={`Mesa: "Investigación en IAGen en la UNAM: su impacto educativo"`} description="" />
-          <ProgramItem hour="10:00" title={`Mesa: "IA generativa y evaluación: ¿se acabaron los exámenes?"`} description="" />
-          <ProgramItem hour="11:00" title={`Mesa: "Futuros de la IA generativa en la UNAM: ¿viaje sin retorno?"`} description="" />
+          <ProgramItem hour="9:00" title={`Mesa: "Investigación en IAGen en la UNAM: su impacto educativo"`} description={`<p>Ponentes: Dr. Gibrán Fuentes (IIMAS), Dr. Caleb Rascón (IIMAS), Dr Marco Negrete (FI), Dra. Atocha Aliseda (IIF), Dr. Carlos Minutti (FI)</p><p class="text-sm text-gray-700">Moderadora: Dra. Jimena Olveres (CECAv)</p>`} />
+          <ProgramItem hour="10:00" title={`Mesa: "IA generativa y evaluación: ¿se acabaron los exámenes?"`} description={`<p>Ponentes: Dr. Melchor Sánchez Mendiola (CUAIEED), Dra. Gabriela de la Cruz (IISUE), Mtra. Elibidú Ortega Sánchez (CUAIEED)</p><p class="text-sm text-gray-700">Moderador: MI Alejandro Velázquez Mena (FI)</p>`} />
+          <ProgramItem hour="11:00" title={`Mesa: "Futuros de la IA generativa en la UNAM: ¿viaje sin retorno?"`} description={`<p>Ponentes: Dr. Boris Escalante (CECAv) y Dr. Héctor Benítez (DGTIC)</p><p class="text-sm text-gray-700">Moderadora: Dra. Guadalupe Vadillo (CUAIEED)</p>`} />
           <div className="program-item">
             <div className="w-1/5">
               <p>12:00</p>
@@ -143,8 +143,8 @@ function Home() {
               <p>Talleres</p>
             </div>
           </div>
-          <ProgramItem hour="16:00" title="Presentaciones relámpago" description="" />
-          <ProgramItem hour="18:00" title="Clausura" description="" />
+          <ProgramItem hour="16:00" title="Presentaciones relámpago" description={`<p class="text-sm text-gray-700">Moderadores: Dra. Ana Yuri Ramírez (DGTIC), Mtro. Federico Turnbull (DGBSIE), Mtro. Ricardo Tavira (DGBSIE)</p>`} />
+          <ProgramItem hour="18:00" title="Clausura" description={`<p></p><p class="text-sm text-gray-700"></p>`} />
         </div>
       </section>
     </div>
