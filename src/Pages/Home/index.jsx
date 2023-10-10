@@ -144,7 +144,7 @@ function Home() {
             </div>
           </div>
           <ProgramItem hour="16:00" title="Presentaciones relámpago" description={`<p class="text-sm text-gray-700">Moderadores: Dra. Ana Yuri Ramírez (DGTIC), Mtro. Federico Turnbull (DGBSIE), Mtro. Ricardo Tavira (DGBSIE)</p>`} />
-          <ProgramItem hour="18:00" title="Clausura" description={`<p></p><p class="text-sm text-gray-700"></p>`} />
+          <ProgramItem hour="18:00" title="Clausura" description={`<p>Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv) y Dr. Héctor Benítez (DGTIC)</p>`} />
         </div>
       </section>
     </div>
