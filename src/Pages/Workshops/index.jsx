@@ -19,7 +19,13 @@ function Workshops() {
           <span className="bg-blue-900 ml-2">Avanzado</span>
         </p>
         <p className="mt-6 text-orange-800">Los talleres ocurrirán de manera simultánea de 12:00 a 14:00 horas.</p>
+        <p className="mt-6 text-sm text-orange-600">* Las grabaciones de los talleres estarán disponibles en esta misma plataforma después del evento.</p>
       </div>
+      <section className="w-full p-4 text-right">
+        <a href="https://www.coursera.org/learn/iagen" target="_blank" rel="noreferrer" className="inline-block max-w-lg">
+          <img src="/images/iagen-coursera.jpeg" alt="IA generativa en el aula" />
+        </a>
+      </section>
       <section className="container grid grid-cols-4 mx-auto">
         {items?.map((item) => {
           return <Card key={item.id} data={item} />;
