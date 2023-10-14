@@ -32,8 +32,8 @@ const startSession = () => {
 
 const Navbar = () => {
   return (
-    <nav className="w-1/2 text-right">
-      <ul>
+    <nav className="sm:w-3/4 text-right flex flex-row-reverse items-center">
+      <ul className="inline-block">
         <li>
           <NavLink to="/">Inicio</NavLink>
         </li>

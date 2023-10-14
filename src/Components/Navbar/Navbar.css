@@ -1,8 +1,5 @@
-nav {
-  @apply p-6;
-}
 nav li {
-    @apply inline-block mx-4
+    @apply inline-block mx-1 mt-2;
 }
 nav a:hover {
     @apply underline text-orange_unam;
