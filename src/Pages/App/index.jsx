@@ -47,8 +47,8 @@ function App() {
         </main>
         <LoginForm />
         <footer className="p-6 mt-8 text-sm text-white bg-orange_unam">
-          <div className="container mx-auto flex flex-row">
-            <div className="w-1/4">
+          <div className="container mx-auto grid grid-cols-2 lg:grid-cols-5">
+            <div className="">
               <p>Desarrollado por</p>
               <p>
                 <a href="" target="_blank" rel="">
@@ -60,7 +60,7 @@ function App() {
                 </a>
               </p>
             </div>
-            <div className="w-1/2">
+            <div className="order-3 lg:order-2 col-span-2 lg:col-span-3 mt-8">
               <h5 className="text-lg font-semibold">Aviso</h5>
               <p>
                 Coordinación de Universidad Abierta y Educación a Distancia de
@@ -86,7 +86,7 @@ function App() {
                 intelectual de terceros.
               </p>
             </div>
-            <div className="w-1/4 text-right">
+            <div className="order-2 lg:order-3 text-right">
               <p>
                 Contacto:
                 <br />
