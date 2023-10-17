@@ -1,13 +1,13 @@
 function CallFor() {
     return (
-      <section id="call-for" className="w-2/3 mx-auto">
-        <header className="flex flex-row items-center mb-8">
-            <div>
-                <img src="/images/iagen-logo.svg" width="480" alt="I JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2023" />
+      <section id="call-for" className="p-4 mx-auto lg:w-3/4 xl:2/3">
+        <header className="mb-8 text-center md:flex md:flex-row">
+            <div className="md:w-2/5 xl:1/6">
+                <img className="inline-block mx-auto" src="/images/iagen-logo.svg" width="480" alt="I JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2023" />
             </div>
-            <div>
-                <p>El Grupo de trabajo sobre inteligencia artificial generativa (IAGen) de la UNAM, convoca a estudiantes y docentes de bachillerato, licenciatura y posgrado de nuestra Universidad a participar en la</p>
-                <h2 className="text-center my-8 text-2xl text-blue_unam font-semibold bg-orange-300/30 p-8 rounded-md">I JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2023</h2>
+            <div className="md:w-3/5 xl:5/6 flex flex-col justify-center">
+                <p>El Grupo de trabajo sobre inteligencia artificial generativa (IAGen) de la UNAM, convoca a estudiantes y docentes de bachillerato, licenciatura y posgrado de nuestra Universidad <br className="sm:hidden" />a participar en la</p>
+                <h2 className="text-center my-8 text-2xl text-blue_unam font-semibold bg-orange-300/30 p-8 rounded-md">I JORNADA DE INTELIGENCIA ARTIFICIAL GENERATIVA EN EDUCACIÓN, UNAM 2023</h2>
             </div>
         </header>
         <main>
