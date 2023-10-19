@@ -53,25 +53,25 @@ function Workshops() {
           </p>
           <p>
             <a
-              className="cursor-pointer py-1 px-2 rounded bg-blue-400 hover:bg-blue-500 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-400 hover:bg-blue-500 text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.level === 1))}}
             >
               Elemental
             </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded bg-blue-600 hover:bg-blue-700 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-600 hover:bg-blue-700 text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.level === 2))}}
             >
               Intermedio
             </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded bg-blue-900 hover:bg-blue-950 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-900 hover:bg-blue-950 text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.level === 3))}}
             >
               Avanzado
             </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded bg-slate-500 hover:bg-slate-600 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-slate-500 hover:bg-slate-600 text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items)}}
             >
               Cualquier nivel
@@ -80,19 +80,19 @@ function Workshops() {
           <p className="mt-4 mb-2">Filtrar por fecha:</p>
           <p>
             <a
-              className="cursor-pointer py-1 px-2 rounded bg-cyan-600 hover:bg-cyan-700 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-cyan-600 hover:bg-cyan-700 text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.ocurrenceDay === "Lunes 23 de octubre 2023"))}}
             >
               Lunes 23 de octubre
             </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded bg-cyan-800 hover:bg-cyan-900 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-cyan-800 hover:bg-cyan-900 text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.ocurrenceDay === "Martes 24 de octubre 2023"))}}
             >
               Martes 24 de octubre
             </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded bg-slate-500 hover:bg-slate-600 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-slate-500 hover:bg-slate-600 text-white text-sm mr-2"
               onClick={() => setFilteredItems(items)}
             >
               Cualquier día
