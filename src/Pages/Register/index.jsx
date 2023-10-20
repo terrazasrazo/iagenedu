@@ -1,4 +1,4 @@
-import './Register.css'
+//import './Register.css'
 
 const displayRegisterMessage = (message) => {
   let registerMessage = document.getElementById('registerMessage')
@@ -77,7 +77,8 @@ const sendRegister = (event) => {
 }
 
 function Register() {
-  document.getElementById("loginform-container").classList.add("hidden");
+  if(document.getElementById("loginform-container"))
+    document.getElementById("loginform-container").classList.add("hidden");
   return (
     <>
       <section id='register'>
