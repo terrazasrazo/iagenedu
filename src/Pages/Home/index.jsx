@@ -133,7 +133,7 @@ function Home() {
             <ProgramItem
               hour="9:00"
               title="Bienvenida e inauguración"
-              description="<p>Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv), Dr. Héctor Benítez (DGTIC) y Dr. José Manuel Saniger (ICAT)</p>"
+              description="<p>Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv), Dr. Héctor Benítez (DGTIC) y Dr. José Manuel Saniger (CIC)</p>"
             />
             <ProgramItem
               hour="9:30"
@@ -164,7 +164,7 @@ function Home() {
             <ProgramItem
               hour="16:00"
               title="Presentaciones relámpago"
-              description={`<p class="text-sm text-gray-700">Moderadores: Dr. Tomás Bautista (CUAIEED), Dra. Ana Yuri Ramírez (DGTIC), Mtro. Federico Turnbull (DGBSIE), Mtro. Ricardo Tavira (DGBSIE)</p>`}
+              description={`<p class="text-sm text-gray-700">Moderadores: Dr. Tomás Bautista (CUAIEED), Dra. Ana Yuri Ramírez (DGTIC)</p>`}
             />
           </div>
           <div className="xl:px-2 xl:w-1/2">
@@ -203,7 +203,7 @@ function Home() {
             <ProgramItem
               hour="16:00"
               title="Presentaciones relámpago"
-              description={`<p class="text-sm text-gray-700">Moderadores: Dra. Ana Yuri Ramírez (DGTIC), Mtro. Federico Turnbull (DGBSIE), Mtro. Ricardo Tavira (DGBSIE)</p>`}
+              description={`<p class="text-sm text-gray-700">Moderadores: Mtro. Federico Turnbull (DGBSIE), Mtro. Ricardo Tavira (DGBSIE)</p>`}
             />
             <ProgramItem
               hour="18:00"
