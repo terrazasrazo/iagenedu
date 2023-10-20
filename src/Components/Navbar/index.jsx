@@ -38,9 +38,6 @@ const Navbar = () => {
           <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink to="/call-for/">Convocatoria</NavLink>
-        </li>
-        <li>
           <NavLink to="/workshops/">Talleres</NavLink>
         </li>
         <li>{startSession()}</li>

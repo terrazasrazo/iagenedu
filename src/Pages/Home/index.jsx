@@ -50,12 +50,10 @@ const institutions = [
 
 const registerAnnouncement = () => {
   if (cookies.get("id") === undefined) {
-    return (
-      <li>
-        <NavLink to={`/register/`} className="hover:text-orange_unam underline">
-          Registro como participante
-        </NavLink>
-      </li>
+    return (      
+      <NavLink to={`/register/`} className="bg-orange_unam hover:bg-orange-800 text-white inline-block py-1 px-2 rounded">
+        Registro como participante
+      </NavLink>
     );
   }
 };
@@ -108,17 +106,7 @@ function Home() {
           </ul>
         </div>
         <div className="border-t-2 lg:border-none mt-4 pt-2 lg:pt-40 border-orange_unam">
-          <ul className="list-disc ml-6">
-            {registerAnnouncement()}
-            <li>
-              <NavLink
-                to={`/call-for/`}
-                className="text-orange_unam underline font-semibold"
-              >
-                Convocatoria para el envío de trabajos de docentes y estudiantes
-              </NavLink>
-            </li>
-          </ul>
+          <p>{registerAnnouncement()}</p>
         </div>
       </section>
       <section
@@ -145,7 +133,7 @@ function Home() {
             <ProgramItem
               hour="9:00"
               title="Bienvenida e inauguración"
-              description="<p>Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv) y Dr. Héctor Benítez (DGTIC)</p>"
+              description="<p>Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv), Dr. Héctor Benítez (DGTIC) y Dr. José Manuel Saniger (ICAT)</p>"
             />
             <ProgramItem
               hour="9:30"
