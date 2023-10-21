@@ -54,55 +54,55 @@ function InterestingResources() {
           <p className="pt-2 py-4">
             <a
               onClick={() => filterResources("Artículo")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-lime-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-lime-500"
             >
               Artículo
             </a>
             <a
               onClick={() => filterResources("Curso")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-emerald-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-emerald-500"
             >
               Curso
             </a>
             <a
               onClick={() => filterResources("Herramientas")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-teal-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-teal-500"
             >
               Herramientas
             </a>
             <a
               onClick={() => filterResources("Lineamientos")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-cyan-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-cyan-500"
             >
               Lineamientos
             </a>
             <a
               onClick={() => filterResources("Sitio web")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-sky-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-sky-500"
             >
               Sitio web
             </a>
             <a
               onClick={() => filterResources("Tutorial")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-blue-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-blue-500"
             >
               Tutorial
             </a>
             <a
               onClick={() => filterResources("Video")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-indigo-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-indigo-500"
             >
               Video
             </a>
             <a
               onClick={() => filterResources("Otro")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-violet-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-violet-500"
             >
               Otro
             </a>
             <a
               onClick={() => filterResources("")}
-              className="inline-block cursor-pointer py-1 px-2 mx-1 rounded text-white bg-gray-500"
+              className="inline-block cursor-pointer py-1 px-2 mx-1 mb-1 rounded text-white bg-gray-500"
             >
               Todos los recursos
             </a>
