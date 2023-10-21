@@ -40,6 +40,9 @@ const Navbar = () => {
         <li>
           <NavLink to="/workshops/">Talleres</NavLink>
         </li>
+        <li>
+          <NavLink to="/resources/">Recursos</NavLink>
+        </li>
         <li>{startSession()}</li>
       </ul>
     </nav>

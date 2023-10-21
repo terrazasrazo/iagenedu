@@ -61,13 +61,14 @@ const registerAnnouncement = () => {
 function Home() {
   return (
     <div id="home" className="p-4">
-      <header className="sm:flex sm:flex-row">
+      <NavLink to="/resources/" className="absolute w-40 lg:w-60 right-0 top-28"><img src="images/tour-recursos.png" alt="Recursos interesantes" /></NavLink>
+      <header className="sm:flex sm:flex-row mt-24 lg:mt-0">
         <div className="xl:w-1/3">
           <img
             src="images/iagen-icon.svg"
             alt="Inteligencia Artificial Generativa en Educación"
             width={600}
-            className="block mx-auto"
+            className="block md:mx-auto"
           />
         </div>
         <div className="px-6 text-center sm:text-left sm:pt-4 md:pt-6 lg:flex lg:flex-col lg:justify-center xl:w-2/3">
