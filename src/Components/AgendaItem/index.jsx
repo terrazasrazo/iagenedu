@@ -41,7 +41,7 @@ const AgendaItem = (data) => {
             Detalle del taller
           </NavLink>
           <a
-            href={data.data.zoomUrl}
+            href={data.data.zoomSession}
             target="_blank"
             rel="noreferrer"
             className="text-white bg-yellow-800 p-1 rounded px-2 inline-block"
