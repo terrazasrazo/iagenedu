@@ -14,7 +14,7 @@ const closeSession = () => {
   window.location.href = "./";
 };
 
-const mainZoomUrl = "";
+const mainZoomUrl = "https://unam.zoom.us/j/87805377231?pwd=ak10WDNJTE12YVNydGlFa1J1N25tUT09";
 
 const mondaySessions = [
   {
