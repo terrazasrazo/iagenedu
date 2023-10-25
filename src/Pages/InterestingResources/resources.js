@@ -205,6 +205,50 @@ const interestingResources = [
       "aprendizaje profundo",
     ],
   },
+  {
+    resourceTitle:
+      "Serie: Cómo sobrevivir a la IAG en el aula. Primera cápsula: Sistemas de Inteligencia artificial generativa. Qué son. Cómo funcionan",
+    resourceType: "Video",
+    resourceURL: "https://youtu.be/fdx8P3lUvfY",
+    keywords: [
+      "inteligencia artificial generativa ",
+      "chatgpt",
+      "bard",
+    ],
+  },
+  {
+    resourceTitle:
+      "Artificial Intelligence and Librarianship",
+    resourceType: "Otro",
+    resourceURL: "https://open.umn.edu/opentextbooks/textbooks/1479",
+    keywords: [
+      "chatbots",
+      "llm",
+      "bibliotecarios",
+    ],
+  },
+  {
+    resourceTitle: "Generative AI Activities for the Writing & Language Classroom",
+    resourceType: "Otro",
+    resourceURL: "https://docs.google.com/presentation/d/1IbEBckhoOPKRWKQovCVL43-552rF4tlK/mobilepresent?slide=id.g28cd987cbf7_0_915",
+    keywords: ["chatgpt", "actividades", "escritura"],
+  },/*
+  {
+    resourceTitle: "",
+    resourceType: "",
+    resourceURL: "",
+    keywords: [],
+  },{
+    resourceTitle: "",
+    resourceType: "",
+    resourceURL: "",
+    keywords: [],
+  },{
+    resourceTitle: "",
+    resourceType: "",
+    resourceURL: "",
+    keywords: [],
+  },*/
 ];
 
 export default interestingResources;
