@@ -151,14 +151,6 @@ function LoginForm() {
               <input type="button" onClick={getRecoveryMail} value="Recuperar contraseña" />
             </div>
           </form>
-          <div className="loginform-field">
-            <p className="text-sm">
-              ¿Aún no tienes cuenta?{" "}
-              <NavLink to="/register/" className={"text-gray-600 underline"}>
-                Registrate aquí
-              </NavLink>
-            </p>
-          </div>
         </div>
       </div>
     </>
