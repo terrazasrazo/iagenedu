@@ -50,8 +50,11 @@ const institutions = [
 
 const registerAnnouncement = () => {
   if (cookies.get("id") === undefined) {
-    return (      
-      <NavLink to={`/register/`} className="bg-orange_unam hover:bg-orange-800 text-white inline-block py-1 px-2 rounded">
+    return (
+      <NavLink
+        to={`/register/`}
+        className="bg-orange_unam hover:bg-orange-800 text-white inline-block py-1 px-2 rounded"
+      >
         Registro como participante
       </NavLink>
     );
@@ -61,7 +64,12 @@ const registerAnnouncement = () => {
 function Home() {
   return (
     <div id="home" className="p-4">
-      <NavLink to="/resources/" className="absolute w-40 lg:w-60 right-0 top-28"><img src="images/tour-recursos.png" alt="Recursos interesantes" /></NavLink>
+      <NavLink
+        to="/resources/"
+        className="absolute w-40 lg:w-60 right-0 top-28"
+      >
+        <img src="images/tour-recursos.png" alt="Recursos interesantes" />
+      </NavLink>
       <header className="sm:flex sm:flex-row mt-24 lg:mt-0">
         <div className="xl:w-1/3">
           <img
@@ -130,12 +138,23 @@ function Home() {
         </header>
         <section id="schedule" className="xl:flex xl:flex-row">
           <div className="xl:px-2 xl:w-1/2">
-            <h3 className="text-xl my-2 bg-orange_unam text-white p-2">Lunes 23 de octubre</h3>
-            <ProgramItem
-              hour="9:00"
-              title="Bienvenida e inauguración"
-              description="<p>Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv), Dr. Héctor Benítez (DGTIC) y Dr. José Manuel Saniger (CIC)</p>"
-            />
+            <h3 className="text-xl my-2 bg-orange_unam text-white p-2">
+              Lunes 23 de octubre
+            </h3>
+            <div className="mb-6 xl:mb-4 border border-gray-400 p-2 grid gap-4 content-center grid-cols-3 md:grid-cols-5">
+              <div className="grid content-center pl-10">
+                <p>9:00</p>
+              </div>
+              <div className="grid col-span-2 content-center text-center">
+                <p>Bienvenida e inauguración</p>
+              </div>
+              <div className="col-span-3 md:col-span-2 border-t md:border-none border-gray-400 pt-2 md:pt-0 grid content-center">
+                <p>
+                  Dr. Melchor Sánchez (CUAIEED), Dr. Boris Escalante (CECAv),
+                  Dr. Héctor Benítez (DGTIC) y Dr. José Manuel Saniger (CIC)
+                </p>
+              </div>
+            </div>
             <ProgramItem
               hour="9:30"
               title={`Mesa: "IA generativa para el aprendizaje"`}
@@ -169,7 +188,9 @@ function Home() {
             />
           </div>
           <div className="xl:px-2 xl:w-1/2">
-            <h3 className="text-xl my-2 bg-orange_unam text-white p-2">Martes 24 de octubre</h3>
+            <h3 className="text-xl my-2 bg-orange_unam text-white p-2">
+              Martes 24 de octubre
+            </h3>
             <ProgramItem
               hour="9:00"
               title={`Mesa: "Investigación en IAGen en la UNAM: su impacto educativo"`}

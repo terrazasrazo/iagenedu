@@ -43,6 +43,9 @@ const Navbar = () => {
         <li>
           <NavLink to="/resources/">Recursos</NavLink>
         </li>
+        <li>
+          <a href="docs/recomendaciones_uso_iagen_docencia_unam_2023.pdf" target="_blank" rel="noopener noreferrer" className="text-orange_unam font-semibold">Recomendaciones</a>
+        </li>
         <li>{startSession()}</li>
       </ul>
     </nav>

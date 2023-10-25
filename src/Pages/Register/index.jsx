@@ -1,4 +1,4 @@
-//import './Register.css'
+import './Register.css'
 
 const displayRegisterMessage = (message) => {
   let registerMessage = document.getElementById('registerMessage')
