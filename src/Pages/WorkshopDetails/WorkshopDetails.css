@@ -1,36 +1,9 @@
-#registerWorkshopMessage {
-    @apply absolute top-2 right-2 bg-white rounded shadow-sm border-2 border-red-500 text-red-500;
+.video > iframe {
+    @apply mx-auto shadow-sm rounded;
 }
-#registerWorkshopMessage > div {
-    @apply relative p-8 pr-10;
-}
-#registerWorkshopMessage span {
-    @apply absolute top-2 right-2 p-2 cursor-pointer text-gray-500;
-}
-#workshop-details {
-    @apply bg-slate-50 p-4;
-}
-#workshop-details h2 {
-    @apply text-2xl mt-4 mb-1;
-}
-#workshop-details a {
-    @apply underline;
-}
-#workshop-details ul {
-    list-style: square;
-    @apply ml-6;
-}
-#workshop-details ol {
-    list-style: decimal;
-    @apply ml-6;
-}
-#workshop-details ol[type="a"] {
-    list-style: lower-alpha;
-}
-#workshop-details li {
-    @apply my-2;
-}
-#workshop-references p {
-    text-indent: 1rem;
-    line-height: 2rem;
+
+@media (max-width: 640px) {
+    .video > iframe {
+        @apply w-full;
+    }
 }

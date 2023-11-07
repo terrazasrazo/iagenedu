@@ -3,8 +3,6 @@ import Card from "../../Components/Card";
 
 function Workshops() {
   const [items, setItems] = useState(null);
-  const [filterLevel, setFilterLevel] = useState(null);
-  const [filterDate, setFilterDate] = useState(null);
   const [filteredItems, setFilteredItems] = useState(null);
 
   useEffect(() => {
@@ -16,38 +14,12 @@ function Workshops() {
       });
   }, []);
 
-  const getFilteredItems = (level,date) => {
-    console.log(level,date)
-    if(level === "" && date === "") {
-      console.log("entra vacío")
-      setFilteredItems(items);
-    } else {
-      if(level !== "") {
-        console.log("entra nivel")
-        setFilteredItems(items?.filter((item) => item.level === level));
-      } else {
-        setFilteredItems(items);
-      }
-      if(filterDate !== "") {
-        setFilteredItems(items?.filter((item) => item.ocurrenceDay === filterDate));
-      } else {
-        setFilteredItems(items);
-      }
-    }
-  };
-
   return (
     <>
-      <section className="w-full p-4 flex flex-col md:flex-row">
-        <div className="order-last md:order-1 bg-white p-4 shadow-sm rounded md:w-1/2">
-          <p className="text-orange-800">
-            Los talleres ocurrirán de manera simultánea de 12:00 a 14:00 horas.
-          </p>
-          <p className="mt-2 text-sm text-orange-600">
-            * Las grabaciones de los talleres estarán disponibles en esta misma
-            plataforma después del evento.
-          </p>
-          <p className="mt-6 border-t border-gray-300 pt-2 mb-2">
+      <section className="w-full p-4">
+        <div className="bg-white p-4 shadow-sm rounded md:grid md:grid-cols-2">
+          <div>
+          <p className="text-sm mb-2">
             Filtrar por nivel de conocimiento de IAGen que se requiere para el
             taller:
           </p>
@@ -77,7 +49,9 @@ function Workshops() {
               Cualquier nivel
             </a>
           </p>
-          <p className="mt-4 mb-2">Filtrar por fecha:</p>
+          </div>
+          <div>
+          <p className="text-sm mb-2 mt-4 md:mt-0">Filtrar por fecha:</p>
           <p>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-cyan-600 hover:bg-cyan-700 text-white text-sm mr-2"
@@ -98,8 +72,9 @@ function Workshops() {
               Cualquier día
             </a>
           </p>
+          </div>         
         </div>
-        <div className="order-1 md:order-last md:w-1/2 md:flex md:flex-col xl:flex-row md:justify-center xl:justify-end md:pl-2 text-right">
+        <div className="mt-4 text-right">
           <a
             href="https://www.coursera.org/learn/iagen"
             target="_blank"
@@ -107,7 +82,7 @@ function Workshops() {
             className="inline-block max-w-lg"
           >
             <img
-              src="/images/iagen-coursera.jpeg"
+              src="/images/banner-iagen.png"
               alt="IA generativa en el aula"
               className="rounded"
             />

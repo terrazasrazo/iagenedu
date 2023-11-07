@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Cookies from "universal-cookie";
-// import "./WorkshopDetails.css";
+import "./WorkshopDetails.css";
 import Speaker from "../../Components/Speaker";
 
 const cookies = new Cookies();
@@ -9,108 +9,6 @@ const cookies = new Cookies();
 const hideRegisterWorkshopMessage = () => {
   const registerMessage = document.getElementById("registerWorkshopMessage");
   registerMessage.classList.add("hidden");
-};
-
-const displayRegisterWorkshopMessage = (message) => {
-  let registerMessage = document.getElementById("registerWorkshopMessage");
-  registerMessage.getElementsByTagName("p")[0].textContent = "";
-  registerMessage.getElementsByTagName("p")[0].textContent = message;
-  registerMessage.classList.remove("hidden");
-  setTimeout(() => {
-    registerMessage.classList.add("hidden");
-  }, 5000);
-};
-
-const availableRegister = (participants, assistantsCount, workshopId) => {
-  const availableSeats = participants - assistantsCount;
-  let availableSeatsColor = "";
-  if (availableSeats > 20) availableSeatsColor = "bg-green-500";
-  if (availableSeats > 10 && availableSeats <= 20)
-    availableSeatsColor = "bg-yellow-500";
-  if (availableSeats <= 10) availableSeatsColor = "bg-orange-500";
-  if (availableSeats > 0) {
-    return (
-      <a
-        onClick={() => registerToWorkshop(workshopId)}
-        className={`${availableSeatsColor} text-gray-50 p-2 inline-block rounded cursor-pointer`}
-        id="registerWorkshopButton"
-      >
-        registrarse al taller
-      </a>
-    );
-  } else {
-    return (
-      <span
-        className="bg-red-500 text-gray-50 p-2 inline-block rounded"
-        id="registerWorkshopButton"
-      >
-        registro cerrado
-      </span>
-    );
-  }
-};
-
-const registerToWorkshop = (workshopId) => {
-  if (cookies.get("worshopsCount") !== undefined) {
-    if (cookies.get("worshopsCount") < 2) {
-      let registerData = {
-        workshopId: workshopId,
-        userId: cookies.get("id"),
-      };
-
-      let dataJSON = JSON.stringify(registerData);
-
-      let options = {
-        method: "POST",
-        body: dataJSON,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      };
-
-      fetch("https://ada.bunam.unam.mx/iagen-api/workshopassistants/", options)
-        .then((response) => response.json())
-        .then((data) => {
-          if (!data.error) {
-            if (data[0].workshopId && data[0].userId) {
-              cookies.set("worshopsCount", cookies.get("worshopsCount") + 1, {
-                path: "/",
-              });
-
-              window.scroll(0, 0);
-              let successMessage = document.getElementById("successMessage");
-              successMessage.classList.remove("hidden");
-              setTimeout(() => {
-                successMessage.classList.add("hidden");
-                window.location.href = "/profile/";
-              }, 10000);
-            } else {
-              displayRegisterWorkshopMessage(
-                "Ocurrió un error inesperado. Intente más tarde."
-              );
-            }
-          } else {
-            window.scroll(0, 0);
-            displayRegisterWorkshopMessage(
-              "Ya se encuentra registrado a este taller."
-            );
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-          displayRegisterWorkshopMessage(
-            "Ocurrió un error inesperado. Intente más tarde."
-          );
-        });
-    } else {
-      displayRegisterWorkshopMessage(
-        "No puedes registrarte a más de 2 talleres"
-      );
-    }
-  } else {
-    const loginformContainer = document.getElementById("loginform-container");
-    loginformContainer.classList.remove("hidden");
-  }
 };
 
 function WorkshopDetails() {
@@ -168,16 +66,30 @@ function WorkshopDetails() {
           if (item.speakers.length > 1) speakerLabel = "Talleristas";
 
           let workshopLevel = "";
-          if(item.level === 1) workshopLevel = "bg-blue-400"
-          if(item.level === 2) workshopLevel = "bg-blue-600"
-          if(item.level === 3) workshopLevel = "bg-blue-900"
+          if (item.level === 1) workshopLevel = "bg-blue-400";
+          if (item.level === 2) workshopLevel = "bg-blue-600";
+          if (item.level === 3) workshopLevel = "bg-blue-900";
 
           return (
             <section key={item.id} id="workshop-details">
               <article className="p-4">
                 <header className="mb-4">
-                  <h1 className={`text-3xl text-white p-2 rounded-sm ${workshopLevel}`}>{item.title}</h1>
+                  <h1
+                    className={`text-3xl text-white p-2 rounded-sm ${workshopLevel}`}
+                  >
+                    {item.title}
+                  </h1>
                 </header>
+                <div className="video">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src={`https://www.youtube.com/embed/${item.youTubeurl}`}
+                    title={item.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
                 <main className="lg:flex lg:flex-row">
                   <section className="lg:w-2/3">
                     <div>
@@ -224,15 +136,6 @@ function WorkshopDetails() {
                       </h3>
                       <p className="text-sm">{item.keywords}</p>
                     </div>
-                    <div className="mt-4">
-                      <p>
-                        {availableRegister(
-                          item.participants,
-                          item.assistantsCount,
-                          id
-                        )}
-                      </p>
-                    </div>
                   </aside>
                 </main>
                 <section>
@@ -244,7 +147,10 @@ function WorkshopDetails() {
                       return <Speaker key={speaker.id} data={speaker} />;
                     })}
                   </div>
-                  <div id="workshop-references" className="mt-8 border-t border-gray-400">
+                  <div
+                    id="workshop-references"
+                    className="mt-8 border-t border-gray-400"
+                  >
                     <h2 className="text-2xl text-orange_unam my-2">
                       Referencias
                     </h2>
