@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import Cookies from "universal-cookie";
+// import Cookies from "universal-cookie";
 import ProgramItem from "../../Components/ProgramItem";
 // import "./Home.css";
 
-const cookies = new Cookies();
+// const cookies = new Cookies();
 
 const institutions = [
   {
@@ -48,7 +48,7 @@ const institutions = [
   },
 ];
 
-const registerAnnouncement = () => {
+/*const registerAnnouncement = () => {
   if (cookies.get("id") === undefined) {
     return (
       <NavLink
@@ -59,7 +59,7 @@ const registerAnnouncement = () => {
       </NavLink>
     );
   }
-};
+};*/
 
 function Home() {
   return (
@@ -113,9 +113,6 @@ function Home() {
             <li>IA generativa para docentes y diseñadores curriculares</li>
             <li>Estudiantes y su uso de la IA generativa</li>
           </ul>
-        </div>
-        <div className="border-t-2 lg:border-none mt-4 pt-2 lg:pt-40 border-orange_unam">
-          <p>{registerAnnouncement()}</p>
         </div>
       </section>
       <section
