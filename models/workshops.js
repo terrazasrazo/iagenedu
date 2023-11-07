@@ -12,6 +12,7 @@ module.exports = (sequelize, type) => {
     keywords: type.STRING,
     participants: type.INTEGER,
     zoomSession: type.STRING,
+    youTubeurl: type.STRING,
     ocurrenceDay: type.STRING
   });
 };
