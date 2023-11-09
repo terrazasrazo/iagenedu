@@ -4,6 +4,7 @@ import { WorkshopProvider } from "../../Context";
 import Home from "../Home";
 import CallFor from "../CallFor";
 import Workshops from "../Workshops";
+import IJornada from "../IJornada";
 import WorkshopDetails from "../WorkshopDetails";
 import InterestingResources from "../InterestingResources";
 import Register from "../Register";
@@ -19,6 +20,7 @@ const AppRoutes = () => {
   return useRoutes([
     { path: "/", element: <Home /> },
     { path: "/call-for", element: <CallFor /> },
+    { path: "/i-jornada", element: <IJornada /> },
     { path: "/workshops", element: <Workshops /> },
     { path: "/workshops/:id", element: <WorkshopDetails /> },
     { path: "/resources", element: <InterestingResources /> },
