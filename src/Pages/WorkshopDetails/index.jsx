@@ -74,11 +74,11 @@ function WorkshopDetails() {
             <section key={item.id} id="workshop-details">
               <article className="p-4">
                 <header className="mb-4">
-                  <h1
+                  <h2
                     className={`text-3xl text-white p-2 rounded-sm ${workshopLevel}`}
                   >
                     {item.title}
-                  </h1>
+                  </h2>
                 </header>
                 <div className="video">
                   <iframe
@@ -93,56 +93,56 @@ function WorkshopDetails() {
                 <main className="lg:flex lg:flex-row">
                   <section className="lg:w-2/3">
                     <div>
-                      <h2 className="text-2xl text-orange_unam my-2">
+                      <h3 className="text-2xl text-orange_unam my-2">
                         Propósito del taller
-                      </h2>
+                      </h3>
                       {workshopContent(item.purpouse)}
                     </div>
                     <div id="workshop-content">
-                      <h2 className="text-2xl text-orange_unam my-2">
+                      <h3 className="text-2xl text-orange_unam my-2">
                         Contenido del taller
-                      </h2>
+                      </h3>
                       {workshopContent(item.themes)}
                     </div>
                     <div>
-                      <h2 className="text-2xl text-orange_unam my-2">
+                      <h3 className="text-2xl text-orange_unam my-2">
                         Producto del taller
-                      </h2>
+                      </h3>
                       {workshopContent(item.product)}
                     </div>
                   </section>
                   <aside className="border-t border-gray-400 lg:border-none mt-8 lg:mt-1 lg:pl-8">
                     <div>
-                      <h3 className="text-xl text-orange-700 my-2">
+                      <h4 className="text-xl text-orange-700 my-2">
                         Nivel educativo al que está dirigido
-                      </h3>
+                      </h4>
                       <p>{item.educationLevel}</p>
                     </div>
                     <div>
-                      <h3 className="text-xl text-orange-700 my-2">
+                      <h4 className="text-xl text-orange-700 my-2">
                         Área de conocimiento que aborda
-                      </h3>
+                      </h4>
                       <p>{item.knowledgeArea}</p>
                     </div>
                     <div id="workshop-tools">
-                      <h3 className="text-xl text-orange-700 my-2">
+                      <h4 className="text-xl text-orange-700 my-2">
                         Herramientas que se usarán en el taller
-                      </h3>
+                      </h4>
                       {workshopContent(item.tools)}
                     </div>
                     <div>
-                      <h3 className="text-xl text-orange-700 my-2">
+                      <h4 className="text-xl text-orange-700 my-2">
                         Palabras clave
-                      </h3>
+                      </h4>
                       <p className="text-sm">{item.keywords}</p>
                     </div>
                   </aside>
                 </main>
                 <section>
                   <div className="mt-8 border-t border-gray-400">
-                    <h2 className="text-2xl text-orange_unam my-2">
+                    <h3 className="text-2xl text-orange_unam my-2">
                       {speakerLabel}
-                    </h2>
+                    </h3>
                     {item.speakers.map((speaker) => {
                       return <Speaker key={speaker.id} data={speaker} />;
                     })}
@@ -151,9 +151,9 @@ function WorkshopDetails() {
                     id="workshop-references"
                     className="mt-8 border-t border-gray-400"
                   >
-                    <h2 className="text-2xl text-orange_unam my-2">
+                    <h3 className="text-2xl text-orange_unam my-2">
                       Referencias
-                    </h2>
+                    </h3>
                     <div className="text-sm leading-relaxed">
                       {workshopContent(item.references)}
                     </div>
