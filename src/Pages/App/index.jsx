@@ -4,7 +4,6 @@ import { WorkshopProvider } from "../../Context";
 import Home from "../Home";
 import CallFor from "../CallFor";
 import Workshops from "../Workshops";
-import IJornada from "../IJornada";
 import WorkshopDetails from "../WorkshopDetails";
 import InterestingResources from "../InterestingResources";
 import Register from "../Register";
@@ -14,13 +13,24 @@ import PasswordRecovery from "../PasswordRecovery";
 import NotFound from "../NotFound";
 import Navbar from "../../Components/Navbar";
 import LoginForm from "../../Components/LoginForm";
+/* I Jornada de Inteligencia Artificial Generativa en Educación UNAM 2023 */
+import IJornada from "../IJornada";
+import BienvenidaInauguracion from "../IJornada/Sessions/BienvenidaInauguracion";
+import IAGenerativaAprendizaje from "../IJornada/Sessions/IAGenerativaAprendizaje";
+import ExperienciasIAGenerativaUNAM from "../IJornada/Sessions/ExperienciasIAGenerativaUNAM";
+import PresentacionesRelampagoLunes from "../IJornada/Sessions/PresentacionesRelampagoLunes";
+import InvestigacionIAGenUNAM from "../IJornada/Sessions/InvestigacionIAGenUNAM";
+import IAGenerativaEvaluacion from "../IJornada/Sessions/IAGenerativaEvaluacion";
+import FuturosIAGenerativaUNAM from "../IJornada/Sessions/FuturosIAGenerativaUNAM";
+import PresentacionesRelampagoMartes from "../IJornada/Sessions/PresentacionesRelampagoMartes";
+import Clausura from "../IJornada/Sessions/Clausura";
+/* */
 import "./App.css";
 
 const AppRoutes = () => {
   return useRoutes([
     { path: "/", element: <Home /> },
     { path: "/call-for", element: <CallFor /> },
-    { path: "/i-jornada", element: <IJornada /> },
     { path: "/workshops", element: <Workshops /> },
     { path: "/workshops/:id", element: <WorkshopDetails /> },
     { path: "/resources", element: <InterestingResources /> },
@@ -28,6 +38,18 @@ const AppRoutes = () => {
     { path: "/profile", element: <UserProfile /> },
     { path: "/activate/:userHash", element: <UserActivate /> },
     { path: "/recovery/:userHash", element: <PasswordRecovery /> },
+    /* I Jornada de Inteligencia Artificial Generativa en Educación UNAM 2023 */
+    { path: "/i-jornada", element: <IJornada /> },
+    { path: "/i-jornada/bienvenida-inauguracion", element: <BienvenidaInauguracion /> },
+    { path: "/i-jornada/ia-generativa-aprendizaje", element: <IAGenerativaAprendizaje /> },
+    { path: "/i-jornada/experiencias-ia-generativa-unam", element: <ExperienciasIAGenerativaUNAM /> },
+    { path: "/i-jornada/presentaciones-relampago-lunes", element: <PresentacionesRelampagoLunes /> },
+    { path: "/i-jornada/investigacion-iagen-unam", element: <InvestigacionIAGenUNAM /> },
+    { path: "/i-jornada/ia-generativa-evaluacion", element: <IAGenerativaEvaluacion /> },
+    { path: "/i-jornada/futuros-ia-generativa-unam", element: <FuturosIAGenerativaUNAM /> },
+    { path: "/i-jornada/presentaciones-relampago-martes", element: <PresentacionesRelampagoMartes /> },
+    { path: "/i-jornada/clausura", element: <Clausura /> },
+    /* */
     { path: "*", element: <NotFound /> },
   ]);
 };
