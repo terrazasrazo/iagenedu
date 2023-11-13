@@ -1,8 +1,6 @@
 import SessionItem from "../../../Components/SessionItem/SessionItem";
 import BioItem from "../../../Components/SessionItem/BioItem";
 
-
-
 const session = {
   title: "Bienvenida e inauguración",
   youTubeurl: "wz8cGeWdL04",
@@ -14,7 +12,7 @@ const bios = [
     name: "Dr. Melchor Sánchez",
     dependence: "CUAIEED",
     photo: "sanchez-mendiola.jpg",
-    googleScholar: "user=2l-cMhYAAAAJ&hl=es",
+    googleScholar: "2l-cMhYAAAAJ&hl",
     researchGate: "Melchor-Sanchez-Mendiola",
     profile: "https://cuaieed.unam.mx/organigrama.php",
     twitter: "melchorsm",
@@ -23,7 +21,7 @@ const bios = [
     name: "Dr. Boris Escalante",
     dependence: "CECAv",
     photo: "escalante-ramirez.jpg",
-    googleScholar: "user=DeMoeYgAAAAJ&hl=es",
+    googleScholar: "DeMoeYgAAAAJ&hl",
     researchGate: "Boris-Escalante-Ramirez",
     profile: "https://cecav.unam.mx/quienes_somos/",
     
@@ -32,7 +30,7 @@ const bios = [
     name: "Dr. Héctor Benítez",
     dependence: "DGTIC",
     photo: "benitez-hector.jpg",
-    googleScholar: "user=pHoGKUQAAAAJ&hl=es",
+    googleScholar: "pHoGKUQAAAAJ&hl",
     researchGate: "Hector-Benitez-Perez",
     profile: "https://www.tic.unam.mx/hectorbenitez/",    
   },
@@ -40,7 +38,7 @@ const bios = [
     name: "Dr. José Manuel Saniger",
     dependence: "CIC",
     photo: "saniger-jose.jpg",
-    googleScholar: "user=DaZcU5oAAAAJ&hl=es",
+    googleScholar: "DaZcU5oAAAAJ&hl",
     researchGate: "Jose-Saniger",
     profile: "https://sid.unam.mx/nosotros.html",
     twitter: "SanigerBlesa",   
