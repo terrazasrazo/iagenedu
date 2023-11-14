@@ -4,7 +4,7 @@ import BioItem from "../../../Components/SessionItem/BioItem";
 const session = {
   title: "Mesa: \"Investigación en IAGen en la UNAM: su impacto educativo\"",
   youTubeurl: "gQsmMgoM2As",
-  ocurrenceDay: "Lunes 23 de octubre de 2023"
+  ocurrenceDay: "Martes 24 de octubre de 2023"
 };
 
 const bios = [
