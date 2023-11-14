@@ -3,7 +3,7 @@ import BioItem from "../../../Components/SessionItem/BioItem";
 
 const session = {
   title: "Mesa: \"IA generativa y evaluación: ¿se acabaron los exámenes?\"",
-  youTubeurl: "1abnGfo0du4",
+  youTubeurl: "Uf2nAvcFOH8",
   ocurrenceDay: "Martes 24 de octubre de 2023"
 };
 
