@@ -1,4 +1,3 @@
-
 import SessionItem from "../../../Components/SessionItem/SessionItem";
 import BioItem from "../../../Components/SessionItem/BioItem";
 
