@@ -36,7 +36,9 @@ function Home() {
           <p className="mt-4">Los primeros productos de este grupo son:</p>
           <ul className="list-disc ml-6 font-semibold text-orange_unam">
             <li><NavLink to="/i-jornada/" className="text-orange_unam hover:text-blue_unam underline">I Jornada de Inteligencia Artificial Generativa en Educación UNAM 2023</NavLink></li>
-            <li><a href="/docs/recomendaciones_uso_iagen_docencia_unam_2023.pdf" target="_blank" rel="noopener noreferrer" className="text-orange_unam hover:text-blue_unam underline">Recomendaciones para el uso de la inteligencia artificial generativa en docencia</a></li>
+            <li>
+              <NavLink to="/recomendaciones/" className="text-orange_unam hover:text-blue_unam underline">Recomendaciones para el uso de la inteligencia artificial generativa en docencia</NavLink>
+            </li>
           </ul>
         </div>
       </header>

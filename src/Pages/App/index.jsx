@@ -6,6 +6,7 @@ import CallFor from "../CallFor";
 import Workshops from "../Workshops";
 import WorkshopDetails from "../WorkshopDetails";
 import InterestingResources from "../InterestingResources";
+import Findings from "../Findings";
 import Register from "../Register";
 import UserProfile from "../UserProfile";
 import UserActivate from "../UserActivate";
@@ -34,6 +35,7 @@ const AppRoutes = () => {
     { path: "/workshops", element: <Workshops /> },
     { path: "/workshops/:id", element: <WorkshopDetails /> },
     { path: "/resources", element: <InterestingResources /> },
+    { path: "/recomendaciones", element: <Findings />},
     { path: "/register", element: <Register /> },
     { path: "/profile", element: <UserProfile /> },
     { path: "/activate/:userHash", element: <UserActivate /> },

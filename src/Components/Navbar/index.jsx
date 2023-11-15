@@ -38,7 +38,7 @@ const Navbar = () => {
           <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink to="/i-jornada/" className="font-semibold text-white hover:text-gray-50 bg-orange_unam p-1 rounded">I Jornada</NavLink>
+          <NavLink to="/i-jornada/" className="font-semibold">I Jornada</NavLink>
         </li>
         <li>
           <NavLink to="/workshops/">Talleres</NavLink>
@@ -47,7 +47,10 @@ const Navbar = () => {
           <NavLink to="/resources/">Recursos</NavLink>
         </li>
         <li>
-          <a href="/docs/recomendaciones_uso_iagen_docencia_unam_2023.pdf" target="_blank" rel="noopener noreferrer" className="text-orange_unam font-semibold">Recomendaciones</a>
+          <NavLink to="/recomendaciones/" className="text-orange_unam font-semibold">Recomendaciones</NavLink>
+        </li>
+        <li>
+          <a href="/docs/recomendaciones_uso_iagen_docencia_unam_2023.pdf" target="_blank" rel="noopener noreferrer"></a>
         </li>
         <li>{startSession()}</li>
       </ul>
