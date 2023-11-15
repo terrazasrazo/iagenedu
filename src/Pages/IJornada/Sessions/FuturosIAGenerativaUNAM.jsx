@@ -12,7 +12,7 @@ const bios = [
     name: "Dr. Boris Escalante",
     dependence: "CECAv",
     photo: "escalante-ramirez.jpg",
-    googleScholar: "DeMoeYgAAAAJ&hl",
+    googleScholar: "DeMoeYgAAAAJ",
     researchGate: "Boris-Escalante-Ramirez",
     profile: "https://cecav.unam.mx/quienes_somos/",
     
@@ -21,7 +21,7 @@ const bios = [
     name: "Dr. Héctor Benítez",
     dependence: "DGTIC",
     photo: "benitez-hector.jpg",
-    googleScholar: "pHoGKUQAAAAJ&hl",
+    googleScholar: "pHoGKUQAAAAJ",
     researchGate: "Hector-Benitez-Perez",
     profile: "https://www.tic.unam.mx/hectorbenitez/",    
   },

@@ -12,7 +12,7 @@ const bios = [
     name: "Dr. Melchor Sánchez",
     dependence: "CUAIEED",
     photo: "sanchez-mendiola.jpg",
-    googleScholar: "2l-cMhYAAAAJ&hl",
+    googleScholar: "2l-cMhYAAAAJ",
     researchGate: "Melchor-Sanchez-Mendiola",
     profile: "https://cuaieed.unam.mx/organigrama.php",
     twitter: "melchorsm",
@@ -21,7 +21,7 @@ const bios = [
     name: "Dr. Boris Escalante",
     dependence: "CECAv",
     photo: "escalante-ramirez.jpg",
-    googleScholar: "DeMoeYgAAAAJ&hl",
+    googleScholar: "DeMoeYgAAAAJ",
     researchGate: "Boris-Escalante-Ramirez",
     profile: "https://cecav.unam.mx/quienes_somos/",
     

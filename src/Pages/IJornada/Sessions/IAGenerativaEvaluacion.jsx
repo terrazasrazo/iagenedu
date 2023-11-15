@@ -12,7 +12,7 @@ const bios = [
     name: "Dr. Melchor Sánchez",
     dependence: "CUAIEED",
     photo: "sanchez-mendiola.jpg",
-    googleScholar: "2l-cMhYAAAAJ&hl",
+    googleScholar: "2l-cMhYAAAAJ",
     researchGate: "Melchor-Sanchez-Mendiola",
     profile: "https://cuaieed.unam.mx/organigrama.php",
     twitter: "melchorsm",

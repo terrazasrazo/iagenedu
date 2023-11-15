@@ -17,7 +17,7 @@ const BioItem = ({ bio }) => {
         <h4 className="text-gray-500 text-md">{bio.dependence}</h4>
         <div className="mt-4">
           {bio.googleScholar && (
-            <a href={`https://scholar.google.com/citations?user=${bio.googleScholar}=es`} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-gray-700 mx-2">
+            <a href={`https://scholar.google.com/citations?user=${bio.googleScholar}&hl=es`} target="_blank" rel="noreferrer" className="text-blue-500 hover:text-gray-700 mx-2">
               <i className="fa-brands fa-google"></i>
             </a>
           )}
