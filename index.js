@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 require('./routes/workshops')(app);
+require('./routes/lightnings')(app);
 require('./routes/users')(app);
 
 const PORT = process.env.PORT || 6600;

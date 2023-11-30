@@ -22,6 +22,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.workshops = require('./models/workshops')(sequelize, Sequelize);
+db.lightnings = require('./models/lightnings')(sequelize, Sequelize);
 // db.keywords = require('./models/keywords')(sequelize, Sequelize);
 db.speakers = require('./models/speakers')(sequelize, Sequelize);
 db.users = require('./models/users')(sequelize, Sequelize);
