@@ -5,7 +5,7 @@ module.exports = (sequelize, type) => {
       ocurrenceDay: type.STRING,
       sessionImage: type.STRING,
       sessionResume: type.TEXT,
-      sessionKeywords: type.STRING
+      keywords: type.STRING
     });
   };
   
