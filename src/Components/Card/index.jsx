@@ -1,6 +1,4 @@
 import { NavLink } from "react-router-dom"
-import { useContext } from "react"
-import { WorkshopContext } from "../../Context"
 import './Card.css'
 
 const Card = (data) => {
@@ -12,11 +10,10 @@ const Card = (data) => {
   let availableSeats = data.data.participants - data.data.assistantsCount
   if(availableSeats < 0) availableSeats = 0
 
-  const context = useContext(WorkshopContext)
 
   return (
     <article className={`${level} m-6 shadow-sm bg-gray-50 rounded border-t-4 relative pb-20`}>
-      <NavLink to={`/workshops/${data.data.id}`} onClick={() => context.setWorkshopData(context.availableSeats = availableSeats)}> 
+      <NavLink to={`/workshops/${data.data.id}`}> 
         <header className="p-4 border-b">
           <h1 className="text-2xl mb-4">{data.data.title}</h1>
           {

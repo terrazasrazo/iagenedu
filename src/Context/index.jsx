@@ -1,22 +1,21 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import { createContext, useState } from 'react'
 
-export const WorkshopContext = createContext()
+export const KeywordContext = createContext()
 
-export const WorkshopProvider = ({ children }) => {
-    const [workshopData, setWorkshopData] = useState([])
-    console.log(workshopData)
+export const KeywordProvider = ({ children }) => {
+    const [keyword, setKeyword] = useState("")
 
     return (
-        <WorkshopContext.Provider value={{
-            workshopData,
-            setWorkshopData,
+        <KeywordContext.Provider value={{
+            keyword,
+            setKeyword
         }}>
             {children}
-        </WorkshopContext.Provider>
-    );
-};
+        </KeywordContext.Provider>
+    )
+}
 
-WorkshopProvider.propTypes = {
-    children: PropTypes.node.isRequired,
+KeywordProvider.propTypes = {
+    children: PropTypes.node.isRequired
 };

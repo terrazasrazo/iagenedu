@@ -1,6 +1,6 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { WorkshopProvider } from "../../Context";
+import { KeywordProvider } from "../../Context";
 import Home from "../Home";
 import CallFor from "../CallFor";
 import Workshops from "../Workshops";
@@ -17,15 +17,8 @@ import LoginForm from "../../Components/LoginForm";
 /* I Jornada de Inteligencia Artificial Generativa en Educación UNAM 2023 */
 import IJornada from "../IJornada";
 import BienvenidaInauguracion from "../IJornada/Sessions/BienvenidaInauguracion";
-import IAGenerativaAprendizaje from "../IJornada/Sessions/IAGenerativaAprendizaje";
-import ExperienciasIAGenerativaUNAM from "../IJornada/Sessions/ExperienciasIAGenerativaUNAM";
-import PresentacionesRelampagoLunes from "../IJornada/Sessions/PresentacionesRelampagoLunes";
-import InvestigacionIAGenUNAM from "../IJornada/Sessions/InvestigacionIAGenUNAM";
-import IAGenerativaEvaluacion from "../IJornada/Sessions/IAGenerativaEvaluacion";
-import FuturosIAGenerativaUNAM from "../IJornada/Sessions/FuturosIAGenerativaUNAM";
-import PresentacionesRelampagoMartes from "../IJornada/Sessions/PresentacionesRelampagoMartes";
-import Clausura from "../IJornada/Sessions/Clausura";
 /* */
+import Keywords from "../Keywords";
 import "./App.css";
 
 const AppRoutes = () => {
@@ -43,22 +36,15 @@ const AppRoutes = () => {
     /* I Jornada de Inteligencia Artificial Generativa en Educación UNAM 2023 */
     { path: "/i-jornada", element: <IJornada /> },
     { path: "/i-jornada/bienvenida-inauguracion", element: <BienvenidaInauguracion /> },
-    { path: "/i-jornada/ia-generativa-aprendizaje", element: <IAGenerativaAprendizaje /> },
-    { path: "/i-jornada/experiencias-ia-generativa-unam", element: <ExperienciasIAGenerativaUNAM /> },
-    { path: "/i-jornada/presentaciones-relampago-lunes", element: <PresentacionesRelampagoLunes /> },
-    { path: "/i-jornada/investigacion-iagen-unam", element: <InvestigacionIAGenUNAM /> },
-    { path: "/i-jornada/ia-generativa-evaluacion", element: <IAGenerativaEvaluacion /> },
-    { path: "/i-jornada/futuros-ia-generativa-unam", element: <FuturosIAGenerativaUNAM /> },
-    { path: "/i-jornada/presentaciones-relampago-martes", element: <PresentacionesRelampagoMartes /> },
-    { path: "/i-jornada/clausura", element: <Clausura /> },
     /* */
+    { path: "/keywords/", element: <Keywords /> },
     { path: "*", element: <NotFound /> },
   ]);
 };
 
 function App() {
   return (
-    <WorkshopProvider>
+    <KeywordProvider>
       <BrowserRouter>
         <main className="container mx-auto">
           <header className="flex flex-row pt-4 pb-6 px-6">
@@ -134,7 +120,7 @@ function App() {
           </div>
         </footer>
       </BrowserRouter>
-    </WorkshopProvider>
+    </KeywordProvider>
   );
 }
 

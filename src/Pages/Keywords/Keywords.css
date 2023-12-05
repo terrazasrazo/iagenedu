@@ -1,0 +1,29 @@
+#keyword-results > section {
+  @apply grid grid-cols-2 gap-4 border-b border-orange_unam pb-4;
+}
+
+#keyword-results > h2 {
+  @apply text-2xl font-bold text-orange_unam;
+}
+
+#keyword-results > h3 {
+  @apply text-xl font-bold text-orange_unam mt-10 mb-2 hover:underline;
+}
+
+#keyword-results > section > article {
+  @apply bg-gray-50 p-4 rounded shadow-md gap-2;
+}
+
+#keyword-results > section > article h4 {
+  @apply text-lg font-bold text-orange_unam pb-2 border-b border-orange-300;
+}
+
+#keyword-results .basic {
+  @apply bg-blue-400;
+}
+#keyword-results .intermediate {
+  @apply bg-blue-600;
+}
+#keyword-results .advanced {
+  @apply bg-blue-900;
+}
