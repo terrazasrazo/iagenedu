@@ -4,7 +4,7 @@ const MainSessionItem = (session) => {
   const keywordsArray = session.session.keywords.split(",");
 
   return (
-    <article className="p-4 grid grid-cols-3">
+    <article>
       <div>
         <img
           src={`/images/sessions/${session.session.sessionImage}.jpg`}
@@ -17,21 +17,17 @@ const MainSessionItem = (session) => {
         </header>
         <main className="p-2">
           <p className="text-right">
-            <NavLink to={`/i-jornada/${session.session.sessionImage}`} className="inline-block bg-orange_unam text-white p-2 rounded-md">
+            <NavLink
+              to={`/i-jornada/${session.session.sessionImage}`}
+              className="inline-block bg-orange_unam text-white p-2 rounded-md"
+            >
               ver la sesión
             </NavLink>
           </p>
         </main>
-        <footer className="text-right mt-2">
+        <footer>
           {keywordsArray.map((keyword, index) => {
-            return (
-              <span
-                key={index}
-                className="inline-block bg-blue_unam m-1 text-white p-1 rounded-sm text-xs"
-              >
-                {keyword}
-              </span>
-            );
+            return <span key={index}>{keyword}</span>;
           })}
         </footer>
       </div>

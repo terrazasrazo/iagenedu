@@ -1,5 +1,8 @@
+#keyword-results {
+  @apply px-2;
+}
 #keyword-results > section {
-  @apply grid grid-cols-2 gap-4 border-b border-orange_unam pb-4;
+  @apply grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 2xl:gap-16 border-b border-orange_unam pb-4;
 }
 
 #keyword-results > h2 {
@@ -11,11 +14,19 @@
 }
 
 #keyword-results > section > article {
-  @apply bg-gray-50 p-4 rounded shadow-md gap-2;
+  @apply bg-gray-50 p-4 rounded shadow-md gap-2 lg:grid lg:grid-cols-3;
 }
 
 #keyword-results > section > article h4 {
-  @apply text-lg font-bold text-orange_unam pb-2 border-b border-orange-300;
+  @apply text-lg font-bold text-orange_unam pb-2 border-b border-orange-300 mt-4;
+}
+
+#keyword-results > section > article footer {
+  @apply text-right mt-2;
+}
+
+#keyword-results > section > article footer span {
+  @apply inline-block bg-blue_unam m-1 text-white p-1 rounded-sm text-xs;
 }
 
 #keyword-results .basic {
