@@ -49,6 +49,9 @@ db.panelists.belongsToMany(db.mainsessions, { through: "panelistsessions" });
 db.users.hasOne(db.sigecos);
 db.sigecos.belongsTo(db.users);
 
+db.users.hasOne(db.speakers);
+db.speakers.belongsTo(db.users);
+
 sequelize
   .sync({
     force: false,
