@@ -1,61 +1,19 @@
+import { useState, useEffect } from "react";
 import VideoItem from "../../Components/ProgramItem/videoItem";
 import institutions from "../../Components/Institutions/institutions";
 
-const sessionsMonday = [
-  {
-    sessionTitle: "Bienvenida e inauguración",
-    sessionImg: "bienvenida-inauguracion.jpg",
-    sessionLink: "bienvenida-inauguracion",
-  },
-  {
-    sessionTitle: "Mesa: IA generativa para el aprendizaje",
-    sessionImg: "ia-generativa-aprendizaje.jpg",
-    sessionLink: "ia-generativa-aprendizaje",
-  },
-  {
-    sessionTitle: "Mesa: Experiencias educativas de IA generativa en la UNAM",
-    sessionImg: "experiencias-ia-generativa-unam.jpg",
-    sessionLink: "experiencias-ia-generativa-unam",
-  },
-  {
-    sessionTitle: "Presentaciones relámpago",
-    sessionImg: "presentaciones-relampago-lunes.jpg",
-    sessionLink: "presentaciones-relampago-lunes",
-  },
-];
-
-const sessionsTuesday = [
-  {
-    sessionTitle:
-      "Mesa: Investigación en IAGen en la UNAM: su impacto educativo",
-    sessionImg: "investigacion-iagen-unam.jpg",
-    sessionLink: "investigacion-iagen-unam",
-  },
-  {
-    sessionTitle:
-      "Mesa: IA generativa y evaluación: ¿se acabaron los exámenes?",
-    sessionImg: "ia-generativa-evaluacion.jpg",
-    sessionLink: "ia-generativa-evaluacion",
-  },
-  {
-    sessionTitle:
-      "Mesa: Futuros de la IA generativa en la UNAM: ¿viaje sin retorno?",
-    sessionImg: "futuros-ia-generativa-unam.jpg",
-    sessionLink: "futuros-ia-generativa-unam",
-  },
-  {
-    sessionTitle: "Presentaciones relámpago",
-    sessionImg: "presentaciones-relampago-martes.jpg",
-    sessionLink: "presentaciones-relampago-martes",
-  },
-  {
-    sessionTitle: "Clausura",
-    sessionImg: "clausura.jpg",
-    sessionLink: "clausura",
-  }
-];
-
 function IJornada() {
+  const [items, setItems] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:6600/mainsessions/")
+    // fetch("https://ada.bunam.unam.mx/iagen-api/workshopassistants")
+      .then((response) => response.json())
+      .then((data) => {
+        setItems(data)
+      });
+  }, []);
+
   return (
     <>
       <header className="sm:flex sm:flex-row mx-auto mt-4 lg:mt-0 justify-center">
@@ -123,28 +81,24 @@ function IJornada() {
             Lunes 23 de octubre
           </h3>
           <div className="md:grid md:grid-cols-2 xl:grid-cols-4 gap-4">
-          {sessionsMonday.map((session, index) => {
+          {items?.filter((item) => item.ocurrenceDay === "Lunes 23 de octubre de 2023").map((session, index) => {
             return (
               <VideoItem
                 key={index}
-                sessionTitle={session.sessionTitle}
-                sessionImg={session.sessionImg}
-                sessionLink={session.sessionLink}
+                session={session}
               />
             );
           })}
           </div>
-          <h3 className="text-xl my-2 md:my-4 md:mt-20 bg-orange_unam text-white p-2">
+          <h3 className="text-xl my-2 md:my-4 bg-orange_unam text-white p-2">
             Martes 24 de octubre
           </h3>
           <div className="md:grid md:grid-cols-2 xl:grid-cols-4 gap-4">
-          {sessionsTuesday.map((session, index) => {
+          {items?.filter((item) => item.ocurrenceDay === "Martes 24 de octubre de 2023").map((session, index) => {
             return (
               <VideoItem
                 key={index}
-                sessionTitle={session.sessionTitle}
-                sessionImg={session.sessionImg}
-                sessionLink={session.sessionLink}
+                session={session}
               />
             );
           })}
