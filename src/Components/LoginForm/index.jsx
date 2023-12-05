@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import Cookies from "universal-cookie";
 import "./LoginForm.css";
 
@@ -115,7 +114,7 @@ function LoginForm() {
     <>
       <div
         id="loginform-container"
-        className="flex flex-row justify-center items-center hidden"
+        className="flex-row justify-center items-center hidden"
       >
         <div id="loginform-message" className="hidden">
           <div>

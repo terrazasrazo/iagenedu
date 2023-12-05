@@ -6,8 +6,7 @@ function IJornada() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:6600/mainsessions/")
-    // fetch("https://ada.bunam.unam.mx/iagen-api/workshopassistants")
+    fetch("https://ada.bunam.unam.mx/iagen-api/mainsessions")
       .then((response) => response.json())
       .then((data) => {
         setItems(data)

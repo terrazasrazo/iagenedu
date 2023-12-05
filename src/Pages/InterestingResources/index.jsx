@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import interestingResources from "./resources";
+import { KeywordContext } from "../../Context";
 
 function InterestingResources() {
   const [items, setItems] = useState(null);
   const [filteredItems, setFilteredItems] = useState(null);
+  const context = useContext(KeywordContext);
 
   useEffect(() => {
     setItems(interestingResources);
@@ -130,12 +134,16 @@ function InterestingResources() {
                 <p className="mt-4">
                   {resource.keywords.map((keyword, index) => {
                     return (
-                      <span
+                      <NavLink
+                        to="/keywords/"
+                        className="text-center"
                         key={index}
-                        className="inline-block bg-amber-600 text-white text-xs py-1 px-2 rounded m-1"
+                        onClick={() => context.setKeyword(keyword)}
                       >
-                        {keyword}
-                      </span>
+                        <span className="bg-orange-900 text-white inline-block p-1 m-1 rounded-sm text-sm">
+                          {keyword}
+                        </span>
+                      </NavLink>
                     );
                   })}
                 </p>

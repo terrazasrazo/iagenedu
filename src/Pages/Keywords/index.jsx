@@ -26,8 +26,7 @@ function Keywords() {
     };
 
     if (context.keyword !== "") {
-      fetch("http://localhost:6600/keywords/", options)
-        // fetch("https://ada.bunam.unam.mx/iagen-api/users/login/", options)
+        fetch("https://ada.bunam.unam.mx/iagen-api/keywords/", options)
         .then((response) => response.json())
         .then((data) => {
           setItems(data);
@@ -48,7 +47,7 @@ function Keywords() {
         </NavLink>
       </h3>
       <section>
-        {items?.mainsessions?.length >= 0 ? (
+        {items?.mainsessions?.length > 0 ? (
           items?.mainsessions.map((item, index) => {
             return <MainSessionItem key={index} session={item} />;
           })
