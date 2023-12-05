@@ -19,6 +19,7 @@ const MainSessionItem = (session) => {
           <p className="text-right">
             <NavLink
               to={`/i-jornada/${session.session.sessionImage}`}
+              target="_blank"
               className="inline-block bg-orange_unam text-white p-2 rounded-md"
             >
               ver la sesión

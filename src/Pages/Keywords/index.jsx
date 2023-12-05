@@ -11,8 +11,6 @@ function Keywords() {
   const context = useContext(KeywordContext);
   const [items, setItems] = useState(null);
 
-  console.log(context.keyword);
-
   useEffect(() => {
     let formData = {
       keyword: context.keyword,
@@ -33,7 +31,6 @@ function Keywords() {
         .then((response) => response.json())
         .then((data) => {
           setItems(data);
-          console.log(data);
         });
     } else {
       setItems(null);
