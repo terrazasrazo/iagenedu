@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Cookies from "universal-cookie";
+import { KeywordContext } from "../../Context";
 import "./WorkshopDetails.css";
 import Speaker from "../../Components/Speaker";
 
@@ -14,6 +16,7 @@ const hideRegisterWorkshopMessage = () => {
 function WorkshopDetails() {
   const { id } = useParams();
   const [items, setItems] = useState(0);
+  const context = useContext(KeywordContext);
 
   useEffect(() => {
     fetch(`https://ada.bunam.unam.mx/iagen-api/workshops/${id}`)
@@ -69,6 +72,8 @@ function WorkshopDetails() {
           if (item.level === 1) workshopLevel = "bg-blue-400";
           if (item.level === 2) workshopLevel = "bg-blue-600";
           if (item.level === 3) workshopLevel = "bg-blue-900";
+
+          const keywordsArray = item.keywords.split(",");
 
           return (
             <section key={item.id} id="workshop-details">
@@ -134,7 +139,22 @@ function WorkshopDetails() {
                       <h4 className="text-xl text-orange-700 my-2">
                         Palabras clave
                       </h4>
-                      <p className="text-sm">{item.keywords}</p>
+                      <div>
+                        {keywordsArray.map((keyword, index) => {
+                          return (
+                            <NavLink
+                              to="/keywords/"
+                              className="text-center"
+                              key={index}
+                              onClick={() => context.setKeyword(keyword)}
+                            >
+                              <span className="bg-orange-900 text-white inline-block p-1 m-1 rounded-sm text-sm">
+                                {keyword}
+                              </span>
+                            </NavLink>
+                          );
+                        })}
+                      </div>
                     </div>
                   </aside>
                 </main>
