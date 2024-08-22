@@ -38,19 +38,16 @@ const Navbar = () => {
           <NavLink to="/">Inicio</NavLink>
         </li>
         <li>
-          <NavLink to="/i-jornada/" className="font-semibold">I Jornada</NavLink>
+          <a href="/i-jornada/" className="font-semibold">I Jornada</a>
         </li>
         <li>
-          <NavLink to="/workshops/">Talleres</NavLink>
+          <a href="/i-jornada/workshops/">Talleres</a>
         </li>
         <li>
           <NavLink to="/resources/">Recursos</NavLink>
         </li>
         <li>
           <NavLink to="/recomendaciones/" className="text-orange_unam font-semibold">Recomendaciones</NavLink>
-        </li>
-        <li>
-          <a href="/docs/recomendaciones_uso_iagen_docencia_unam_2023.pdf" target="_blank" rel="noopener noreferrer"></a>
         </li>
         <li>{startSession()}</li>
       </ul>
