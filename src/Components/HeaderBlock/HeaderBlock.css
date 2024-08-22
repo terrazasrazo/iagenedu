@@ -1,0 +1,54 @@
+.header {
+  @apply text-iagen_lightgray;
+}
+nav {
+  @apply mx-auto flex items-center justify-between p-4 md:px-8;
+}
+.nav__logo {
+  @apply flex flex-1;
+}
+.nav__mobile--button {
+  @apply flex md:hidden;
+}
+.nav__mobile--button-button {
+  @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 bg-iagen_bluehover;
+}
+.nav__mobile--button-icon {
+  @apply h-6 w-6;
+}
+.nav__desktop {
+  @apply hidden md:flex md:gap-x-6 justify-center;
+}
+.nav__desktop--collapsible {
+  @apply relative;
+}
+.nav__desktop--collapsible-button {
+  @apply flex items-center gap-x-1 leading-6;
+}
+.nav__desktop--collapsible-button-icon {
+  @apply h-5 w-5 flex-none ;
+}
+.nav__desktop--collapsible-container {
+  @apply -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-xl bg-iagen_blue shadow-lg border border-iagen_lightgray;
+}
+.nav__desktop--collapsible-container-content {
+  @apply p-4;
+}
+.nav__desktop--collapsible-container-content-item {
+  @apply relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-iagen_bluehover;
+}
+.nav__desktop--collapsible-container-content-item-icon {
+  @apply flex h-11 w-11 flex-none items-center justify-center;
+}
+.nav__desktop--collapsible-container-content-item-label {
+  @apply flex-auto;
+}
+.nav__desktop--collapsible-container-content-item-label-link {
+  @apply block font-semibold;
+}
+.nav__desktop--collapsible-container-content-item-label-date {
+  @apply mt-1 text-iagen_lightgrayhover;
+}
+.nav__desktop--item {
+  @apply leading-6;
+}
