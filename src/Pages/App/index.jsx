@@ -71,7 +71,7 @@ function App() {
             <div className="sm:w-1/4">
               <h1 className="inline-block">
                 <NavLink to="/">
-                  <img src="/images/iagen-icon.svg" width="120" alt="" />
+                  <img src="/i-jornada/images/iagen-icon.svg" width="120" alt="" />
                 </NavLink>
               </h1>
             </div>
@@ -86,7 +86,7 @@ function App() {
               <p className="mt-3">
                 <a href="https://cuaed.unam.mx/" target="_blank" rel="noreferrer">
                   <img
-                    src="/images/logo-cuaed.png"
+                    src="/i-jornada/images/logo-cuaed.png"
                     width="150"
                     alt="Coordinación de Universidad Abierta y Educación Digital"
                   />

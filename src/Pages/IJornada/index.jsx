@@ -6,7 +6,6 @@ function IJornada() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    //fetch("http://localhost:6600/mainsessions")
     fetch("https://ada.bunam.unam.mx/iagen-api/mainsessions")
       .then((response) => response.json())
       .then((data) => {
@@ -69,7 +68,7 @@ function IJornada() {
           return (
             <div key={index} className="p-2 block">
               <a href={item.url} target="_blank" rel="noreferrer">
-                <img src={item.logo} alt={item.name} />
+                <img src={`/i-jornada${item.logo}`} alt={item.name} />
               </a>
             </div>
           );

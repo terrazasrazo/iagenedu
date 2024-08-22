@@ -5,7 +5,7 @@ const BioItem = ({ bio }) => {
     <div className="my-4">
       <div>
         <img
-          src={`/images/bios/${bio.photo}`}
+          src={`/i-jornada/images/bios/${bio.photo}`}
           alt={bio.name}
           className="mx-auto w-32 rounded-full"
         />
