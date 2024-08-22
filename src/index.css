@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
-    background: url("/images/background.jpg") no-repeat center center fixed;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    @apply text-blue_unam;
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: ultra-expanded;
+  @apply bg-iagen_blue text-iagen_lightgray;
 }

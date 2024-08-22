@@ -4,6 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
+        iagen_magenta: "#A6374B",
+        iagen_darkgray: "#4C5259",
+        iagen_blue: "#132B40",
+        iagen_bluehover: "#0a1722",
+        iagen_cyan: "#1C98A6",
+        iagen_lightgray: "#F2F2F2",
+        iagen_lightgrayhover: "#D7D7D7",
         blue_unam: "#10223a",
         yellow_unam: "#eea149",
         orange_unam: "#db7a4b"
