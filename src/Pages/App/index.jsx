@@ -52,12 +52,12 @@ function App() {
           <div className="container mx-auto grid grid-cols-2 lg:grid-cols-5">
             <div className="">
               <p>Desarrollado por</p>
-              <p>
-                <a href="" target="_blank" rel="">
+              <p className="mt-3">
+                <a href="https://cuaed.unam.mx/" target="_blank" rel="noreferrer">
                   <img
-                    src="/images/bunam_mooc.svg"
-                    width="120"
-                    alt="B@UNAM & MOOC"
+                    src="/images/logo-cuaed.png"
+                    width="150"
+                    alt="Coordinación de Universidad Abierta y Educación Digital"
                   />
                 </a>
               </p>
@@ -65,8 +65,8 @@ function App() {
             <div className="order-3 lg:order-2 col-span-2 lg:col-span-3 mt-8">
               <h5 className="text-lg font-semibold">Aviso</h5>
               <p>
-                Coordinación de Universidad Abierta y Educación a Distancia de
-                la UNAM. ©Todos los derechos reservados 2023. Hecho en México.
+                Coordinación de Universidad Abierta y Educación Digital de
+                la UNAM. ©Todos los derechos reservados 2024. Hecho en México.
                 Este sitio puede ser reproducido con fines no lucrativos,
                 siempre y cuando no se mutile, se cite la fuente completa y su
                 dirección electrónica, de otra forma, se requiere permiso previo
@@ -92,8 +92,8 @@ function App() {
               <p>
                 Contacto:
                 <br />
-                <a href="mailto:iagenedu@cuaieed.unam.mx" className="underline">
-                  iagenedu@cuaieed.unam.mx
+                <a href="mailto:iagenedu@cuaed.unam.mx" className="underline">
+                  iagenedu@cuaed.unam.mx
                 </a>
               </p>
               <p className="mt-2">
