@@ -1,50 +1,32 @@
-#home {
-    @apply mb-10;
+.jornada-2 img {
+  @apply w-full border border-iagen_blue hover:border-iagen_cyan rounded;
+
 }
-#home > section, #home > header {
-    @apply flex flex-row items-center;
+.hero {
+  @apply px-4 md:px-0 md:grid md:grid-flow-row gap-0 my-20 xl:mx-20 grid-cols-4 grid-rows-7 lg:grid-rows-6 xl:grid-rows-5;
 }
-#home > header h1 {
-    @apply text-6xl;
-    font-weight: 600;
+
+.video {
+  grid-area: 1 / 2 / 5 / 5;
+  @apply relative;
 }
-#home h2 {
-    @apply text-2xl mt-4 my-2;
-    font-weight: 500;
+
+.description {
+  @apply bg-iagen_bluehover/90 md:px-10 md:border md:border-iagen_lightgray flex flex-col justify-center relative mt-10 md:mt-0 md:rounded md:py-4 xl:py-6;
+  grid-area: 3 / 1 / 6 / 3;
 }
-#home > header h2 {
-    @apply text-4xl;
+.description--text {
+    @apply text-lg xl:text-xl 2xl:text-2xl lg:leading-10;
 }
-#home section#schedule {
-    @apply items-start;
+
+@media screen and (max-width: 1024px) {
+  .description {
+    grid-area: 3 / 1 / 7 / 3;
+  } 
 }
-#home section#schedule > div {
-    @apply p-2;
-}
-#home h3 {
-    font-weight: 500;
-    @apply text-xl my-2 bg-orange_unam text-white p-2;
-}
-#home ul li {
-    list-style-type: square;
-    @apply ml-4 mb-2;
-}
-#home > section#institutions {
-    @apply flex-none;
-}
-#institutions ul {
-    @apply flex flex-row justify-center items-center;
-}
-#institutions ul li {
-    @apply list-none flex-1 ml-0;
-}
-#institutions ul li a {
-    @apply inline;
-}
-#institutions img {
-    
-    display: block
-}
-.program-item {
-    @apply flex flex-row items-center;
-}
+
+@media screen and (max-width: 768px) {
+    .description {
+      grid-area: 3 / 1 / 8 / 3;
+    } 
+  }
