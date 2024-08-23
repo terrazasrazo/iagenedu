@@ -150,9 +150,9 @@ function HeaderBlock() {
           </NavLink>
         </div>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <a href="#" className="leading-6">
+          {/*<a href="#" className="leading-6">
             Iniciar sesión <span aria-hidden="true">&rarr;</span>
-          </a>
+          </a>*/}
         </div>
       </nav>
       <div id="mobile-menu" className="hidden" role="dialog" aria-modal="true">
@@ -234,12 +234,12 @@ function HeaderBlock() {
                 </a>
               </div>
               <div className="py-6">
-                <a
+                {/*<a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 hover:bg-iagen_bluehover"
                 >
                   Iniciar sesión <span aria-hidden="true">&rarr;</span>
-                </a>
+                </a>*/}
               </div>
             </div>
           </div>

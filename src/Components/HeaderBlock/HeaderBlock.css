@@ -2,7 +2,7 @@ header {
   @apply text-iagen_lightgray bg-iagen_blue z-40 relative;
 }
 nav {
-  @apply mx-auto flex items-center justify-between p-4 md:px-8;
+  @apply mx-auto flex items-center justify-between p-4 md:px-8 lg:text-lg;
 }
 .nav__logo {
   @apply flex flex-1;
@@ -20,7 +20,7 @@ nav {
   @apply hidden md:flex md:gap-x-6 justify-center;
 }
 .nav__desktop--collapsible {
-  @apply relative;
+  @apply relative p-2;
 }
 .nav__desktop--collapsible-button {
   @apply flex items-center gap-x-1 leading-6;
@@ -50,5 +50,5 @@ nav {
   @apply mt-1 text-iagen_lightgrayhover;
 }
 .nav__desktop--item {
-  @apply leading-6;
+  @apply leading-6 p-2 rounded hover:bg-iagen_bluehover;
 }
