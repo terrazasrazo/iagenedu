@@ -3,7 +3,9 @@ import "./HeaderBlock.css";
 
 function HeaderBlock() {
   const showJornadas = () => {
-    const jornadasMenu = document.querySelector(".nav__desktop--collapsible-container");
+    const jornadasMenu = document.querySelector(
+      ".nav__desktop--collapsible-container"
+    );
     const jornadasClasses = jornadasMenu.classList;
     jornadasClasses.remove("hidden");
     jornadasClasses.add("absolute");
@@ -11,7 +13,9 @@ function HeaderBlock() {
   };
 
   const hideJornadas = () => {
-    const jornadasMenu = document.querySelector(".nav__desktop--collapsible-container");
+    const jornadasMenu = document.querySelector(
+      ".nav__desktop--collapsible-container"
+    );
     const jornadasClasses = jornadasMenu.classList;
     setTimeout(() => {
       jornadasClasses.remove("absolute");
@@ -37,7 +41,11 @@ function HeaderBlock() {
         <div className="nav__logo">
           <NavLink to="/">
             <span className="sr-only">IAGen en Educación UNAM</span>
-            <img src="/images/iagen-unam.png" alt="IAGen en Educación UNAM" height={80} />
+            <img
+              src="/images/iagen-unam.png"
+              alt="IAGen en Educación UNAM"
+              height={80}
+            />
           </NavLink>
         </div>
         <div className="nav__mobile--button">
@@ -107,7 +115,10 @@ function HeaderBlock() {
                     </svg>
                   </div>
                   <div className="nav__desktop--collapsible-container-content-item-label">
-                    <a href="#" className="nav__desktop--collapsible-container-content-item-label-link">
+                    <a
+                      href="/i-jornada/"
+                      className="nav__desktop--collapsible-container-content-item-label-link"
+                    >
                       I Jornada
                     </a>
                     <p className="nav__desktop--collapsible-container-content-item-label-date">
@@ -131,9 +142,12 @@ function HeaderBlock() {
                     </svg>
                   </div>
                   <div className="nav__desktop--collapsible-container-content-item-label">
-                    <a href="#" className="nav__desktop--collapsible-container-content-item-label-link">
+                    <NavLink
+                      to="/2ajornada"
+                      className="nav__desktop--collapsible-container-content-item-label-link"
+                    >
                       2<sup>a</sup> Jornada
-                    </a>
+                    </NavLink>
                     <p className="nav__desktop--collapsible-container-content-item-label-date">
                       14 y 15 de noviembre <strong>2024</strong>
                     </p>
@@ -207,31 +221,31 @@ function HeaderBlock() {
                   </button>
                   <div className="mt-2 space-y-2" id="disclosure-1">
                     <a
-                      href="#"
+                      href="/i-jornada/"
                       className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-iagen_lightgrayhover hover:bg-iagen_bluehover"
                     >
                       I Jornada
                     </a>
-                    <a
-                      href="#"
+                    <NavLink
+                      to="/2ajornada"
                       className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-iagen_lightgrayhover hover:bg-iagen_bluehover"
                     >
                       2<sup>a</sup> Jornada
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
-                <a
-                  href="#"
+                <NavLink
+                  to="/resources"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-iagen_bluehover"
                 >
                   Recursos
-                </a>
-                <a
-                  href="#"
+                </NavLink>
+                <NavLink
+                  to="/recomendaciones"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-iagen_bluehover"
                 >
                   Recomendaciones
-                </a>
+                </NavLink>
               </div>
               <div className="py-6">
                 {/*<a
