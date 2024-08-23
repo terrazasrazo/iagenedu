@@ -1,44 +1,54 @@
-const institutions = [
+const institutionsArray = [
   {
-    name: "CECAv",
-    logo: "/images/logo-cecav.png",
+    name: "C3",
+    logo: "/images/institutions/logo-c3.png",
     url: "https://cecav.unam.mx/",
   },
   {
-    name: "CUAIEED",
-    logo: "/images/logo-cuaieed.png",
+    name: "CECAv",
+    logo: "/images/institutions/logo-cecav.png",
+    url: "https://cecav.unam.mx/",
+  },
+  {
+    name: "CEIDE",
+    logo: "/images/institutions/logo-ceide.png",
+    url: "https://cecav.unam.mx/",
+  },
+  {
+    name: "CUAED",
+    logo: "/images/institutions/logo-cuaed.png",
     url: "https://cuaieed.unam.mx/",
   },
   {
     name: "DGBSDI",
-    logo: "/images/logo-dgbsdi.png",
+    logo: "/images/institutions/logo-dgbsdi.png",
     url: "https://www.dgb.unam.mx/",
   },
   {
     name: "DGTIC",
-    logo: "/images/logo-dgtic.png",
+    logo: "/images/institutions/logo-dgtic.png",
     url: "https://www.tic.unam.mx/",
   },
   {
     name: "FI",
-    logo: "/images/logo-fi.png",
+    logo: "/images/institutions/logo-fi.png",
     url: "https://www.ingenieria.unam.mx/",
   },
   {
     name: "ICAT",
-    logo: "/images/logo-icat.png",
+    logo: "/images/institutions/logo-icat.png",
     url: "https://www.icat.unam.mx/",
   },
   {
     name: "IER",
-    logo: "/images/logo-ier.png",
+    logo: "/images/institutions/logo-ier.png",
     url: "https://www.ier.unam.mx/",
   },
   {
     name: "IISUE",
-    logo: "/images/logo-iisue.png",
+    logo: "/images/institutions/logo-iisue.png",
     url: "https://www.iisue.unam.mx/",
   },
 ];
 
-export default institutions;
+export default institutionsArray;

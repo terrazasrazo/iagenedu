@@ -1,0 +1,9 @@
+.institutions {
+  @apply grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10;
+}
+.institutions__item {
+  @apply flex flex-col items-center justify-center border-b hover:border-iagen_lightgrayhover;
+}
+.institutions__item:nth-child(9) {
+  @apply sm:col-start-2 lg:col-start-4 xl:col-start-9;
+}
