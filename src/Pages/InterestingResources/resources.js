@@ -614,6 +614,30 @@ const interestingResources = [
     ],
   },
   {
+    resourceTitle: "Gamma",
+    resourceType: "Herramientas",
+    resourceURL: "https://gamma.app/",
+    keywords: ["inteligencia artificial", "matemáticas", "cálculo"],
+  },
+  {
+    resourceTitle: "Tome",
+    resourceType: "Herramientas",
+    resourceURL: "https://tome.app/",
+    keywords: ["inteligencia artificial", "escritura", "productividad"],
+  },
+  {
+    resourceTitle: "SlidesAI",
+    resourceType: "Herramientas",
+    resourceURL: "https://www.slidesai.io/",
+    keywords: ["inteligencia artificial", "presentaciones", "diseño"],
+  },
+  {
+    resourceTitle: "beautiful.ai",
+    resourceType: "Herramientas",
+    resourceURL: "https://www.beautiful.ai/",
+    keywords: ["inteligencia artificial", "presentaciones", "diseño"],
+  },
+  {
     resourceTitle: "A Generative AI Primer",
     resourceType: "Artículo",
     resourceURL:
@@ -623,13 +647,6 @@ const interestingResources = [
       "generación de texto",
       "introducción",
     ],
-  },
-  {
-    resourceTitle: "Guide on the use of Generative AI",
-    resourceType: "Lineamientos",
-    resourceURL:
-      "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html",
-    keywords: ["inteligencia artificial", "generación de texto", "guía"],
   },
   {
     resourceTitle: "PromptBox",
@@ -680,6 +697,13 @@ const interestingResources = [
     keywords: ["inteligencia artificial", "investigación", "explicación"],
   },
   {
+    resourceTitle: "Guide on the use of Generative AI",
+    resourceType: "Lineamientos",
+    resourceURL:
+      "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html",
+    keywords: ["inteligencia artificial", "generación de texto", "guía"],
+  },
+  {
     resourceTitle: "Connected Papers",
     resourceType: "Herramientas",
     resourceURL: "https://www.connectedpapers.com/",
@@ -692,30 +716,7 @@ const interestingResources = [
       "https://observatorio.tec.mx/edu-news/las-mejores-ia-para-el-investigador-moderno/",
     keywords: ["inteligencia artificial", "investigación", "recomendaciones"],
   },
-  {
-    resourceTitle: "Gamma",
-    resourceType: "Herramientas",
-    resourceURL: "https://gamma.app/",
-    keywords: ["inteligencia artificial", "matemáticas", "cálculo"],
-  },
-  {
-    resourceTitle: "Tome",
-    resourceType: "Herramientas",
-    resourceURL: "https://tome.app/",
-    keywords: ["inteligencia artificial", "escritura", "productividad"],
-  },
-  {
-    resourceTitle: "SlidesAI",
-    resourceType: "Herramientas",
-    resourceURL: "https://www.slidesai.io/",
-    keywords: ["inteligencia artificial", "presentaciones", "diseño"],
-  },
-  {
-    resourceTitle: "beautiful.ai",
-    resourceType: "Herramientas",
-    resourceURL: "https://www.beautiful.ai/",
-    keywords: ["inteligencia artificial", "presentaciones", "diseño"],
-  },
+  
 
   /*
   {

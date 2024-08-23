@@ -1,0 +1,24 @@
+.resource {
+  @apply border border-iagen_lightgray hover:bg-iagen_cyan rounded my-2 md:mx-2;
+}
+.resource a {
+  @apply block p-4;
+}
+.resource--title {
+  @apply block mb-2 text-xl font-bold text-iagen_cyan;
+}
+.resource:hover .resource--title {
+  @apply text-iagen_blue;
+}
+.resource--type {
+  @apply text-iagen_lightgray py-1 px-2 rounded-tl rounded-bl -mr-4;
+}
+.resoure--keywords {
+  @apply mt-4;
+}
+.resource--keywords-item {
+  @apply bg-iagen_cyan text-iagen_lightgray inline-block p-1 m-1 rounded-sm text-sm;
+}
+.resource:hover .resource--keywords-item {
+  @apply bg-iagen_blue;
+}
