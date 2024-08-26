@@ -1,5 +1,10 @@
 const institutionsArray = [
   {
+    name: "CEIDE",
+    logo: "/images/institutions/logo-ceide.png",
+    url: "https://cecav.unam.mx/",
+  },
+  {
     name: "C3",
     logo: "/images/institutions/logo-c3.png",
     url: "https://cecav.unam.mx/",
@@ -7,11 +12,6 @@ const institutionsArray = [
   {
     name: "CECAv",
     logo: "/images/institutions/logo-cecav.png",
-    url: "https://cecav.unam.mx/",
-  },
-  {
-    name: "CEIDE",
-    logo: "/images/institutions/logo-ceide.png",
     url: "https://cecav.unam.mx/",
   },
   {
