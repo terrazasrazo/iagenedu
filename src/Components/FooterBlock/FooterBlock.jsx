@@ -5,7 +5,7 @@ function FooterBlock() {
     <footer className="footer">
       <div className="footer__content">
         <div>
-          <p>Desarrollado por</p>
+          <p>Sitio desarrollado por</p>
           <p className="mt-3">
             <a href="https://cuaed.unam.mx/" target="_blank" rel="noreferrer">
               <img
