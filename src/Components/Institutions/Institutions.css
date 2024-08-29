@@ -1,9 +1,21 @@
 .institutions {
-  @apply my-20 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10;
+  @apply my-36 p-4;
 }
-.institutions__item {
-  @apply flex flex-col items-center justify-center border-b border-iagen_blue hover:bg-iagen_bluehover hover:border-iagen_lightgrayhover rounded-ss rounded-se;
+.institutions__header {
+  @apply text-2xl md:text-3xl font-bold text-iagen_lightgray mb-10;
 }
-.institutions__item:nth-child(9) {
+.institutions__header h2 {
+  @apply inline-block p-2 border-b-4 border-iagen_magenta;
+}
+.institutions__header h2 > br {
+  @apply hidden lg:inline;
+}
+.institutions__content {
+  @apply grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10;
+}
+.institutions__content--item {
+  @apply flex flex-col items-center justify-center border-b border-iagen_blue hover:bg-iagen_bluehover hover:border-iagen_magentahover rounded-ss rounded-se;
+}
+.institutions__content--item:nth-child(9) {
   @apply sm:col-start-2 lg:col-start-4 xl:col-start-9;
 }
