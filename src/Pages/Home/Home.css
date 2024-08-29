@@ -12,7 +12,7 @@
 }
 
 .description {
-  @apply bg-iagen_bluehover/90 md:px-10 md:border md:border-iagen_lightgray flex flex-col justify-center relative mt-10 md:mt-0 md:rounded md:py-4 xl:py-6;
+  @apply bg-iagen_bluehover/90 md:px-10 md:border md:border-iagen_lightgray flex flex-col justify-center relative mt-10 md:mt-0 md:rounded p-4 md:py-4 xl:py-6;
   grid-area: 3 / 1 / 6 / 3;
 }
 .description--text {

@@ -17,6 +17,7 @@ function Home() {
             src="video/teachers.mp4"
             type="video/mp4"
             autoPlay
+            muted
             loop
           ></video>
           <img
