@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         iagen_magenta: "#A6374B",
+        iagen_magentahover: "#7D2A39",
         iagen_darkgray: "#4C5259",
         iagen_blue: "#132B40",
         iagen_bluehover: "#0a1722",
