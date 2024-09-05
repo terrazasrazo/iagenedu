@@ -6,7 +6,7 @@ function InstitutionsBlock() {
     <section className="institutions">
       <header className="institutions__header">
         <h2>
-          Dependencias que conforman el Grupo de Trabajo <br />de Inteligencia
+          Entidades y dependencias que conforman<br />el Grupo de Trabajo de Inteligencia
           Artificial Generativa <br />en Educación de la UNAM
         </h2>
       </header>
