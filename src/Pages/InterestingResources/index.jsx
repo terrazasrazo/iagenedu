@@ -49,8 +49,8 @@ function InterestingResources() {
     <>
       <section className="p-4">
         <header>
-          <h1 className="text-orange_unam text-3xl mb-8">
-            Recursos interesantes sobre IA Generativa en Educación
+          <h1 className="text-iagen_cyan text-3xl mb-8">
+            Recursos sobre IA Generativa en Educación
           </h1>
         </header>
         <section className="border-b border-gray-300">

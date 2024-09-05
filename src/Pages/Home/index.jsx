@@ -23,19 +23,18 @@ function Home() {
           <img
             src="images/overlay.png"
             alt="Overlay"
-            className="w-full absolute top-0"
+            className="w-full absolute bottom-0"
           />
         </div>
         <div className="description">
           <p className="description--text">
             Universidades de todo el mundo están integrando la inteligencia
             artificial generativa en la enseñanza. En la UNAM, este enfoque se
-            impulsa desde la CEIDE<sup className="text-xs">*</sup> como parte del Plan de Desarrollo
+            impulsa desde el <strong>Grupo de Trabajo de IAGen en educación</strong> como parte del Plan de Desarrollo
             Institucional. Aquí ofrecemos eventos, como las Jornadas UNAM sobre
             el tema, recursos para su análisis en el aula, publicaciones y guías
             para su implementación.
           </p>
-          <p className="text-xs mt-6">* Coordinación de Evaluación, Innovación y Desarrollo Educativos</p>
         </div>
       </section>
       <InstitutionsBlock />

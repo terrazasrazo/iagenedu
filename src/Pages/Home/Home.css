@@ -19,6 +19,10 @@
     @apply text-lg xl:text-xl 2xl:text-2xl lg:leading-10;
 }
 
+.description--text > strong {
+  @apply text-iagen_cyan;
+}
+
 @media screen and (max-width: 1024px) {
   .description {
     grid-area: 3 / 1 / 7 / 3;
