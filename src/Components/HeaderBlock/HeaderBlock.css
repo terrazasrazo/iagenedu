@@ -52,3 +52,9 @@ nav {
 .nav__desktop--item {
   @apply leading-6 p-2 rounded hover:bg-iagen_bluehover;
 }
+.nav__desktop--login {
+  @apply p-2 rounded hover:bg-iagen_cyan;
+}
+.nav__mobile--login {
+  @apply -mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 hover:bg-iagen_cyan;
+}
