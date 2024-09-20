@@ -10,6 +10,7 @@ export default {
         iagen_blue: "#132B40",
         iagen_bluehover: "#0a1722",
         iagen_cyan: "#1C98A6",
+        iagen_cyanhover: "#24a8b7",
         iagen_lightgray: "#F2F2F2",
         iagen_lightgrayhover: "#D7D7D7",
         blue_unam: "#10223a",

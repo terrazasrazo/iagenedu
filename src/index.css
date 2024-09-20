@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Gloria Hallelujah", cursive;
-  font-weight: 400;
+body, input, select, option {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
   font-stretch: ultra-expanded;
+}
+body {
   @apply bg-iagen_blue text-iagen_lightgray;
 }
