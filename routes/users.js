@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 const sendRecoveryEmail = async (email, hash) => {
   const mailOptions = {
-    from: '"Grupo de trabajo sobre Inteligencia Artificial Generativa de la UNAM" <iagenedu@cuaieed.unam.mx>',
+    from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
     to: email,
     subject: "🔐 Has solicitado la recuperación de tu contraseña",
     text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${urlDestiny}/recovery/${hash}`,
@@ -36,7 +36,7 @@ const sendRecoveryEmail = async (email, hash) => {
 
 const sendConfirmationChangePassword = async (email) => {
   const mailOptions = {
-    from: '"Grupo de trabajo sobre Inteligencia Artificial Generativa de la UNAM" <iagenedu@cuaieed.unam.mx>',
+    from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
     to: email,
     subject: "🔑 Has realizado un cambio de tu contraseña",
     text: `Hemos procesado tu cambio de contraseña. Ahora puedes ingresar a la plataforma con tu nueva contraseña.`,
@@ -158,16 +158,18 @@ module.exports = (app) => {
       });
   });
 
-  app.route("/users/login").post(function (req, res) {
+  app.route("/users/signin").post(function (req, res) {
+    const email = req.body.email;
+    const password = crypto
+      .createHash("sha256", secret)
+      .update(req.body.password)
+      .digest("hex");
     db.users
       .findOne({
         where: {
-          email: req.body.email,
-          password: crypto
-            .createHash("sha256", secret)
-            .update(req.body.password)
-            .digest("hex"),
-          active: true,
+          email: email,
+          password: password,
+          active: 2,
         },
         attributes: {
           include: [
@@ -182,6 +184,7 @@ module.exports = (app) => {
                     FROM workshopassistants
                     WHERE
                         workshopassistants.userId = id
+                        AND workshopassistants.createdAt >= "2024-09-01 00:00:00"
                 )`),
               "workshopsCount",
             ],
@@ -206,13 +209,71 @@ module.exports = (app) => {
               });
             });
         } else {
-          res.json({ error: "Usuario o contraseña incorrectos" });
+          db.users
+            .findOne({
+              where: {
+                email: email,
+                password: password,
+                active: 1,
+              },
+              attributes: {
+                include: [
+                  "id",
+                  "email",
+                  "active",
+                  "createdAt",
+                  "updatedAt",
+                  [
+                    db.Sequelize.literal(`(
+                          SELECT COUNT(*)
+                          FROM workshopassistants
+                          WHERE
+                              workshopassistants.userId = id
+                              AND workshopassistants.createdAt >= "2024-09-01 00:00:00"
+                      )`),
+                    "workshopsCount",
+                  ],
+                ],
+              },
+            })
+            .then((user) => {
+              if (user) {
+                db.users
+                  .update(
+                    { active: 2 },
+                    {
+                      where: {
+                        id: user.id,
+                      },
+                    }
+                  )
+                  .then((user) => {
+                    db.sigecos
+                      .findOne({
+                        where: {
+                          userId: user.id,
+                        },
+                      })
+                      .then((sigeco) => {
+                        res.json({
+                          id: user.id,
+                          email: user.email,
+                          name: sigeco.name,
+                          lastname: sigeco.lastname,
+                          worshopsCount: user.get("workshopsCount"),
+                        });
+                      });
+                  });
+              } else {
+                res.json({ error: "Usuario o contraseña incorrectos" });
+              }
+            });
         }
       });
   });
 
   app.route("/users/recoverypassword").post(function (req, res) {
-    const hash = crypto.randomBytes(32).toString ('hex');
+    const hash = crypto.randomBytes(32).toString("hex");
     db.users
       .update(
         { hash: hash },
@@ -250,11 +311,11 @@ module.exports = (app) => {
   });
 
   app.route("/users/changepassword").post(function (req, res) {
-    const newHash = crypto.randomBytes(32).toString ('hex');
+    const newHash = crypto.randomBytes(32).toString("hex");
     const newPassword = crypto
-    .createHash("sha256", secret)
-    .update(req.body.password)
-    .digest("hex");
+      .createHash("sha256", secret)
+      .update(req.body.password)
+      .digest("hex");
 
     db.users
       .update(
@@ -270,18 +331,21 @@ module.exports = (app) => {
         }
       )
       .then((user) => {
-        if(user[0] === 0){
-          res.json({newPassword: false})
+        if (user[0] === 0) {
+          res.json({ newPassword: false });
         } else {
-          db.users.findOne({
-            where:{
-            hash: newHash,
-            password: newPassword
-          }}).then(sendUser => {
-            sendConfirmationChangePassword(sendUser.email).then(() => {
-              res.json({newPassword: true})
+          db.users
+            .findOne({
+              where: {
+                hash: newHash,
+                password: newPassword,
+              },
             })
-          })
+            .then((sendUser) => {
+              sendConfirmationChangePassword(sendUser.email).then(() => {
+                res.json({ newPassword: true });
+              });
+            });
         }
       });
   });
@@ -318,5 +382,15 @@ module.exports = (app) => {
         ],
       })
       .then((user) => res.json(user[0].workshops));
+  });
+
+  app.route("/users/count").get(function (req, res) {
+    db.users
+      .count({
+        where: {
+          active: 2,
+        },
+      })
+      .then((count) => res.json(count));
   });
 };
