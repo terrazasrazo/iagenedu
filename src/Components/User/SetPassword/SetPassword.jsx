@@ -107,7 +107,7 @@ const SetPassword = () => {
       <div className="setpassword">
         <h2 className="setpassword__title">Establecer contraseña</h2>
         <p className="setpassword__advice">&nbsp;</p>
-        <p className="setpassword__message">
+        <p className="setpassword__message warning">
           El enlace para establecer contraseña no es válido.
         </p>
         <div className="setpassword__advice">
@@ -115,9 +115,9 @@ const SetPassword = () => {
           <NavLink to="/user/recovery">Solicitar recuperación</NavLink>
         </div>
         <div className="setpassword__item">
-          <a href="" className="setpassword__item--button-link">
+          <NavLink to="/" className="setpassword__item--button">
             Ir al inicio
-          </a>
+          </NavLink>
         </div>
       </div>
     );
