@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
+import Cookies from "universal-cookie";
 import "./HeaderBlock.css";
 
 function HeaderBlock() {
+  const cookies = new Cookies();
+
   const showJornadas = () => {
     const jornadasMenu = document.querySelector(
       ".nav__desktop--collapsible-container"
@@ -143,7 +146,7 @@ function HeaderBlock() {
                   </div>
                   <div className="nav__desktop--collapsible-container-content-item-label">
                     <NavLink
-                      to="/2ajornada"
+                      to="/2a-jornada"
                       className="nav__desktop--collapsible-container-content-item-label-link"
                     >
                       2<sup>a</sup> Jornada
@@ -164,9 +167,15 @@ function HeaderBlock() {
           </NavLink>
         </div>
         <div className="hidden md:flex md:flex-1 md:justify-end">
-          <NavLink to="/user/signin" className="nav__desktop--login">
-            Iniciar sesión <span aria-hidden="true">&rarr;</span>
-          </NavLink>
+          {cookies.get("id") ? (
+            <NavLink to="/user/profile" className="nav__desktop--login">
+              {cookies.get("name")} {cookies.get("lastname")}
+            </NavLink>
+          ) : (
+            <NavLink to="/user/signin" className="nav__desktop--login">
+              Iniciar sesión <span aria-hidden="true">&rarr;</span>
+            </NavLink>
+          )}
         </div>
       </nav>
       <div id="mobile-menu" className="hidden" role="dialog" aria-modal="true">
@@ -227,7 +236,7 @@ function HeaderBlock() {
                       I Jornada
                     </a>
                     <NavLink
-                      to="/2ajornada"
+                      to="/2a-jornada"
                       className="block rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-iagen_lightgrayhover hover:bg-iagen_bluehover"
                     >
                       2<sup>a</sup> Jornada

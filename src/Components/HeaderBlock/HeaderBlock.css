@@ -1,4 +1,4 @@
-header {
+body > header {
   @apply text-iagen_lightgray bg-iagen_blue z-40 relative;
 }
 nav {
