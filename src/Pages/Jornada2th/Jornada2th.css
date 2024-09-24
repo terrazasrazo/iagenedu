@@ -1,0 +1,9 @@
+.jornada2th__header {
+  @apply bg-iagen_purple w-full;
+}
+.jornada2th__header nav  ul{
+  @apply text-center mx-auto;
+}
+.jornada2th__header ul li {
+  @apply inline-block mx-4;
+}
