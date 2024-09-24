@@ -1,0 +1,13 @@
+.welcome {
+  @apply grid grid-cols-2;
+}
+.welcome__announcement {
+  @apply px-40 min-h-screen max-h-max content-center;
+  background: radial-gradient(ellipse at center,  #451457 0%,#132b40 100%);
+}
+.welcome__announcement--button-schedule {
+  @apply hover:text-iagen_cyan font-semibold border-b hover:border-iagen_cyan text-iagen_orange border-iagen_orange inline-block py-1 mt-10;
+}
+.welcome__form {
+  @apply bg-iagen_lightgray text-iagen_blue min-h-screen max-h-max content-center;
+}
