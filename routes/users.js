@@ -18,8 +18,8 @@ const sendActivateEmail = async (email, hash) => {
     from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
     to: email,
     subject: "☑️ Has solicitado validar tu cuenta",
-    text: `Hemos recibido una solicitud para activar tu cuenta. Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${process.env.urlDestiny}/user/activate/${this.hash}`,
-    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para activar tu cuenta.</p><p>Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente <a href="${process.env.urlDestiny}/user/activate/${hash}">enlace</a>.</p></div>`,
+    text: `Hemos recibido una solicitud para activar tu cuenta. Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${process.env.URL_DESTINY}/user/activate/${this.hash}`,
+    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para activar tu cuenta.</p><p>Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente <a href="${process.env.URL_DESTINY}/user/activate/${hash}">enlace</a>.</p></div>`,
   };
 
   try {
@@ -37,8 +37,8 @@ const sendRecoveryEmail = async (email, hash) => {
     from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
     to: email,
     subject: "🔐 Has solicitado la recuperación de tu contraseña",
-    text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${process.env.urlDestiny}/user/setpassword/${hash}`,
-    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma.</p><p>Para recuperar tu contraseña, por favor accede al siguiente <a href="${process.env.urlDestiny}/user/setpassword/${hash}">enlace</a>.</p></div>`,
+    text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${process.env.URL_DESTINY}/user/setpassword/${hash}`,
+    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma.</p><p>Para recuperar tu contraseña, por favor accede al siguiente <a href="${process.env.URL_DESTINY}/user/setpassword/${hash}">enlace</a>.</p></div>`,
   };
 
   try {
@@ -57,7 +57,7 @@ const sendConfirmationChangePassword = async (email) => {
     to: email,
     subject: "🔑 Has realizado un cambio de tu contraseña",
     text: `Hemos procesado tu cambio de contraseña. Ahora puedes ingresar a la plataforma con tu nueva contraseña.`,
-    html: `<div style="font-size: 24px"><p>Hemos procesado tu cambio de contraseña.</p><p>Ahora puedes ingresar a la plataforma con tu nueva contraseña.</p><p>Da clic en el siguiente <a href="${process.env.urlDestiny}" target="_blank">enlace</a> para ir a la plataforma.</p></div>`,
+    html: `<div style="font-size: 24px"><p>Hemos procesado tu cambio de contraseña.</p><p>Ahora puedes ingresar a la plataforma con tu nueva contraseña.</p><p>Da clic en el siguiente <a href="${process.env.URL_DESTINY}" target="_blank">enlace</a> para ir a la plataforma.</p></div>`,
   };
 
   try {
@@ -125,7 +125,9 @@ module.exports = (app) => {
                           if (sendMail.accepted) {
                             res.json({ messageId: sendMail.messageId });
                           } else {
-                            res.json({ error: "Error al enviar correo electrónico" });
+                            res.json({
+                              error: "Error al enviar correo electrónico",
+                            });
                           }
                         });
                       });
@@ -254,7 +256,10 @@ module.exports = (app) => {
                   })
                   .then((user) => {
                     if (user) {
-                      res.json({ error: "<p>La cuenta no ha sido activada.</p><p>¿No cuenta con el correo de activación? <a href=\"/user/getactivate\">Solicitar activación</a></p>" });
+                      res.json({
+                        error:
+                          '<p>La cuenta no ha sido activada.</p><p>¿No cuenta con el correo de activación? <a href="/user/getactivate">Solicitar activación</a></p>',
+                      });
                     } else {
                       res.json({ error: "Usuario y/o contraseña incorrectos" });
                     }
@@ -289,9 +294,7 @@ module.exports = (app) => {
     const newHash = crypto.randomBytes(32).toString("hex");
     db.users
       .update(
-        { active: 2,
-          hash: newHash,
-         },
+        { active: 2, hash: newHash },
         {
           where: {
             hash: req.body.hash,
@@ -414,15 +417,32 @@ module.exports = (app) => {
             attributes: [
               "id",
               "title",
-              "level",
-              "purpouse",
               "zoomSession",
               "ocurrenceDay",
             ],
+            through: {
+              attributes: [], 
+              where: {
+                createdAt: {
+                  [db.Sequelize.Op.gte]: new Date("2024-09-01T00:00:00"),
+                },
+              },
+            },
           },
         ],
       })
-      .then((user) => res.json(user[0].workshops));
+      .then((users) => {
+        if (users.length > 0) {
+          // Devuelve los workshops asociados al usuario
+          res.json(users[0].workshops);
+        } else {
+          res.json([]);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        res.status(500).send("Error al obtener los workshops");
+      });
   });
 
   app.route("/users/count").get(function (req, res) {

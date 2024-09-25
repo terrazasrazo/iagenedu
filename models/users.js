@@ -24,8 +24,8 @@ module.exports = (sequelize, type) => {
       from: '"IAGen en Educación UNAM" <iagenedu@cuaieed.unam.mx>',
       to: this.email,
       subject: "✅ Comencemos validando tu cuenta",
-      text: `Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${process.env.urlDestiny}/user/activate/${this.hash}`,
-      html: `<div style="font-size: 24px"><p>Te damos la bienvenida al sitio web de la <strong>2a. Jornada de IA Generativa en Educación, UNAM 2024</strong>.</p><p>Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente <a href="${process.env.urlDestiny}/user/activate/${this.hash}">enlace</a>.</p></div>`,
+      text: `Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${process.env.URL_DESTINY}/user/activate/${this.hash}`,
+      html: `<div style="font-size: 24px"><p>Te damos la bienvenida al sitio web de la <strong>2a. Jornada de IA Generativa en Educación, UNAM 2024</strong>.</p><p>Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente <a href="${process.env.URL_DESTINY}/user/activate/${this.hash}">enlace</a>.</p></div>`,
     };
 
     try {

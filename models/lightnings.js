@@ -4,6 +4,7 @@ module.exports = (sequelize, type) => {
       thematicLine: type.STRING,
       educationalLevel: type.STRING,
       knwoledgeArea: type.STRING,
+      userId: type.INTEGER,
       keywords: type.STRING
     });
   };

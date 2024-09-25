@@ -28,6 +28,7 @@ module.exports = (app) => {
         thematicLine: req.body.category,
         educationalLevel: req.body.video,
         knwoledgeArea: req.body.user,
+        userId: req.body.userId,
         keywords: "",
       })
       .then((lightning) => res.json(lightning));
