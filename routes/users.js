@@ -15,13 +15,32 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+const sendActivateEmail = async (email, hash) => {
+  const mailOptions = {
+    from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
+    to: email,
+    subject: "☑️ Has solicitado validar tu cuenta",
+    text: `Hemos recibido una solicitud para activar tu cuenta. Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${urlDestiny}/user/activate/${this.hash}`,
+    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para activar tu cuenta.</p><p>Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente <a href="${urlDestiny}/activate/${hash}">enlace</a>.</p></div>`,
+  };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Message sent: %s", info.messageId);
+    return info;
+  } catch (error) {
+    console.log("Error to send email messages", error);
+    return error;
+  }
+};
+
 const sendRecoveryEmail = async (email, hash) => {
   const mailOptions = {
     from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
     to: email,
     subject: "🔐 Has solicitado la recuperación de tu contraseña",
-    text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${urlDestiny}/recovery/${hash}`,
-    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma.</p><p>Para recuperar tu contraseña, por favor accede al siguiente <a href="${urlDestiny}/recovery/${hash}">enlace</a>.</p></div>`,
+    text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${urlDestiny}/setpassword/${hash}`,
+    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma.</p><p>Para recuperar tu contraseña, por favor accede al siguiente <a href="${urlDestiny}/setpassword/${hash}">enlace</a>.</p></div>`,
   };
 
   try {
@@ -54,7 +73,7 @@ const sendConfirmationChangePassword = async (email) => {
 };
 
 module.exports = (app) => {
-  app.route("/users").post(function (req, res) {
+  app.route("/users/signup").post(function (req, res) {
     const hash = crypto
       .createHash("sha256", secret)
       .update(req.body.email + req.body.password)
@@ -108,7 +127,7 @@ module.exports = (app) => {
                           if (sendMail.accepted) {
                             res.json({ messageId: sendMail.messageId });
                           } else {
-                            res.json({ error: "Error to send email messages" });
+                            res.json({ error: "Error al enviar correo electrónico" });
                           }
                         });
                       });
@@ -119,51 +138,10 @@ module.exports = (app) => {
       });
   });
 
-  app.route("/users/:id").put(function (req, res) {
-    db.users
-      .update(req.body, {
-        where: {
-          id: req.params.id,
-        },
-      })
-      .then((user) => res.json(user));
-  });
-
-  app.route("/sigeco/:id").put(function (req, res) {
-    db.sigecos
-      .update(req.body, {
-        where: {
-          userId: req.params.id,
-        },
-      })
-      .then((sigeco) => res.json(sigeco));
-  });
-
-  app.route("/users/activate/:hash").get(function (req, res) {
-    db.users
-      .update(
-        { active: true },
-        {
-          where: {
-            hash: req.params.hash,
-          },
-        }
-      )
-      .then((user) => {
-        if (user[0] === 0) {
-          res.json({ user: false });
-        } else {
-          res.json({ user: true });
-        }
-      });
-  });
-
   app.route("/users/signin").post(function (req, res) {
     const email = req.body.email;
-    const password = crypto
-      .createHash("sha256", secret)
-      .update(req.body.password)
-      .digest("hex");
+    const password = req.body.password;
+
     db.users
       .findOne({
         where: {
@@ -265,14 +243,96 @@ module.exports = (app) => {
                       });
                   });
               } else {
-                res.json({ error: "Usuario o contraseña incorrectos" });
+                db.users
+                  .findOne({
+                    where: {
+                      email: email,
+                      password: password,
+                      active: 0,
+                    },
+                    attributes: {
+                      include: ["id"],
+                    },
+                  })
+                  .then((user) => {
+                    if (user) {
+                      res.json({ error: "<p>La cuenta no ha sido activada.</p><p>¿No cuenta con el correo de activación? <a href=\"/user/getactivate\">Solicitar activación</a></p>" });
+                    } else {
+                      res.json({ error: "Usuario y/o contraseña incorrectos" });
+                    }
+                  });
               }
             });
         }
       });
   });
 
-  app.route("/users/recoverypassword").post(function (req, res) {
+  app.route("/users/:id").put(function (req, res) {
+    db.users
+      .update(req.body, {
+        where: {
+          id: req.params.id,
+        },
+      })
+      .then((user) => res.json(user));
+  });
+
+  app.route("/sigeco/:id").put(function (req, res) {
+    db.sigecos
+      .update(req.body, {
+        where: {
+          userId: req.params.id,
+        },
+      })
+      .then((sigeco) => res.json(sigeco));
+  });
+
+  app.route("/users/activate").post(function (req, res) {
+    const newHash = crypto.randomBytes(32).toString("hex");
+    db.users
+      .update(
+        { active: 2,
+          hash: newHash,
+         },
+        {
+          where: {
+            hash: req.body.hash,
+          },
+        }
+      )
+      .then((user) => {
+        if (user[0] === 0) {
+          res.json({ user: false });
+        } else {
+          res.json({ user: true });
+        }
+      });
+  });
+
+  app.route("/users/getactivate").post(function (req, res) {
+    const hash = crypto.randomBytes(32).toString("hex");
+    db.users
+      .update(
+        { hash: hash },
+        {
+          where: {
+            email: req.body.email,
+            active: 0,
+          },
+        }
+      )
+      .then((user) => {
+        if (user[0] === 0) {
+          res.json({ user: false });
+        } else {
+          sendActivateEmail(req.body.email, hash).then((sendMail) => {
+            res.json({ user: sendMail.messageId });
+          });
+        }
+      });
+  });
+
+  app.route("/users/recovery").post(function (req, res) {
     const hash = crypto.randomBytes(32).toString("hex");
     db.users
       .update(
@@ -294,22 +354,6 @@ module.exports = (app) => {
       });
   });
 
-  app.route("/users/validatehash").post(function (req, res) {
-    db.users
-      .findOne({
-        where: {
-          hash: req.body.hash,
-        },
-      })
-      .then((user) => {
-        if (user) {
-          res.json({ date: user.updatedAt });
-        } else {
-          res.json({ date: false });
-        }
-      });
-  });
-
   app.route("/users/changepassword").post(function (req, res) {
     const newHash = crypto.randomBytes(32).toString("hex");
     const newPassword = crypto
@@ -326,7 +370,6 @@ module.exports = (app) => {
         {
           where: {
             hash: req.body.hash,
-            updatedAt: req.body.updatedAt,
           },
         }
       )
