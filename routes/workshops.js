@@ -53,17 +53,35 @@ module.exports = (app) => {
   app.route("/workshopassistants").post(function (req, res) {
     db.workshops.findByPk(req.body.workshopId).then((workshop) => {
       db.users.findByPk(req.body.userId).then((user) => {
-        workshop
-          .addUser(user)
-          .then((workshopassistant) => {
-            if(workshopassistant === undefined){
-              res.json({error: "Ya te encuentras registrado en este taller"})
+        // Verificar si el usuario ya está inscrito en otro workshop con el mismo ocurrenceDay
+        user
+          .getWorkshops({
+            where: {
+              ocurrenceDay: workshop.ocurrenceDay, // Comparar el día de ocurrencia
+            },
+          })
+          .then((existingWorkshops) => {
+            if (existingWorkshops.length > 0) {
+              // El usuario ya está inscrito en otro workshop el mismo día
+              res.json({
+                error:
+                  "Ya estás inscrito en un taller que ocurre el mismo día.",
+              });
             } else {
-              res.json(workshopassistant)
+              // Proceder con la inscripción si no está inscrito en otro workshop el mismo día
+              workshop.addUser(user).then((workshopassistant) => {
+                if (workshopassistant === undefined) {
+                  res.json({
+                    error: "Ya te encuentras registrado en este taller",
+                  });
+                } else {
+                  res.json(workshopassistant);
+                }
+              });
             }
           });
       });
-    });
+    });    
   });
 
   app.route("/workshops/:id").get(function (req, res) {
