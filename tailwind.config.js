@@ -13,6 +13,12 @@ export default {
         iagen_cyanhover: "#24a8b7",
         iagen_lightgray: "#F2F2F2",
         iagen_lightgrayhover: "#D7D7D7",
+        iagen_purple: "#451457",
+        iagen_purplehover: "#631d7c",
+        iagen_orange: "#db7a4b",
+        iagen_orangehover: "#da662d",
+        iagen_yellow: "#e3a000",
+        iagen_yellowhover: "#eea149",
         blue_unam: "#10223a",
         yellow_unam: "#eea149",
         orange_unam: "#db7a4b"
