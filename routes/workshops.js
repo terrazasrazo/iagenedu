@@ -2,7 +2,7 @@ const express = require("express"),
   db = require("../sequelize"),
   app = express();
 
-const { QueryTypes } = require("sequelize");
+const { QueryTypes, where } = require("sequelize");
 
 module.exports = (app) => {
   app.route("/").get(function (req, res) {
@@ -24,6 +24,11 @@ module.exports = (app) => {
   app.route("/workshopassistants").get(function (req, res) {
     db.workshops
       .findAll({
+        where: {
+          createdAt: {
+            [db.Sequelize.Op.gt]: new Date('2024-09-24T00:00:00')
+          },
+        },
         attributes: {
           include: [
             [
