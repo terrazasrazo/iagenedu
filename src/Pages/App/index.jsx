@@ -15,7 +15,7 @@ import Keywords from "../Keywords";
 const AppRoutes = () => {
   return useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/2a-jornada/:jornadaState?", element: <Jornada2th /> },
+    { path: "/2a-jornada/:jornadaState?/:jornadaDetails?", element: <Jornada2th /> },
     { path: "/resources", element: <InterestingResources /> },
     { path: "/recomendaciones", element: <Findings /> },
     { path: "/keywords/", element: <Keywords /> },

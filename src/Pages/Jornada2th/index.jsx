@@ -1,18 +1,17 @@
 import { useParams, NavLink } from "react-router-dom";
+import Schedule from "../../Components/Jornada2th/Schedule/Schedule";
+import Workshops from "../../Components/Jornada2th/Workshops/Workshops";
+import WorkshopDetails from "../../Components/Jornada2th/WorkshopDetails/WorkshopDetails";
 import "./Jornada2th.css";
 
 function Jornada2th() {
-  const { jornadaState } = useParams();
+  const { jornadaState, jornadaDetails } = useParams();
 
   const jornadaStateData = (jornadaState) => {
-    if (jornadaState === "workshops") {
-      return (
-        <article className="jornada2th__workshops">
-          <h3 className="text-center text-4xl my-40">
-            Próximamente los talleres
-          </h3>
-        </article>
-      );
+    if (jornadaState === "workshops" && jornadaDetails === undefined) {
+      return <Workshops />;
+    } else if (jornadaState === "workshops" && jornadaDetails !== undefined) {
+      return <WorkshopDetails />;
     } else if (jornadaState === "call-for") {
       return (
         <article className="jornada2th__callfor">
@@ -20,13 +19,7 @@ function Jornada2th() {
         </article>
       );
     } else {
-      return (
-        <article className="jornada2th__schedule">
-          <h3 className="text-center text-4xl my-40">
-            Próximamente el programa completo
-          </h3>
-        </article>
-      );
+      return <Schedule />;
     }
   };
 
@@ -47,13 +40,6 @@ function Jornada2th() {
           </ul>
         </nav>
       </header>
-      {jornadaState === "call-for" ? (
-        <></>
-      ) : (
-        <article className="jornada2th__savethedate">
-          <img src="/images/jornada2th.jpg" alt="2a Jornada" />
-        </article>
-      )}
       {jornadaStateData(jornadaState)}
     </section>
   );
