@@ -44,7 +44,7 @@ const Profile = () => {
             <div className="profile__schedule empty">
               <p>No hay presentaciones enviadas.</p>
               <p className="profile__button-empty">
-                <NavLink to="/2a-jornada/call-for/">Ir a la convocatoria</NavLink>
+                <NavLink to="/user/submission/">Hacer un envío</NavLink>
               </p>
             </div>
           </article>

@@ -9,6 +9,7 @@ import GetActivate from "../../Components/User/GetActivate/GetActivate";
 import Recovery from "../../Components/User/Recovery/Recovery";
 import SetPassword from "../../Components/User/SetPassword/SetPassword";
 import Profile from "../../Components/User/Profile/Profile";
+import Submission from "../../Components/User/Submission/Submission";
 import "./User.css";
 
 function User() {
@@ -61,6 +62,8 @@ function User() {
     } else {
       return <Profile />;
     }
+  } else if (userState === "submission") {
+    return <Submission />;
   } else {
     return (
       <section className="welcome">

@@ -1,5 +1,5 @@
 footer.footer {
-  @apply p-6 mt-8 text-sm bg-iagen_bluehover text-iagen_lightgrayhover;
+  @apply p-6 text-sm bg-iagen_bluehover text-iagen_lightgrayhover;
 }
 .footer__content {
   @apply container mx-auto grid grid-cols-2 lg:grid-cols-5;
