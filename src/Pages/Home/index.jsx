@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <section className="jornada-2">
-        <NavLink to="/2ajornada">
+        <NavLink to="/2a-jornada">
           <img src="images/jornada2th.jpg" alt="2a Jornada" />
         </NavLink>
       </section>
