@@ -20,4 +20,16 @@ module.exports = (app) => {
       })
       .then((lightnings) => res.json(lightnings));
   });
+
+  app.route("/lightning/").post(function (req, res) {
+    db.lightnings
+      .create({
+        title: req.body.title,
+        thematicLine: req.body.category,
+        educationalLevel: req.body.video,
+        knwoledgeArea: req.body.user,
+        keywords: "",
+      })
+      .then((lightning) => res.json(lightning));
+  });
 };
