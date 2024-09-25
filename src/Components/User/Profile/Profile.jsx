@@ -1,19 +1,31 @@
+import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Cookies from "universal-cookie";
 import HeaderBlock from "../../HeaderBlock/HeaderBlock";
 import FooterBlock from "../../FooterBlock/FooterBlock";
-
 import "./Profile.css";
-import { NavLink } from "react-router-dom";
 
 const Profile = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
   const cookies = new Cookies();
+  const [workshops, setWorkshops] = useState(null);
+
+  useEffect(() => {
+    fetch(`${API_URL}/users/agenda/${cookies.get("id")}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setWorkshops(data);
+      });
+  }, []);
 
   return (
     <>
       <HeaderBlock />
       <section className="profile">
         <header className="profile__info">
-          <div><h2>Mi espacio</h2></div>
+          <div>
+            <h2>Mi espacio</h2>
+          </div>
           <div>
             <NavLink to="/user/signout">Cerrar sesión</NavLink>
           </div>
@@ -30,12 +42,25 @@ const Profile = () => {
           </article>
           <article className="profile__events--workshops">
             <h3>Mis talleres</h3>
-            <div className="profile__schedule empty">
-              <p>No cuenta con talleres programados.</p>
-              <p className="profile__button-empty">
-                <NavLink to="/2a-jornada/workshops/">Ver talleres</NavLink>
-              </p>
-            </div>
+            {console.log(workshops)}
+            {(workshops === null || workshops.length === 0) ? (
+              <div className="profile__schedule empty">
+                <p>No cuenta con talleres programados.</p>
+                <p className="profile__button-empty">
+                  <NavLink to="/2a-jornada/workshops/">Ver talleres</NavLink>
+                </p>
+              </div>
+            ) : (
+              <div className="profile__schedule">
+                {workshops.map((workshop) => (
+                  <div key={workshop.id}>
+                    <p>{workshop.title}</p>
+                    <p>{workshop.ocurrenceDay}</p>
+                    <p>{workshop.ocurrenceTime}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </article>
         </section>
         <div className="profile__submissions">
