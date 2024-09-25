@@ -30,7 +30,7 @@ const Card = (data) => {
         <main className="p-2 py-4 text-gray-700">
           <p className="text-right mb-4"><span className="rounded text-gray-50 text-sm p-2">{data.data.ocurrenceDay}</span></p>
           <p>{data.data.purpouse}</p>
-          <p className="text-right"><NavLink to={`/workshops/${data.data.id}`} className="inline-block bg-orange_unam text-white my-2 p-2 rounded-md">ver detalles del taller</NavLink></p>
+          <p className="text-right"><NavLink to={`/2a-jornada/workshops/${data.data.id}`} className="inline-block bg-orange_unam text-white my-2 p-2 rounded-md">ver detalles del taller</NavLink></p>
         </main>
         <footer className="tags">
         {keywordsArray.map((keyword, index) => {
