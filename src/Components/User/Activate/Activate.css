@@ -1,5 +1,5 @@
 .activate {
-  @apply px-40 py-10 text-gray-600; 
+  @apply px-4 lg:px-20 xl:px-40 py-10 text-gray-600; 
 }
 .activate__title {
   @apply text-2xl font-bold mb-10;

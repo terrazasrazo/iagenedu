@@ -12,7 +12,7 @@
   @apply text-white text-3xl font-semibold;
 }
 .profile__events {
-  @apply container mx-auto mt-10 grid grid-cols-2 gap-4;
+  @apply container mx-auto mt-10 md:grid md:grid-cols-2 md:gap-4;
 }
 .profile__events > article {
   @apply p-6 mb-10;
@@ -22,6 +22,18 @@
 }
 .profile__events--workshops {
   @apply bg-iagen_purple;
+}
+.profile__schedule--item {
+  @apply p-4 border border-iagen_lightgray;
+}
+.profile__schedule--item p:first-child {
+  @apply text-lg font-semibold mb-2;
+}
+.profile__schedule--item p:last-child {
+  @apply text-right mt-2;
+}
+.profile__schedule--item p:last-child a {
+  @apply bg-iagen_orange hover:bg-iagen_orangehover p-2 inline-block rounded font-semibold;
 }
 .profile__events h3, .profile__submissions h3 {
   @apply text-2xl font-semibold mb-4;

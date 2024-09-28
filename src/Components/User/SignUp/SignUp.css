@@ -1,5 +1,5 @@
 .signup {
-  @apply p-10 text-gray-600; 
+  @apply px-4 lg:px-10 py-10 text-gray-600; 
 }
 .signup__title {
   @apply text-2xl font-bold mb-4;
@@ -20,10 +20,10 @@
   @apply text-iagen_magenta font-semibold hover:underline;
 }
 .signup__form {
-  @apply grid grid-cols-2 gap-4;
+  @apply xl:grid xl:grid-cols-2 xl:gap-4;
 }
 .signup__item {
-  @apply mb-8;
+  @apply mb-8 content-start;
 }
 .signup__item:first-child {
   @apply col-span-2 mt-4;

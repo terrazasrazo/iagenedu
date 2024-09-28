@@ -42,7 +42,6 @@ const Profile = () => {
           </article>
           <article className="profile__events--workshops">
             <h3>Mis talleres</h3>
-            {console.log(workshops)}
             {(workshops === null || workshops.length === 0) ? (
               <div className="profile__schedule empty">
                 <p>No cuenta con talleres programados.</p>
@@ -53,10 +52,14 @@ const Profile = () => {
             ) : (
               <div className="profile__schedule">
                 {workshops.map((workshop) => (
-                  <div key={workshop.id}>
+                  <div className="profile__schedule--item" key={workshop.id}>
                     <p>{workshop.title}</p>
                     <p>{workshop.ocurrenceDay}</p>
-                    <p>{workshop.ocurrenceTime}</p>
+                    <p>
+                      <NavLink to={`/2a-jornada/workshops/${workshop.id}`}>
+                        Ver detalles
+                      </NavLink>
+                    </p>
                   </div>
                 ))}
               </div>

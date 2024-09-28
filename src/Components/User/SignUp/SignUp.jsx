@@ -194,7 +194,7 @@ const SignUp = () => {
           />
         </div>
         <div className="signup__item">
-          <label htmlFor="account" className="signup__item--label">Número de trabajador o número de cuenta UNAM</label>
+          <label htmlFor="account" className="signup__item--label">Número de trabajador o de cuenta UNAM</label>
           <input
             type="number"
             className="signup__item--input"
