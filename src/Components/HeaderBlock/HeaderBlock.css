@@ -5,7 +5,7 @@ nav {
   @apply mx-auto flex items-center justify-between p-4 md:px-8 lg:text-lg;
 }
 .nav__logo {
-  @apply flex flex-1;
+  @apply flex flex-1 w-1/4;
 }
 .nav__mobile--button {
   @apply flex md:hidden;
@@ -17,7 +17,7 @@ nav {
   @apply h-6 w-6;
 }
 .nav__desktop {
-  @apply hidden md:flex md:gap-x-6 justify-center;
+  @apply hidden md:flex md:gap-x-6 justify-center w-2/4;
 }
 .nav__desktop--collapsible {
   @apply relative p-2;
@@ -52,9 +52,21 @@ nav {
 .nav__desktop--item {
   @apply leading-6 p-2 rounded hover:bg-iagen_bluehover;
 }
-.nav__desktop--login {
+.nav__desktop--session {
+  @apply hidden md:flex md:flex-1 justify-end w-1/4;
+}
+.nav__desktop--session .session__login--button {
   @apply p-2 rounded hover:bg-iagen_cyan;
 }
-.nav__mobile--login {
-  @apply -mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 hover:bg-iagen_cyan;
+.nav__mobile--session {
+  @apply z-20;
+}
+.nav__mobile--session .session__login--button {
+  @apply -mx-3 block rounded-lg px-3 mt-6 py-2 text-base leading-7 hover:bg-iagen_cyan;
+}
+.nav__mobile--session_link {
+  @apply -mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-iagen_bluehover;
+}
+.nav__mobile--session_link-jornadas {
+  @apply block rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-iagen_lightgrayhover hover:bg-iagen_bluehover;
 }
