@@ -1,24 +1,21 @@
 .resource {
-  @apply border border-iagen_lightgray hover:bg-iagen_cyan rounded my-2 md:mx-2;
+  @apply border border-iagen_lightgray rounded my-4 md:mx-2 p-4;
 }
-.resource a {
-  @apply block p-4;
+.resource__title {
+  @apply block mb-2 text-xl font-medium text-iagen_cyan;
 }
-.resource--title {
-  @apply block mb-2 text-xl font-bold text-iagen_cyan;
-}
-.resource:hover .resource--title {
-  @apply text-iagen_blue;
-}
-.resource--type {
+.resource__type {
   @apply text-iagen_lightgray py-1 px-2 rounded-tl rounded-bl -mr-4;
 }
-.resoure--keywords {
+.resource__keywords {
   @apply mt-4;
 }
-.resource--keywords-item {
-  @apply bg-iagen_cyan text-iagen_lightgray inline-block p-1 m-1 rounded-sm text-sm;
+.resource__keywords-item {
+  @apply bg-iagen_cyan hover:bg-iagen_purple text-iagen_lightgray inline-block p-1 m-1 rounded-sm text-sm;
 }
-.resource:hover .resource--keywords-item {
-  @apply bg-iagen_blue;
+.resource__link {
+  @apply text-right border-t border-iagen_lightgray mt-4 pt-2;
+}
+.resource__link--item {
+  @apply inline-block bg-iagen_magenta hover:bg-iagen_magentahover text-white py-1 px-2 rounded;
 }

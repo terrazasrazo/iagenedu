@@ -1,7 +1,12 @@
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { KeywordContext } from "../../Context";
 import "./ResourceItem.css";
 
 function ResourceItem({ item, index }) {
+  const context = useContext(KeywordContext);
+
   const resourceTypeColor = (resourceType) => {
     switch (resourceType) {
       case "Artículo":
@@ -25,32 +30,40 @@ function ResourceItem({ item, index }) {
 
   return (
     <article key={index} className="resource">
-      <a href={item.resourceURL} target="_blank" rel="noreferrer">
-        <h3 className="resource--title">
-          {item.resourceTitle}
-        </h3>
-        <p className="text-right">
-          <span
-            className={`${resourceTypeColor(
-              item.resourceType
-            )} resource--type`}
-          >
-            {item.resourceType}
-          </span>
-        </p>
-        <p className="resoure--keywords">
-          {item.keywords.map((keyword, index) => {
-            return (
-              <span
-                key={index}
-                className="resource--keywords-item"
-              >
+      <h3 className="resource__title">{item.resourceTitle}</h3>
+      <p className="text-right">
+        <span
+          className={`${resourceTypeColor(item.resourceType)} resource__type`}
+        >
+          {item.resourceType}
+        </span>
+      </p>
+      <p className="resource__keywords">
+        {item.keywords.map((keyword, index) => {
+          return (
+            <NavLink
+              to="/keywords/"
+              className="text-center"
+              key={index}
+              onClick={() => context.setKeyword(keyword)}
+            >
+              <span className="resource__keywords-item">
                 {keyword}
               </span>
-            );
-          })}
-        </p>
-      </a>
+            </NavLink>
+          );
+        })}
+      </p>
+      <p className="resource__link">
+        <a
+          href={item.resourceURL}
+          target="_blank"
+          rel="noreferrer"
+          className="resource__link--item"
+        >
+          Ir al recurso
+        </a>
+      </p>
     </article>
   );
 }

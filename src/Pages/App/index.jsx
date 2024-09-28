@@ -6,7 +6,7 @@ import FooterBlock from "../../Components/FooterBlock/FooterBlock";
 
 import Home from "../Home";
 import Jornada2th from "../Jornada2th";
-import InterestingResources from "../InterestingResources";
+import InterestingResources from "../InterestingResources/InterestingResources";
 import Findings from "../Findings";
 import User from "../User/User";
 import NotFound from "../NotFound";
