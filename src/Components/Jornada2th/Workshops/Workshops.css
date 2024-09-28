@@ -1,0 +1,6 @@
+.workshops {
+  @apply w-full
+}
+.workshops__filters {
+ @apply p-4 md:grid md:grid-cols-2 bg-iagen_bluehover;
+}

@@ -17,7 +17,7 @@ const Card = (data) => {
   const keywordsArray = data.data.keywords.split(",");
 
   return (
-    <article className={`${level} m-6 shadow-sm bg-gray-50 rounded border-t-4 border-b relative pb-2`}>
+    <article className={`${level} m-6 shadow-sm rounded border-t-8 border relative pb-2`}>
        
         <header className="p-4 border-b">
           <h1 className="text-2xl mb-4">{data.data.title}</h1>
@@ -27,10 +27,10 @@ const Card = (data) => {
             })
           }
         </header>
-        <main className="p-2 py-4 text-gray-700">
+        <main className="p-2 py-4 text-iagen_lightgray">
           <p className="text-right mb-4"><span className="rounded text-gray-50 text-sm p-2">{data.data.ocurrenceDay}</span></p>
           <p>{data.data.purpouse}</p>
-          <p className="text-right"><NavLink to={`/2a-jornada/workshops/${data.data.id}`} className="inline-block bg-orange_unam text-white my-2 p-2 rounded-md">ver detalles del taller</NavLink></p>
+          <p className="text-right"><NavLink to={`/2a-jornada/workshops/${data.data.id}`} className="inline-block bg-iagen_magenta hover:bg-iagen_magenta text-white my-2 p-2 rounded-md">ver detalles del taller</NavLink></p>
         </main>
         <footer className="tags">
         {keywordsArray.map((keyword, index) => {
@@ -41,7 +41,7 @@ const Card = (data) => {
               key={index}
               onClick={() => context.setKeyword(keyword)}
             >
-              <span className="bg-orange-900 text-white inline-block p-1 m-1 rounded text-sm">
+              <span className="bg-iagen_orange hover:bg-iagen_orangehover text-white inline-block p-1 m-1 rounded text-sm">
                 {keyword}
               </span>
             </NavLink>

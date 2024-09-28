@@ -7,6 +7,7 @@ import "./WorkshopDetails.css";
 
 function WorkshopDetails() {
   const [items, setItems] = useState(0);
+  const [seat, setSeat] = useState(0);
   const context = useContext(KeywordContext);
   const cookies = new Cookies();
   const navigate = useNavigate();
@@ -36,16 +37,39 @@ function WorkshopDetails() {
       availableSeatsColor = "bg-yellow-500";
     if (availableSeats < 10) availableSeatsColor = "bg-orange-500";
 
+    if (cookies.get("worshopsCount") > 0) {
+      fetch(
+        `${API_URL}/workshops/validate/${jornadaDetails}/${cookies.get("id")}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.registered === 1) {
+            setSeat(true);
+          }
+        });
+    }
+
     if (availableSeats > 0) {
-      return (
-        <a
-          onClick={() => registerToWorkshop(workshopId)}
-          className={`${availableSeatsColor} text-gray-50 p-4 rounded cursor-pointer`}
-          id="registerWorkshopButton"
-        >
-          registrarse al taller
-        </a>
-      );
+      if (seat) {
+        return (
+          <span
+            className="bg-green-500 text-gray-50 p-4 rounded"
+            id="registerWorkshopButton"
+          >
+            ya estás registrado en este taller
+          </span>
+        );
+      } else {
+        return (
+          <a
+            onClick={() => registerToWorkshop(workshopId)}
+            className={`${availableSeatsColor} text-gray-50 p-4 rounded cursor-pointer`}
+            id="registerWorkshopButton"
+          >
+            registrarse al taller
+          </a>
+        );
+      }
     } else {
       return (
         <span
@@ -77,12 +101,13 @@ function WorkshopDetails() {
           },
         };
 
-        fetch(
-          `${API_URL}/workshopassistants/`,
-          options
-        )
+        fetch(`${API_URL}/workshopassistants/`, options)
           .then((response) => response.json())
           .then((data) => {
+            if (data.error) {
+              displayRegisterWorkshopMessage(data.error);
+              return;
+            }
             if (data[0].workshopId && data[0].userId) {
               cookies.set("worshopsCount", cookies.get("worshopsCount") + 1, {
                 path: "/",
@@ -96,9 +121,7 @@ function WorkshopDetails() {
                 navigate("/user/profile");
               }, 10000);
             } else {
-              displayRegisterWorkshopMessage(
-                "Ocurrió un error inesperado. Intente más tarde."
-              );
+              displayRegisterWorkshopMessage(data.error);
             }
           })
           .catch((error) => {
@@ -122,22 +145,6 @@ function WorkshopDetails() {
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, [jornadaDetails]);
-
-  if (cookies.get("worshopsCount") > 0) {
-    fetch(
-      `${API_URL}/workshops/validate/${jornadaDetails}/${cookies.get("id")}`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.registered === 1) {
-          const registerWorkshopButton = document.getElementById(
-            "registerWorkshopButton"
-          );
-          registerWorkshopButton.classList.remove("pointer");
-          registerWorkshopButton.innerHTML = "estás registrado en este taller";
-        }
-      });
-  }
 
   const workshopContent = (content) => {
     const htmlContent = { __html: content };

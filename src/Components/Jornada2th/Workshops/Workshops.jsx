@@ -18,8 +18,8 @@ const Workshops = () => {
 
   return (
     <>
-      <section className="w-full">
-        <div className="bg-white p-4 shadow-sm rounded md:grid md:grid-cols-2">
+      <section className="workshops">
+        <div className="workshops__filters">
           <div>
           <p className="text-sm mb-2">
             Filtrar por nivel de conocimiento de IAGen que se requiere para el
