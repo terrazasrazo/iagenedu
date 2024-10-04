@@ -27,19 +27,19 @@ const Workshops = () => {
           </p>
           <p>
             <a
-              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-400 hover:bg-blue-500 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-orange-200 hover:bg-orange-300 text-iagen_blue text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.level === 1))}}
             >
               Elemental
             </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-600 hover:bg-blue-700 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-orange-400 hover:bg-orange-500 text-iagen_blue text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.level === 2))}}
             >
               Intermedio
             </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-900 hover:bg-blue-950 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-orange-600 hover:bg-orange-700 text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.level === 3))}}
             >
               Avanzado
@@ -56,13 +56,13 @@ const Workshops = () => {
           <p className="text-sm mb-2 mt-4 md:mt-0">Filtrar por fecha:</p>
           <p>
             <a
-              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-cyan-600 hover:bg-cyan-700 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-iagen_magenta hover:bg-iagen_magentahover text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.ocurrenceDay === "Jueves 14 de noviembre de 2024"))}}
             >
               Jueves 14 de noviembre
         </a>
             <a
-              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-cyan-800 hover:bg-cyan-900 text-white text-sm mr-2"
+              className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-iagen_purple hover:bg-iagen_purplehover text-white text-sm mr-2"
               onClick={() => {setFilteredItems(items?.filter((item) => item.ocurrenceDay === "Viernes 15 de noviembre de 2024"))}}
             >
               Viernes 15 de noviembre

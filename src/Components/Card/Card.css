@@ -2,40 +2,40 @@
     @apply rounded text-gray-50 p-2;
 }
 .basic {
-    @apply border-blue-400;
+    @apply border-orange-200;
 }
 .basic header {
-    @apply border-blue-400;
+    @apply border-orange-200;
 }
 .basic header h1 {
-    @apply text-blue-400;
+    @apply text-orange-200;
 }
 .basic main > p:first-child > span {
-    @apply bg-blue-400;
+    @apply bg-orange-200 text-iagen_blue;
 }
 
 .intermediate {
-    @apply border-blue-600;
+    @apply border-orange-400;
 }
 .intermediate header {
-    @apply border-blue-600;
+    @apply border-orange-400;
 }
 .intermediate header h1 {
-    @apply text-blue-600;
+    @apply text-orange-400;
 }
 .intermediate main > p:first-child > span {
-    @apply bg-blue-600;
+    @apply bg-orange-400 text-iagen_blue;
 }
 
 .advanced {
-    @apply border-blue-900;
+    @apply border-orange-600;
 }
 .advanced header {
-    @apply border-blue-900;
+    @apply border-orange-600;
 }
 .advanced header h1 {
-    @apply text-blue-900;
+    @apply text-orange-600;
 }
 .advanced main > p:first-child > span {
-    @apply bg-blue-900;
+    @apply bg-orange-600;
 }
