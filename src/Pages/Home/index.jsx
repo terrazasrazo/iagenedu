@@ -7,9 +7,14 @@ function Home() {
   return (
     <>
       <section className="jornada-2">
-        <NavLink to="/2a-jornada">
-          <img src="images/jornada2th.jpg" alt="2a Jornada" />
-        </NavLink>
+        <div className="jornada-2__image">
+          <img src="images/512.png" width="320" alt="2a. Jornada IAGen en Educación UNAM 2024" />
+        </div>
+        <div className="jornada-2__links">
+          <h2>2<sup>a</sup> Jornada IAGen en Educación UNAM 2024</h2>
+          <p className="jornada-2__links--item"><NavLink to="/user/signin">Registro y envío de trabajos</NavLink></p>
+          <p className="jornada-2__links--item"><NavLink to="/2a-jornada">Más información</NavLink></p>
+        </div>
       </section>
       <section className="hero">
         <div className="video">

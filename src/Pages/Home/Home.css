@@ -1,6 +1,26 @@
-.jornada-2 img {
-  @apply w-full border border-iagen_blue hover:border-iagen_cyan rounded;
-
+.jornada-2 {
+  background: rgb(166, 55, 75);
+  background: linear-gradient(
+    0deg,
+    rgba(166, 55, 75, 1) 0%,
+    rgba(19, 43, 64, 1) 100%
+  );
+  @apply md:grid md:grid-cols-3 md:gap-4 p-2 sm:px-4 md:p-8;
+}
+.jornada-2__image img {
+  @apply mx-auto;
+}
+.jornada-2__links {
+  @apply mt-12 md:mt-0 md:col-span-2 content-center;
+}
+.jornada-2__links h2 {
+  @apply text-2xl md:text-3xl xl:text-4xl 2xl:text-6xl font-bold lg:text-3xl text-right mb-8;
+}
+.jornada-2__links--item {
+  @apply text-right my-4;
+}
+.jornada-2__links--item a {
+  @apply inline-block bg-iagen_orange hover:bg-iagen_orangehover py-2 px-4 rounded;
 }
 .hero {
   @apply px-4 md:px-0 md:grid md:grid-flow-row gap-0 my-20 xl:mx-20 grid-cols-4 grid-rows-7 lg:grid-rows-6 xl:grid-rows-5;
@@ -16,7 +36,7 @@
   grid-area: 3 / 1 / 6 / 3;
 }
 .description--text {
-    @apply text-lg xl:text-xl 2xl:text-2xl lg:leading-10;
+  @apply text-lg xl:text-xl 2xl:text-2xl lg:leading-10;
 }
 
 .description--text > strong {
@@ -26,11 +46,11 @@
 @media screen and (max-width: 1024px) {
   .description {
     grid-area: 3 / 1 / 7 / 3;
-  } 
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .description {
-      grid-area: 3 / 1 / 8 / 3;
-    } 
+  .description {
+    grid-area: 3 / 1 / 8 / 3;
   }
+}
