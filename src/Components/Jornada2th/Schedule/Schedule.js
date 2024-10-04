@@ -25,7 +25,7 @@ const scheduleArray = [
             { time: "15:00", event: "Presentaciones relámpago" },
             { time: "16:00", event: "Mejores propuestas del certamen" },
             { time: "16:30", event: "Premiación y clausura" },
-            { time: "16:45", event: "Cierre día 2" },
+            { time: "16:45", event: "Cierre día 2" }
         ]
     },    
 ];

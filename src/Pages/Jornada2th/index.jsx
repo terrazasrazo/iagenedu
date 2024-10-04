@@ -1,5 +1,5 @@
 import { useParams, NavLink } from "react-router-dom";
-import Schedule from "../../Components/Jornada2th/Schedule/Schedule";
+import Schedule from "../../Components/Jornada2th/Schedule/ScheduleBlock";
 import Workshops from "../../Components/Jornada2th/Workshops/Workshops";
 import WorkshopDetails from "../../Components/Jornada2th/WorkshopDetails/WorkshopDetails";
 import "./Jornada2th.css";
