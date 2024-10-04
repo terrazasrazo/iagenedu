@@ -33,9 +33,9 @@ export default defineConfig({
         }]
       }
     })*/
-  ],
+  ],/*
   build: {
     outDir: "/var/www/html/iagenedu/",
     emptyOutDir: true
-  }
+  }*/
 });
