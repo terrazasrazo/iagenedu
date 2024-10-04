@@ -22,31 +22,31 @@ const Card = (data) => {
   };
 
   return (
-    <article className={`${level} m-6 shadow-sm rounded border-t-8 border relative pb-2`}>
+    <article className={`${level} workshop`}>
        
-        <header className="p-4 border-b">
-          <h1 className="text-2xl mb-4">{data.data.title}</h1>
+        <header className="workshop__header">
+          <h3 className="workshop__header--title">{data.data.title}</h3>
           {
             data.data.speakers?.map(speaker => {
-              return <h4 className="text-right text-lg text-gray-800" key={speaker.id}>{speaker.name}</h4>
+              return <h4 className="workshop__header--speaker" key={speaker.id}>{speaker.name}</h4>
             })
           }
         </header>
-        <main className="p-2 py-4 text-iagen_lightgray">
-          <p className="text-right mb-4"><span className="rounded text-gray-50 text-sm p-2">{data.data.ocurrenceDay}</span></p>
+        <main className="workshop__details">
+          <p className="workshop__details--ocurrence"><span>{data.data.ocurrenceDay}</span></p>
           {workshopContent(data.data.purpouse)}
-          <p className="text-right"><NavLink to={`/2a-jornada/workshops/${data.data.id}`} className="inline-block bg-iagen_magenta hover:bg-iagen_magenta text-white my-2 p-2 rounded-md">ver detalles del taller</NavLink></p>
+          <p className="workshop__details--link"><NavLink to={`/2a-jornada/workshops/${data.data.id}`} >ver detalles del taller</NavLink></p>
         </main>
-        <footer className="tags">
+        <footer className="workshop__tags">
         {keywordsArray.map((keyword, index) => {
           return (
             <NavLink
               to="/keywords/"
-              className="text-center"
+              className="workshop__tags--item"
               key={index}
               onClick={() => context.setKeyword(keyword)}
             >
-              <span className="bg-iagen_orange hover:bg-iagen_orangehover text-white inline-block p-1 m-1 rounded text-sm">
+              <span>
                 {keyword}
               </span>
             </NavLink>

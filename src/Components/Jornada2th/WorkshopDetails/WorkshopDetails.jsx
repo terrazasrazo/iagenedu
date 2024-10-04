@@ -3,7 +3,7 @@ import { useParams, NavLink, useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { KeywordContext } from "../../../Context";
 import "./WorkshopDetails.css";
-/*import Speaker from "../../Components/Speaker";*/
+import Speaker from "../../Speaker/";
 
 function WorkshopDetails() {
   const [items, setItems] = useState(0);
@@ -264,11 +264,11 @@ function WorkshopDetails() {
                 <section>
                   <div className="mt-8 border-t border-gray-400">
                     <h3 className="text-2xl text-orange_unam my-2">
-                      {/*speakerLabel*/}
+                      {speakerLabel}
                     </h3>
-                    {/*item.speakers.map((speaker) => {
+                    {item.speakers.map((speaker) => {
                       return <Speaker key={speaker.id} data={speaker} />;
-                    })*/}
+                    })}
                   </div>
                   <div
                     id="workshop-references"

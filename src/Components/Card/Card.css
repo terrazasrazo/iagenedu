@@ -1,3 +1,37 @@
+.workshop {
+    @apply m-6 shadow-sm rounded border-t-8 border relative pb-2;
+}
+.workshop__header {
+    @apply p-4 border-b;
+}
+.workshop__header--title {
+    @apply text-2xl mb-4;
+}
+.workshop__header--speaker {
+    @apply text-right text-lg text-gray-800;
+}
+.workshop__details {
+    @apply p-2 py-4 text-iagen_lightgray;
+}
+.workshop__details--ocurrence {
+    @apply text-right mb-4;
+}
+.workshop__details--ocurrence span {
+    @apply rounded text-gray-50 text-sm p-2;
+}
+.workshop__details--link {
+    @apply text-right;
+}
+.workshop__details--link a {
+    @apply inline-block bg-iagen_magenta hover:bg-iagen_magenta text-white my-2 p-2 rounded-md;
+}
+.workshop__tags--item {
+    @apply text-center;
+}
+.workshop__tags--item span {
+    @apply bg-iagen_orange hover:bg-iagen_orangehover text-white inline-block p-1 m-1 rounded text-sm;
+}
+
 .workshop-levels span {
     @apply rounded text-gray-50 p-2;
 }
