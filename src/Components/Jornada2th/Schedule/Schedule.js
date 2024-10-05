@@ -3,7 +3,7 @@ const scheduleArray = [
         date: "14 de noviembre de 2024",
         items: [
             { time: "09:00", event: "Bienvenida e inauguración" },
-            { time: "09:30", event: "Conferencia IAGen y educación" },
+            { time: "09:30", event: "Conferencia \"Artificial Intelligence & The Future of Education\"" },
             { time: "10:30", event: "Mesa \"Nuevos roles docentes en la era de la IAGen\"" },
             { time: "11:30", event: "<em>Receso</em>" },
             { time: "11:40", event: "<a href=\"/2a-jornada/workshops/58\" target=\"_blank\" class=\"font-semibold underline\">Promptatón</a> y Talleres" },
