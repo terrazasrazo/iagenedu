@@ -3,15 +3,13 @@ const express = require("express"),
   app = express(),
   crypto = require("crypto"),
   secret = "iagenedu",
-  nodemailer = require("nodemailer"),
-  mailConfig = require("../config/mailer"),
-  urlDestiny = "https://iagenedu.unam.mx";
+  nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
   service: "Gmail",
   auth: {
-    user: mailConfig.user,
-    pass: mailConfig.password,
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASSWORD,
   },
 });
 
@@ -20,8 +18,8 @@ const sendActivateEmail = async (email, hash) => {
     from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
     to: email,
     subject: "☑️ Has solicitado validar tu cuenta",
-    text: `Hemos recibido una solicitud para activar tu cuenta. Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${urlDestiny}/user/activate/${this.hash}`,
-    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para activar tu cuenta.</p><p>Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente <a href="${urlDestiny}/activate/${hash}">enlace</a>.</p></div>`,
+    text: `Hemos recibido una solicitud para activar tu cuenta. Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente enlace: ${process.env.urlDestiny}/user/activate/${this.hash}`,
+    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para activar tu cuenta.</p><p>Te damos la bienvenida al sitio web de la 2a. JORNADA DE IA GENERATIVA EN EDUCACIÓN, UNAM 2024. Para comenzar a utilizar tu cuenta, por favor valida tu correo electrónico a través del siguiente <a href="${process.env.urlDestiny}/user/activate/${hash}">enlace</a>.</p></div>`,
   };
 
   try {
@@ -39,8 +37,8 @@ const sendRecoveryEmail = async (email, hash) => {
     from: '"IAGen en Educación UNAM" <iagenedu@cuaed.unam.mx>',
     to: email,
     subject: "🔐 Has solicitado la recuperación de tu contraseña",
-    text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${urlDestiny}/setpassword/${hash}`,
-    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma.</p><p>Para recuperar tu contraseña, por favor accede al siguiente <a href="${urlDestiny}/setpassword/${hash}">enlace</a>.</p></div>`,
+    text: `Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma. Para recuperar tu contraseña, por favor accede al siguiente enlace: ${process.env.urlDestiny}/user/setpassword/${hash}`,
+    html: `<div style="font-size: 24px"><p>Hemos recibido una solicitud para recuperar tu contraseña, si no has sido tú puedes hacer caso omiso de este correo. No te preocupes que este proceso solo se realiza a través de tu cuenta de correo registrada en nuestra plataforma.</p><p>Para recuperar tu contraseña, por favor accede al siguiente <a href="${process.env.urlDestiny}/user/setpassword/${hash}">enlace</a>.</p></div>`,
   };
 
   try {
@@ -59,7 +57,7 @@ const sendConfirmationChangePassword = async (email) => {
     to: email,
     subject: "🔑 Has realizado un cambio de tu contraseña",
     text: `Hemos procesado tu cambio de contraseña. Ahora puedes ingresar a la plataforma con tu nueva contraseña.`,
-    html: `<div style="font-size: 24px"><p>Hemos procesado tu cambio de contraseña.</p><p>Ahora puedes ingresar a la plataforma con tu nueva contraseña.</p><p>Da clic en el siguiente <a href="${urlDestiny}" target="_blank">enlace</a> para ir a la plataforma.</p></div>`,
+    html: `<div style="font-size: 24px"><p>Hemos procesado tu cambio de contraseña.</p><p>Ahora puedes ingresar a la plataforma con tu nueva contraseña.</p><p>Da clic en el siguiente <a href="${process.env.urlDestiny}" target="_blank">enlace</a> para ir a la plataforma.</p></div>`,
   };
 
   try {
