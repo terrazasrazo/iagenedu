@@ -14,11 +14,13 @@ const Submission = () => {
     const titleTag = document.getElementsByName("title")[0];
     const categoryTag = document.getElementsByName("category")[0];
     const videoTag = document.getElementsByName("video")[0];
+    const keywordsTag = document.getElementsByName("keywords")[0];
 
     const formData = {
       title: titleTag.value,
       category: categoryTag.value,
       video: videoTag.value,
+      keywords: keywordsTag.value,
       user: cookies.get("id"),
     };
 
@@ -88,6 +90,11 @@ const Submission = () => {
               <div className="submission__data--info-form_item">
                 <label htmlFor="video">Enlace de video</label>
                 <input type="url" id="video" name="video" placeholder="https://drive.google=..." />
+              </div>
+              <div className="submission__data--info-form_item">
+                <label htmlFor="keywords"><strong>Cinco</strong> palabras clave</label>
+                <input type="text" id="keywords" name="keywords" />
+                <p className="text-sm text-red-800">Las palabras clave deben ir separadas por &quot;,&quot; (coma).</p>
               </div>
               <div className="submission__data--info-form_item">
                 <button type="submit">Enviar</button>
