@@ -26,10 +26,10 @@ module.exports = (app) => {
       .create({
         title: req.body.title,
         thematicLine: req.body.category,
-        educationalLevel: req.body.video,
-        knwoledgeArea: req.body.user,
-        userId: req.body.userId,
-        keywords: "",
+        videoUrl: req.body.video,
+        knwoledgeArea: "",
+        keywords: req.body.keywords,
+        userId: req.body.user,
       })
       .then((lightning) => res.json(lightning));
   });
