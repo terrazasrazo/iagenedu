@@ -37,8 +37,11 @@ const Recovery = () => {
         if (data.error) {
           displayRecoveryMessage("error", data.error);
           return;
+        } else if (data.user) {
+          displayRecoveryMessage("success", "Se ha enviado un correo con las instrucciones para recuperar su contraseña.");
+        } else {
+          displayRecoveryMessage("error", "El correo electrónico no se encuentra registrado.");
         }
-        displayRecoveryMessage("success", "Se ha enviado un correo con las instrucciones para recuperar su contraseña.");
       })
       .catch((error) => {
         console.log(error);
