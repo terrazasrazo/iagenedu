@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
-const config = require("./config/keys");
-const sequelize = new Sequelize(config.database, config.user, config.password, {
+console.log("DATABASE", process.env.DATABASE);
+const sequelize = new Sequelize(process.env.DATABASE, process.env.DATABASE_USER, process.env.DATABASE_PASSWORD, {
   host: "localhost",
   dialect: "mysql",
   timezone: "-05:00",
@@ -12,6 +12,7 @@ const sequelize = new Sequelize(config.database, config.user, config.password, {
   },
   dialectOptions: {
     socketPath: "/var/run/mysqld/mysqld.sock",
+    // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
   },
 });
 
