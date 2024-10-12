@@ -9,12 +9,20 @@ const Profile = () => {
   const API_URL = import.meta.env.VITE_API_URL;
   const cookies = new Cookies();
   const [workshops, setWorkshops] = useState(null);
+  const [lightning, setLightning] = useState(null);
 
   useEffect(() => {
     fetch(`${API_URL}/users/agenda/${cookies.get("id")}`)
       .then((response) => response.json())
       .then((data) => {
         setWorkshops(data);
+      });
+
+    fetch(`${API_URL}/lightning/${cookies.get("id")}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setLightning(data);
+        console.log(data);
       });
   }, []);
 
@@ -42,7 +50,7 @@ const Profile = () => {
           </article>
           <article className="profile__events--workshops">
             <h3>Mis talleres</h3>
-            {(workshops === null || workshops.length === 0) ? (
+            {workshops === null || workshops.length === 0 ? (
               <div className="profile__schedule empty">
                 <p>No cuenta con talleres programados.</p>
                 <p className="profile__button-empty">
@@ -69,12 +77,42 @@ const Profile = () => {
         <div className="profile__submissions">
           <article className="profile__submissions--works">
             <h3>Mis presentaciones</h3>
-            <div className="profile__schedule empty">
-              <p>No hay presentaciones enviadas.</p>
-              <p className="profile__button-empty">
-                <NavLink to="/user/submission/">Hacer un envío</NavLink>
-              </p>
-            </div>
+            {lightning === null || lightning.length === 0 ? (
+              <div className="profile__submissions--item empty">
+                <p>No hay presentaciones enviadas.</p>
+                <p className="profile__button-empty">
+                  <NavLink to="/user/submission/">Hacer un envío</NavLink>
+                </p>
+              </div>
+            ) : (
+              <>
+                {lightning.map((lightning) => (
+                  <div className="profile__submissions--item" key={lightning.id}>
+                    <h5>{lightning.title}</h5>
+                    <p>
+                      {(() => {
+                        const keywordsArray = lightning.keywords.split(",");
+                        if (keywordsArray[0] === "") {
+                          return;
+                        }
+                        return keywordsArray.map((keyword, index) => {
+                          return <span key={index} className="profile__submissions--item-keyword">{keyword}</span>;
+                        });
+                      })()}
+                    </p>
+                    <p className="text-right">
+                      <a
+                        href={lightning.videoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Ver video
+                      </a>
+                    </p>
+                  </div>
+                ))}
+              </>
+            )}
           </article>
         </div>
       </section>

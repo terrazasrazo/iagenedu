@@ -53,3 +53,15 @@
 .profile__button-empty > a {
   @apply inline-block bg-iagen_lightgrayhover hover:bg-iagen_lightgray text-iagen_blue my-2 py-2 px-4 rounded;
 }
+.profile__submissions--item {
+  @apply p-4 my-4 rounded-sm border bg-iagen_orangehover border-none;
+}
+.profile__submissions--item h5 {
+  @apply font-semibold
+}
+.profile__submissions--item a {
+  @apply inline-block bg-iagen_yellow hover:bg-iagen_yellowhover text-iagen_blue my-2 py-2 px-4 rounded;
+}
+.profile__submissions--item-keyword {
+  @apply inline-block bg-iagen_magenta mt-2 mr-1 py-2 px-4 rounded;
+}
