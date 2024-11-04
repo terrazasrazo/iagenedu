@@ -47,6 +47,15 @@
 .basic main > p:first-child > span {
     @apply bg-orange-200 text-iagen_blue;
 }
+.workshop__details--seats {
+    @apply  mt-1 inline-block p-1 rounded rounded-s-none;
+}
+.workshop__details--seats.full {
+    @apply bg-red-900;
+}
+.workshop__details--seats.available {
+    @apply bg-green-900;
+}
 
 .intermediate {
     @apply border-orange-400;
