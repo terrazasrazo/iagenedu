@@ -80,9 +80,9 @@ const Profile = () => {
             {lightning === null || lightning.length === 0 ? (
               <div className="profile__submissions--item empty">
                 <p>No hay presentaciones enviadas.</p>
-                <p className="profile__button-empty">
+                {/*<p className="profile__button-empty">
                   <NavLink to="/user/submission/">Hacer un envío</NavLink>
-                </p>
+                </p>*/}
               </div>
             ) : (
               <>
