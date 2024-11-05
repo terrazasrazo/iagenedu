@@ -23,7 +23,7 @@ const Card = (data) => {
 
   return (
     <article className={`${level} workshop`}>
-      {data.data.assistantsCount >= 70 ? (
+      {data.data.assistantsCount >= data.data.participants ? (
         <span className="workshop__details--seats full">Lugares agotados</span>
       ):(<span className="workshop__details--seats"></span>)}
       <header className="workshop__header">
