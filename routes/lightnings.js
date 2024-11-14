@@ -9,6 +9,16 @@ module.exports = (app) => {
     db.lightnings.findAll().then((lightnings) => res.json(lightnings));
   });
 
+  app.route("/lightning/:id").get(function (req, res) {
+    db.lightnings
+      .findAll({
+        where: {
+          userId: req.params.id,
+        },
+      })
+      .then((lightning) => res.json(lightning));
+  });
+
   app.route("/lightnings/").post(function (req, res) {
     db.lightnings
       .findAll({
