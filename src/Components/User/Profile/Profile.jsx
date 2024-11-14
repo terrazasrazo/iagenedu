@@ -27,9 +27,39 @@ const Profile = () => {
       });
   }, []);
 
-  const passAssistance = (event) => {
-    console.log(event);
-  }
+  const handleClick = () => {
+    const clickTime = new Date().toISOString();
+    console.log("Hora del clic:", clickTime);
+
+    let registerData = {
+      userid: cookies.get("id"),
+    };
+
+    let dataJSON = JSON.stringify(registerData);
+
+    let options = {
+      method: "POST",
+      body: dataJSON,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    fetch(`${API_URL}/attendance/`, options)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.error) {
+          console.log(data.error);
+          return;
+        }
+        console.log(data);
+        window.location.href =
+          "https://unam.zoom.us/webinar/register/WN__SgTPRZ9Q720zfHQdjwkpQ";
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <>
@@ -50,31 +80,57 @@ const Profile = () => {
               <div className="profile__schedule--14nov">
                 <h3>14 de noviembre de 2024</h3>
                 {scheduleArray[0].items.map((item, index) => {
-                  return (
-                    <div key={index} className="profile__schedule--item-program" onClick={() => {passAssistance}}>
-                      <a href={item.link} target="_blank" rel="noopener noreferrer">
-                      <span>{item.time}</span>
-                      <span
-                        dangerouslySetInnerHTML={{ __html: item.event }}
-                      ></span>
-                      </a>
-                    </div>
-                  );
+                  if (index !== 3 && index !== 4 && index !== 5) {
+                    return (
+                      <div
+                        key={index}
+                        className="profile__schedule--item-program"
+                      >
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => {
+                            e.preventDefault(); // Evita que el enlace navegue inmediatamente
+                            handleClick(); // Ejecuta la función de registro y redirección
+                          }}
+                        >
+                          <span>{item.time}</span>
+                          <span
+                            dangerouslySetInnerHTML={{ __html: item.event }}
+                          ></span>
+                        </a>
+                      </div>
+                    );
+                  }
                 })}
               </div>
               <div className="profile__schedule--15nov">
                 <h3>15 de noviembre de 2024</h3>
                 {scheduleArray[1].items.map((item, index) => {
-                  return (
-                    <div key={index} className="profile__schedule--item-program">
-                      <a href={item.link} target="_blank" rel="noopener noreferrer">
-                      <span>{item.time}</span>
-                      <span
-                        dangerouslySetInnerHTML={{ __html: item.event }}
-                      ></span>
-                      </a>
-                    </div>
-                  );
+                  if (index !== 2 && index !== 3 && index !== 5) {
+                    return (
+                      <div
+                        key={index}
+                        className="profile__schedule--item-program"
+                      >
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => {
+                            e.preventDefault(); // Evita que el enlace navegue inmediatamente
+                            handleClick(); // Ejecuta la función de registro y redirección
+                          }}
+                        >
+                          <span>{item.time}</span>
+                          <span
+                            dangerouslySetInnerHTML={{ __html: item.event }}
+                          ></span>
+                        </a>
+                      </div>
+                    );
+                  }
                 })}
               </div>
             </div>
