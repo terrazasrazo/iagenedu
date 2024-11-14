@@ -24,7 +24,7 @@
   @apply bg-iagen_purple;
 }
 .profile__schedule--item {
-  @apply p-4 border border-iagen_lightgray;
+  @apply my-2 p-4 border border-iagen_lightgray rounded;
 }
 .profile__schedule--item p:first-child {
   @apply text-lg font-semibold mb-2;
@@ -34,6 +34,18 @@
 }
 .profile__schedule--item p:last-child a {
   @apply bg-iagen_orange hover:bg-iagen_orangehover p-2 inline-block rounded font-semibold;
+}
+.profile__schedule--item p:last-child .profile__schedule--item-zoomlink {
+  @apply bg-iagen_cyan hover:bg-iagen_cyanhover p-2 mx-2 inline-block rounded font-semibold;
+}
+.profile__schedule--item-program {
+  @apply border block p-2 my-2 rounded font-semibold hover:bg-iagen_lightgray hover:text-iagen_magenta;
+}
+.profile__schedule--item-program > a {
+  @apply block hover:underline;
+}
+.profile__schedule--item-program > a > span {
+  @apply mx-2;
 }
 .profile__events h3, .profile__submissions h3 {
   @apply text-2xl font-semibold mb-4;
