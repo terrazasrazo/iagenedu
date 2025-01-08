@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import SessionBlock from "./SessionBlock";
+// import SessionBlock from "./SessionBlock";
 
 const DesktopMenu = () => {
   const showJornadas = () => {
@@ -117,7 +117,9 @@ const DesktopMenu = () => {
           Recomendaciones
         </NavLink>
       </div>
-      <SessionBlock legacyClass="nav__desktop--session" />
+      {
+      //<SessionBlock legacyClass="nav__desktop--session" />
+      }
     </>
   );
 };

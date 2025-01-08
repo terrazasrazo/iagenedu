@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import InstitutionsBlock from "../../Components/Institutions/InstitutionsBlock";
 import LastResourcesBlock from "../../Components/LastResourcesBlock/LastResourcesBlock";
 import "./Home.css";
@@ -6,16 +5,6 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <section className="jornada-2">
-        <div className="jornada-2__image">
-          <img src="images/512.png" width="320" alt="2a. Jornada IAGen en Educación UNAM 2024" />
-        </div>
-        <div className="jornada-2__links">
-          <h2>2<sup>a</sup> Jornada IAGen en Educación UNAM 2024</h2>
-          <p className="jornada-2__links--item"><NavLink to="/user/signin">Inicia sesión para ver enlaces de sesiones</NavLink></p>
-          <p className="jornada-2__links--item"><NavLink to="/2a-jornada">Ver programa completo</NavLink></p>
-        </div>
-      </section>
       <section className="hero">
         <div className="video">
           <video

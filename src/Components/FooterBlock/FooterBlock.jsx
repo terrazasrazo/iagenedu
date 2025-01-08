@@ -1,6 +1,8 @@
 import "./FooterBlock.css";
 
 function FooterBlock() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer__content">
@@ -20,7 +22,7 @@ function FooterBlock() {
           <h5 className="text-lg font-semibold">Aviso</h5>
           <p>
             Coordinación de Universidad Abierta y Educación Digital de la UNAM.
-            ©Todos los derechos reservados 2024. Hecho en México. Este sitio
+            ©Todos los derechos reservados {currentYear}. Hecho en México. Este sitio
             puede ser reproducido con fines no lucrativos, siempre y cuando no
             se mutile, se cite la fuente completa y su dirección electrónica, de
             otra forma, se requiere permiso previo por escrito de la

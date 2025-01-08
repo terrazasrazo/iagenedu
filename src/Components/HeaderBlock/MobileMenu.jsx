@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import SessionBlock from "./SessionBlock";
+// import SessionBlock from "./SessionBlock";
 
 const MobileMenu = () => {
   const closeMenu = () => {
@@ -96,7 +96,9 @@ const MobileMenu = () => {
                   Recomendaciones
                 </NavLink>
               </div>
-              <SessionBlock legacyClass="nav__mobile--session" />
+              {
+                // <SessionBlock legacyClass="nav__mobile--session" />
+              }
             </div>
           </div>
         </div>

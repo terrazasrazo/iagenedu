@@ -17,7 +17,7 @@ const institutionsArray = [
   {
     name: "CUAED",
     logo: "/images/institutions/logo-cuaed.png",
-    url: "https://cuaieed.unam.mx/",
+    url: "https://cuaed.unam.mx/",
   },
   {
     name: "DGBSDI",
