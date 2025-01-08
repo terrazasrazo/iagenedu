@@ -70,7 +70,7 @@ const DesktopMenu = () => {
                 </div>
                 <div className="nav__desktop--collapsible-container-content-item-label">
                   <a
-                    href="/i-jornada/"
+                    href="https://iagenedu.unam.mx/i-jornada/"
                     className="nav__desktop--collapsible-container-content-item-label-link"
                   >
                     I Jornada
@@ -96,12 +96,12 @@ const DesktopMenu = () => {
                   </svg>
                 </div>
                 <div className="nav__desktop--collapsible-container-content-item-label">
-                  <NavLink
-                    to="/2a-jornada"
+                <a
+                    href="https://iagenedu.unam.mx/2a-jornada/"
                     className="nav__desktop--collapsible-container-content-item-label-link"
                   >
                     2<sup>a</sup> Jornada
-                  </NavLink>
+                  </a>
                   <p className="nav__desktop--collapsible-container-content-item-label-date">
                     14 y 15 de noviembre <strong>2024</strong>
                   </p>
