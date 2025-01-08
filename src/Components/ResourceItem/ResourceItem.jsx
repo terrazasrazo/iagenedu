@@ -1,11 +1,7 @@
 import PropTypes from "prop-types";
-import { NavLink } from "react-router-dom";
-import { useContext } from "react";
-import { KeywordContext } from "../../Context";
 import "./ResourceItem.css";
 
 function ResourceItem({ item, index }) {
-  const context = useContext(KeywordContext);
 
   const resourceTypeColor = (resourceType) => {
     switch (resourceType) {
@@ -40,18 +36,7 @@ function ResourceItem({ item, index }) {
       </p>
       <p className="resource__keywords">
         {item.keywords.map((keyword, index) => {
-          return (
-            <NavLink
-              to="/keywords/"
-              className="text-center"
-              key={index}
-              onClick={() => context.setKeyword(keyword)}
-            >
-              <span className="resource__keywords-item">
-                {keyword}
-              </span>
-            </NavLink>
-          );
+          return <span className="resource__keywords-item" key={index}>{keyword}</span>;
         })}
       </p>
       <p className="resource__link">

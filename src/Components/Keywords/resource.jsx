@@ -40,12 +40,6 @@ const ResourceItem = (resource) => {
 
   return (
     <article>
-      <div>
-        <img
-          src={`/images/resources/${resource.resource.resourceImage}`}
-          alt={resource.resource.resourceTitle}
-        />
-      </div>
       <div className="col-span-2">
         <header className="border-b-2">
           <h4>{resource.resource.resourceTitle}</h4>
@@ -63,7 +57,7 @@ const ResourceItem = (resource) => {
               href={resource.resource.resourceURL}
               target="_blank"
               rel="noreferrer"
-              className="inline-block bg-orange_unam text-white p-2 rounded-md"
+              className="inline-block bg-iagen_magenta hover:bg-iagen_magentahover text-white p-2 rounded-md"
             >
               ir al recurso
             </a>

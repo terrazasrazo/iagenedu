@@ -1,9 +1,0 @@
-.video > iframe {
-    @apply mx-auto shadow-sm rounded;
-}
-
-@media (max-width: 640px) {
-    .video > iframe {
-        @apply w-full;
-    }
-}
