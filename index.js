@@ -17,6 +17,7 @@ require('./routes/resources')(app);
 require('./routes/mainsessions')(app);
 require('./routes/keywords')(app);
 require('./routes/users')(app);
+require('./routes/attendance')(app);
 
 const PORT = process.env.PORT || 6600;
 app.listen(PORT);

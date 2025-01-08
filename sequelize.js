@@ -47,11 +47,16 @@ db.users.belongsToMany(db.lightnings, { through: "lightningsusers" });
 db.mainsessions.belongsToMany(db.panelists, { through: "panelistsessions" });
 db.panelists.belongsToMany(db.mainsessions, { through: "panelistsessions" });
 
+db.attendance = require("./models/attendance")(sequelize, Sequelize);
+
 db.users.hasOne(db.sigecos);
 db.sigecos.belongsTo(db.users);
 
 db.users.hasOne(db.speakers);
 db.speakers.belongsTo(db.users);
+
+db.users.hasOne(db.attendance);
+db.attendance.belongsTo(db.users);
 
 sequelize
   .sync({
