@@ -5,7 +5,7 @@ const express = require("express"),
 const { Sequelize } = require("../sequelize");
 
 module.exports = (app) => {
-  app.route("/keywords/").post(function (req, res) {
+  /* app.route("/keywords/").post(function (req, res) {
     db.mainsessions
       .findAll({
         where: Sequelize.fn(
@@ -40,6 +40,22 @@ module.exports = (app) => {
                 });
               });
           });
+      });
+  });
+  */
+  app.route("/keywords/").post(function (req, res) {
+    db.resources
+      .findAll({
+        where: Sequelize.fn(
+          "LOCATE",
+          req.body.keyword,
+          Sequelize.col("keywords")
+        ),
+      })
+      .then((resources) => {
+        res.json({
+          resources: resources,
+        });
       });
   });
 };
