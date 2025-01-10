@@ -1,24 +1,27 @@
 .schedule {
-  @apply md:grid md:grid-cols-2 md:gap-4;
+  @apply my-16 md:grid md:grid-cols-2 md:gap-12;
 }
 .schedule > article {
   @apply p-4;
 }
+.schedule h3 {
+  @apply mb-14;
+}
 .schedule__14nov .schedule__item {
-  @apply bg-iagen_cyan p-4 my-4 rounded-sm;
+  @apply bg-iagen_cyan p-4 rounded-sm;
 }
 .schedule__14nov h3 {
-  @apply text-iagen_cyan text-lg font-semibold;
+  @apply text-iagen_cyan text-2xl font-semibold;
 }
 .schedule__15nov .schedule__item {
-  @apply bg-iagen_magenta p-4 my-4 rounded-sm;
+  @apply bg-iagen_magenta p-4 rounded-sm;
 }
 .schedule__15nov h3 {
-  @apply text-iagen_magenta text-lg font-semibold;
+  @apply text-iagen_magenta text-2xl font-semibold;
+}
+.schedule__item {
+  @apply block my-8;
 }
 .schedule__item span {
-  @apply mx-2 inline-block;
-}
-.schedule__item span:first-child {
-  @apply font-semibold;
+  @apply mx-2 inline-block text-xl;
 }

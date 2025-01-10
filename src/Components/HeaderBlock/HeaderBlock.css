@@ -16,6 +16,9 @@ nav {
 .nav__mobile--button-icon {
   @apply h-6 w-6;
 }
+.nav__mobile--item {
+  @apply block my-6;
+}
 .nav__desktop {
   @apply hidden md:flex md:gap-x-6 justify-center w-5/6;
 }
