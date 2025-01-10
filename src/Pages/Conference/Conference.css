@@ -1,0 +1,30 @@
+.conference {
+  @apply my-10;
+}
+.conference h2 {
+  @apply text-3xl font-bold text-iagen_cyan mb-10;
+}
+.conference article {
+  @apply grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-2 gap-4 content-center;
+}
+.conference .video {
+  @apply lg:col-span-2 xl:col-span-1;
+}
+.conference .actors .actor {
+  @apply mb-2 p-2 border-b border-gray-500;
+}
+.conference .actors .actor > h4 {
+  @apply text-xl;
+}
+.conference .back-to-program {
+  @apply p-2 inline-block bg-iagen_magenta hover:bg-iagen_magentahover;
+}
+.video > iframe {
+  @apply mx-auto shadow-sm rounded;
+}
+
+@media (max-width: 640px) {
+  .video > iframe {
+      @apply w-full;
+  }
+}
