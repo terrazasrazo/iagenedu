@@ -35,7 +35,7 @@ const Card = (data) => {
         </p>
         {workshopContent(data.data.purpouse)}
         <p className="workshop__details--link">
-          <NavLink to={`/2a-jornada/workshops/${data.data.id}`}>
+          <NavLink to={`/2a-jornada/workshop/${data.data.id}`}>
             ver detalles del taller
           </NavLink>
         </p>

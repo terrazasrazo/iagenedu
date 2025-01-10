@@ -1,0 +1,6 @@
+.workshop-data {
+  @apply xl:grid xl:grid-cols-3 pl-4;
+}
+.workshop-description {
+  @apply xl:col-span-2 xl:pl-4;
+}
