@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 import "./HeaderBlock.css";
@@ -14,14 +13,14 @@ function HeaderBlock() {
     <header>
       <nav aria-label="Global">
         <div className="nav__logo">
-          <NavLink to="/">
+          <a href="/">
             <span className="sr-only">IAGen en Educación UNAM</span>
             <img
               src="/images/iagen-unam.png"
               alt="IAGen en Educación UNAM"
               height={80}
             />
-          </NavLink>
+          </a>
         </div>
         <div className="nav__mobile--button">
           <button
