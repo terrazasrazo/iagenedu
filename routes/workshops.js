@@ -21,6 +21,35 @@ module.exports = (app) => {
       .then((workshops) => res.json(workshops));
   });
 
+  app.route("/workshops2023").get(function (req, res) {
+    db.workshops
+      .findAll({
+        where: {
+          createdAt: {
+            [db.Sequelize.Op.lt]: new Date('2024-01-01T00:00:00')
+          },
+        },
+        attributes: {
+          include: [
+            [
+              db.Sequelize.literal(`(
+                    SELECT COUNT(*)
+                    FROM workshopassistants
+                    WHERE
+                        workshopassistants.workshopId = workshops.id
+                )`),
+              "assistantsCount",
+            ],
+          ],
+        },
+        order: [
+          ["ocurrenceDay", "ASC"],
+          ["level", "ASC"],
+        ],
+      })
+      .then((workshops) => res.json(workshops));
+  });
+
   app.route("/workshopassistants").get(function (req, res) {
     db.workshops
       .findAll({
