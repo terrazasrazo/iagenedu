@@ -1,5 +1,4 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import { KeywordProvider } from "../../Context";
 import NotFound from "../NotFound";
 import Navbar from "../../Components/Navbar";
