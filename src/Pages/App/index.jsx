@@ -70,9 +70,13 @@ function App() {
           <header className="flex flex-row pt-4 pb-6 px-6">
             <div className="sm:w-1/4">
               <h1 className="inline-block">
-                <NavLink to="/">
-                  <img src="/i-jornada/images/iagen-icon.svg" width="120" alt="" />
-                </NavLink>
+                <a href="/">
+                  <img
+                    src="/i-jornada/images/iagen-icon.svg"
+                    width="120"
+                    alt=""
+                  />
+                </a>
               </h1>
             </div>
             <Navbar />
@@ -84,7 +88,11 @@ function App() {
             <div className="">
               <p>Desarrollado por</p>
               <p className="mt-3">
-                <a href="https://cuaed.unam.mx/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://cuaed.unam.mx/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src="/i-jornada/images/logo-cuaed.png"
                     width="150"
@@ -131,7 +139,8 @@ function App() {
                 <a
                   href="https://lib.cuaed.unam.mx/portales/aviso-privacidad-simplificado.html"
                   className="underline"
-                  target="_blank" rel="noreferrer"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Aviso de privacidad
                 </a>
