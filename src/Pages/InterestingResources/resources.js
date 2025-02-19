@@ -1,5 +1,25 @@
 const interestingResources = [
   {
+    resourceTitle: "Galería de Prompts educativos UNAM",
+    resourceType: "Otro",
+    resourceURL: "https://padlet.com/innovacion_educativa1/galer-a-de-prompts-educativos-unam-f288ckj4t5sqjnsz",
+    keywords: [
+      "prompt",
+      "inteligencia artificial generativa",
+      "creatividad",
+    ],
+  },
+  {
+    resourceTitle: "IA generativa en el aula",
+    resourceType: "Curso",
+    resourceURL: "https://www.coursera.org/learn/iagenerativa",
+    keywords: [
+      "inteligencia artificial generativa",
+      "herramientas",
+      "educación",
+    ],
+  },
+  {
     resourceTitle: "ChatGPT y generadores de texto con inteligencia artificial",
     resourceType: "Video",
     resourceURL: "https://youtu.be/jpFTtmHs-R4",
