@@ -76,10 +76,10 @@ function Workshops() {
         </div>
         <div className="mt-4 text-right">
           <a
-            href="https://www.coursera.org/learn/iagen"
+            href="https://www.coursera.org/learn/iagenerativa"
             target="_blank"
             rel="noreferrer"
-            className="inline-block max-w-lg"
+            className="inline-block"
           >
             <img
               src="/i-jornada/images/banner-iagen.png"
