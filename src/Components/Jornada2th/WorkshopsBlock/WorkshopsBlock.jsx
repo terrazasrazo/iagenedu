@@ -77,6 +77,11 @@ const WorkshopsBlock = () => {
           </div>         
         </div>
       </section>
+      <section className="announcement">
+        <a href="https://padlet.com/innovacion_educativa1/galer-a-de-prompts-educativos-unam-f288ckj4t5sqjnsz" target="_blank" rel="noopener noreferrer">
+          <img src="/2a-jornada/images/workshops/padlet-prompts.jpg" alt="Galería de Prompts educativos UNAM" />
+        </a>
+      </section>
       <section className="container sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
         {filteredItems?.map((item) => {
           return <Card key={item.id} data={item} />;
