@@ -7,7 +7,7 @@ const MainSessionItem = (session) => {
     <article>
       <div>
         <img
-          src={`/images/sessions/${session.session.sessionImage}.jpg`}
+          src={`${import.meta.env.VITE_BASE_URL}/images/sessions/${session.session.sessionImage}.jpg`}
           alt={session.session.sessionTitle}
         />
       </div>
@@ -18,7 +18,7 @@ const MainSessionItem = (session) => {
         <main className="p-2">
           <p className="text-right">
             <NavLink
-              to={`/i-jornada/${session.session.sessionImage}`}
+              to={`/${session.session.sessionImage}`}
               target="_blank"
               className="inline-block bg-orange_unam text-white p-2 rounded-md"
             >

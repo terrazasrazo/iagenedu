@@ -11,7 +11,7 @@ const VideoItem = ({ session }) => {
     <div className="my-2 md:my-0 bg-gray-50 border border-orange-300 rounded">
       <NavLink to={session.sessionImage} className="text-center">
         <img
-          src={`/i-jornada/images/sessions/${session.sessionImage}.jpg`}
+          src={`${import.meta.env.VITE_BASE_URL}images/sessions/${session.sessionImage}.jpg`}
           alt={session.sessionTitle}
           className="w-full"
         />

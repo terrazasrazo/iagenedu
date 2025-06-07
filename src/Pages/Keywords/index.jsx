@@ -26,7 +26,7 @@ function Keywords() {
     };
 
     if (context.keyword !== "") {
-        fetch("https://ada.bunam.unam.mx/iagen-api/keywords/", options)
+        fetch(`${import.meta.env.VITE_API_URL}/keywords/`, options)
         .then((response) => response.json())
         .then((data) => {
           setItems(data);

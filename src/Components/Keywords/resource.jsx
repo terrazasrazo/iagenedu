@@ -42,7 +42,7 @@ const ResourceItem = (resource) => {
     <article>
       <div>
         <img
-          src={`/images/resources/${resource.resource.resourceImage}`}
+          src={`${import.meta.env.VITE_BASE_URL}/images/resources/${resource.resource.resourceImage}`}
           alt={resource.resource.resourceTitle}
         />
       </div>

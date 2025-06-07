@@ -20,58 +20,60 @@ import Keywords from "../Keywords";
 const AppRoutes = () => {
   return useRoutes([
     /* I Jornada de Inteligencia Artificial Generativa en Educación UNAM 2023 */
-    { path: "/i-jornada", element: <IJornada /> },
+    { path: "/", element: <IJornada /> },
     {
-      path: "/i-jornada/bienvenida-inauguracion",
+      path: "/bienvenida-inauguracion",
       element: <BienvenidaInauguracion />,
     },
     {
-      path: "/i-jornada/ia-generativa-aprendizaje",
+      path: "/ia-generativa-aprendizaje",
       element: <IAGenerativaAprendizaje />,
     },
     {
-      path: "/i-jornada/experiencias-ia-generativa-unam",
+      path: "/experiencias-ia-generativa-unam",
       element: <ExperienciasIAGenerativaUNAM />,
     },
     {
-      path: "/i-jornada/presentaciones-relampago-lunes",
+      path: "/presentaciones-relampago-lunes",
       element: <PresentacionesRelampagoLunes />,
     },
     {
-      path: "/i-jornada/investigacion-iagen-unam",
+      path: "/investigacion-iagen-unam",
       element: <InvestigacionIAGenUNAM />,
     },
     {
-      path: "/i-jornada/ia-generativa-evaluacion",
+      path: "/ia-generativa-evaluacion",
       element: <IAGenerativaEvaluacion />,
     },
     {
-      path: "/i-jornada/futuros-ia-generativa-unam",
+      path: "/futuros-ia-generativa-unam",
       element: <FuturosIAGenerativaUNAM />,
     },
     {
-      path: "/i-jornada/presentaciones-relampago-martes",
+      path: "/presentaciones-relampago-martes",
       element: <PresentacionesRelampagoMartes />,
     },
-    { path: "/i-jornada/clausura", element: <Clausura /> },
-    { path: "/i-jornada/workshops", element: <Workshops /> },
-    { path: "/i-jornada/workshops/:id", element: <WorkshopDetails /> },
+    { path: "/clausura", element: <Clausura /> },
+    { path: "/workshops", element: <Workshops /> },
+    { path: "/workshops/:id", element: <WorkshopDetails /> },
     { path: "/keywords/", element: <Keywords /> },
     { path: "*", element: <NotFound /> },
   ]);
 };
 
 function App() {
+  const baseName = import.meta.env.VITE_BASE_URL || "/";
+
   return (
     <KeywordProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={baseName}>
         <main className="container mx-auto">
           <header className="flex flex-row pt-4 pb-6 px-6">
             <div className="sm:w-1/4">
               <h1 className="inline-block">
                 <a href="/">
                   <img
-                    src="/i-jornada/images/iagen-icon.svg"
+                    src={`${import.meta.env.VITE_BASE_URL}images/iagen-icon.svg`}
                     width="120"
                     alt=""
                   />
@@ -93,7 +95,7 @@ function App() {
                   rel="noreferrer"
                 >
                   <img
-                    src="/i-jornada/images/logo-cuaed.png"
+                    src={`${import.meta.env.VITE_BASE_URL}images/logo-cuaed.png`}
                     width="150"
                     alt="Coordinación de Universidad Abierta y Educación Digital"
                   />

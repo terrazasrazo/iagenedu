@@ -5,7 +5,7 @@ const BioItem = ({ bio }) => {
     <div className="my-4">
       <div>
         <img
-          src={`/i-jornada/images/bios/${bio.photo}`}
+          src={`${import.meta.env.VITE_BASE_URL}images/bios/${bio.photo}`}
           alt={bio.name}
           className="mx-auto w-32 rounded-full"
         />

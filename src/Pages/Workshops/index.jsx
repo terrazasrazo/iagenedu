@@ -6,7 +6,7 @@ function Workshops() {
   const [filteredItems, setFilteredItems] = useState(null);
 
   useEffect(() => {
-    fetch("https://ada.bunam.unam.mx/iagen-api/workshops2023")
+    fetch(`${import.meta.env.VITE_API_URL}/workshops2023`)
       .then((response) => response.json())
       .then((data) => {
         setItems(data)
@@ -82,7 +82,7 @@ function Workshops() {
             className="inline-block"
           >
             <img
-              src="/i-jornada/images/banner-iagen.png"
+              src={`${import.meta.env.VITE_BASE_URL}images/banner-iagen.png`}
               alt="IA generativa en el aula"
               className="rounded"
             />

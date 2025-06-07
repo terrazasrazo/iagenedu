@@ -23,7 +23,7 @@ const WorkshopItem = (workshop) => {
     <article>
       <div>
         <img
-          src={`/images/workshops/default.jpg`}
+          src={`${import.meta.env.VITE_BASE_URL}/images/workshops/default.jpg`}
           alt={workshop.workshop.title}
         />
       </div>

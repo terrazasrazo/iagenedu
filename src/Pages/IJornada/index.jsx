@@ -6,7 +6,7 @@ function IJornada() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch("https://ada.bunam.unam.mx/iagen-api/mainsessions")
+    fetch(`${import.meta.env.VITE_API_URL}/mainsessions`)
       .then((response) => response.json())
       .then((data) => {
         setItems(data)
@@ -18,7 +18,7 @@ function IJornada() {
       <header className="sm:flex sm:flex-row mx-auto mt-4 lg:mt-0 justify-center">
         <div className="lg:w-1/4">
           <img
-            src="/images/iagen-icon.svg"
+            src={`${import.meta.env.VITE_BASE_URL}images/iagen-icon.svg`}
             alt="Inteligencia Artificial Generativa en Educación"
             width={400}
             className="block md:mx-auto"
@@ -68,7 +68,7 @@ function IJornada() {
           return (
             <div key={index} className="p-2 block">
               <a href={item.url} target="_blank" rel="noreferrer">
-                <img src={`/i-jornada${item.logo}`} alt={item.name} />
+                <img src={`${import.meta.env.VITE_BASE_URL}${item.logo}`} alt={item.name} />
               </a>
             </div>
           );

@@ -19,14 +19,14 @@ function WorkshopDetails() {
   const context = useContext(KeywordContext);
 
   useEffect(() => {
-    fetch(`https://ada.bunam.unam.mx/iagen-api/workshops/${id}`)
+    fetch(`${import.meta.env.VITE_API_URL}/workshops/${id}`)
       .then((response) => response.json())
       .then((data) => setItems(data));
   }, [id]);
 
   if (cookies.get("worshopsCount") > 0) {
     fetch(
-      `https://ada.bunam.unam.mx/iagen-api/workshops/validate/${id}/${cookies.get(
+      `${import.meta.env.VITE_API_URL}/workshops/validate/${id}/${cookies.get(
         "id"
       )}`
     )
