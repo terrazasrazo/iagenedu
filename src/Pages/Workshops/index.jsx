@@ -1,18 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Card from "../../Components/Card";
+import workshops from "./workshops.json";
 
 function Workshops() {
-  const [items, setItems] = useState(null);
-  const [filteredItems, setFilteredItems] = useState(null);
-
-  useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/workshops2023`)
-      .then((response) => response.json())
-      .then((data) => {
-        setItems(data)
-        setFilteredItems(data)
-      });
-  }, []);
+  const workshopsData = workshops;
+  const [filteredItems, setFilteredItems] = useState(workshopsData);
 
   return (
     <>
@@ -26,25 +18,25 @@ function Workshops() {
           <p>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-400 hover:bg-blue-500 text-white text-sm mr-2"
-              onClick={() => {setFilteredItems(items?.filter((item) => item.level === 1))}}
+              onClick={() => {setFilteredItems(workshopsData.filter((item) => item.level === 1))}}
             >
               Elemental
             </a>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-600 hover:bg-blue-700 text-white text-sm mr-2"
-              onClick={() => {setFilteredItems(items?.filter((item) => item.level === 2))}}
+              onClick={() => {setFilteredItems(workshopsData.filter((item) => item.level === 2))}}
             >
               Intermedio
             </a>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-blue-900 hover:bg-blue-950 text-white text-sm mr-2"
-              onClick={() => {setFilteredItems(items?.filter((item) => item.level === 3))}}
+              onClick={() => {setFilteredItems(workshopsData.filter((item) => item.level === 3))}}
             >
               Avanzado
             </a>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-slate-500 hover:bg-slate-600 text-white text-sm mr-2"
-              onClick={() => {setFilteredItems(items)}}
+              onClick={() => {setFilteredItems(workshopsData)}}
             >
               Cualquier nivel
             </a>
@@ -55,19 +47,19 @@ function Workshops() {
           <p>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-cyan-600 hover:bg-cyan-700 text-white text-sm mr-2"
-              onClick={() => {setFilteredItems(items?.filter((item) => item.ocurrenceDay === "Lunes 23 de octubre 2023"))}}
+              onClick={() => {setFilteredItems(workshopsData.filter((item) => item.ocurrenceDay === "Lunes 23 de octubre 2023"))}}
             >
               Lunes 23 de octubre
             </a>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-cyan-800 hover:bg-cyan-900 text-white text-sm mr-2"
-              onClick={() => {setFilteredItems(items?.filter((item) => item.ocurrenceDay === "Martes 24 de octubre 2023"))}}
+              onClick={() => {setFilteredItems(workshopsData.filter((item) => item.ocurrenceDay === "Martes 24 de octubre 2023"))}}
             >
               Martes 24 de octubre
             </a>
             <a
               className="cursor-pointer py-1 px-2 rounded inline-block my-1 bg-slate-500 hover:bg-slate-600 text-white text-sm mr-2"
-              onClick={() => setFilteredItems(items)}
+              onClick={() => setFilteredItems(workshopsData)}
             >
               Cualquier día
             </a>

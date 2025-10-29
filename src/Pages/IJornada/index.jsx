@@ -1,17 +1,9 @@
-import { useState, useEffect } from "react";
 import VideoItem from "../../Components/ProgramItem/videoItem";
 import institutions from "../../Components/Institutions/institutions";
+import mainsessions from "./mainsessions.json";
 
 function IJornada() {
-  const [items, setItems] = useState(null);
-
-  useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/mainsessions`)
-      .then((response) => response.json())
-      .then((data) => {
-        setItems(data)
-      });
-  }, []);
+  const items = mainsessions;
 
   return (
     <>

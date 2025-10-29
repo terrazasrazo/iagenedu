@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "sessionTitle": "Bienvenida e inauguración",
+        "sessionUrl": "wz8cGeWdL04",
+        "ocurrenceDay": "Lunes 23 de octubre de 2023",
+        "sessionImage": "bienvenida-inauguracion",
+        "sessionResume": "A",
+        "keywords": "educación, desafíos educativos, innovación educativa",
+        "createdAt": "2023-10-23T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 2,
+        "sessionTitle": "Mesa: IA generativa para el aprendizaje",
+        "sessionUrl": "lDQRPjXWeiI",
+        "ocurrenceDay": "Lunes 23 de octubre de 2023",
+        "sessionImage": "ia-generativa-aprendizaje",
+        "sessionResume": "A",
+        "keywords": "educación digital, herramientas generativas, ética educativa",
+        "createdAt": "2023-10-23T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 3,
+        "sessionTitle": "Mesa: Experiencias educativas de IA generativa en la UNAM",
+        "sessionUrl": "1abnGfo0du4",
+        "ocurrenceDay": "Lunes 23 de octubre de 2023",
+        "sessionImage": "experiencias-ia-generativa-unam",
+        "sessionResume": "A",
+        "keywords": "educación digital, generación automática, habilidades críticas",
+        "createdAt": "2023-10-23T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 4,
+        "sessionTitle": "Presentaciones relámpago",
+        "sessionUrl": "--pA-EXh7yc",
+        "ocurrenceDay": "Lunes 23 de octubre de 2023",
+        "sessionImage": "presentaciones-relampago-lunes",
+        "sessionResume": "A",
+        "keywords": "educación, prácticas docentes, colaboración",
+        "createdAt": "2023-10-23T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 5,
+        "sessionTitle": "Mesa: Investigación en IAGen en la UNAM: su impacto educativo",
+        "sessionUrl": "gQsmMgoM2As",
+        "ocurrenceDay": "Martes 24 de octubre de 2023",
+        "sessionImage": "investigacion-iagen-unam",
+        "sessionResume": "A",
+        "keywords": "educación superior, razonamiento abductivo, diseño de redes neuronales",
+        "createdAt": "2023-10-24T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 6,
+        "sessionTitle": "Mesa: IA generativa y evaluación: ¿se acabaron los exámenes?",
+        "sessionUrl": "Uf2nAvcFOH8",
+        "ocurrenceDay": "Martes 24 de octubre de 2023",
+        "sessionImage": "ia-generativa-evaluacion",
+        "sessionResume": "A",
+        "keywords": "alternativas de evaluación, ética educativa, formación continua",
+        "createdAt": "2023-10-24T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 7,
+        "sessionTitle": "Mesa: Futuros de la IA generativa en la UNAM: ¿viaje sin retorno?",
+        "sessionUrl": "2t1QrSYgtuQ",
+        "ocurrenceDay": "Martes 24 de octubre de 2023",
+        "sessionImage": "futuros-ia-generativa-unam",
+        "sessionResume": "A",
+        "keywords": "educación, analíticas, ética",
+        "createdAt": "2023-10-24T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 8,
+        "sessionTitle": "Presentaciones relámpago",
+        "sessionUrl": "3hVzLivr-UY",
+        "ocurrenceDay": "Martes 24 de octubre de 2023",
+        "sessionImage": "presentaciones-relampago-martes",
+        "sessionResume": "A",
+        "keywords": "educación, creatividad, diseño",
+        "createdAt": "2023-10-24T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    },
+    {
+        "id": 9,
+        "sessionTitle": "Clausura",
+        "sessionUrl": "W_VMT7Dxj3I",
+        "ocurrenceDay": "Martes 24 de octubre de 2023",
+        "sessionImage": "clausura",
+        "sessionResume": "A",
+        "keywords": "éxito, diversidad, educación",
+        "createdAt": "2023-10-24T05:00:00.000Z",
+        "updatedAt": "2023-12-01T23:00:00.000Z"
+    }
+]

@@ -1,0 +1,1431 @@
+[
+    {
+        "id": 2,
+        "title": "De IA Generativa a multimedia: un viaje creativo",
+        "tools": "<p>Durante el taller se explorarán las herramientas:</p>\n<ul>\n  <li><a href=\"https://app.artflow.ai/\" target=\"_blank\" rel=\"noreferrer\">artflow</a></li>\n  <li><a href=\"https://gamma.app/\" target=\"_blank\" rel=\"noreferrer\">Gamma App</a></li>\n  <li><a href=\"https://leonardo.ai/\" target=\"_blank\" rel=\"noreferrer\">Leonardo.ai</a></li>\n  <li><a href=\"https://clipdrop.co/stable-diffusion/\" target=\"_blank\" rel=\"noreferrer\">Clipdrop</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Fomentar el uso de la inteligencia artificial generativa para generar recursos multimedia innovadores y aplicarlos a la práctica educativa",
+        "themes": "<ul>\n  <li>Introducción a las herramientas de IA Generativa de texto a imagen, video y presentación.</li>\n  <li>Exploración de las herramientas de IA Generativa de texto a imagen y recomendaciones para obtener mejores resultados.</li>\n  <li>Exploración de las herramientas de IA Generativa de texto a video y recomendaciones para obtener mejores resultados.</li>\n  <li>Exploración de las herramientas de IA Generativa de texto a presentación y recomendaciones para obtener mejores resultados.</li>\n  <li>Desarrollo de una presentación a partir de las herramientas de IA Generativa.</li>\n</ul>",
+        "product": "Presentación creada a partir de las herramientas de IA Generativa",
+        "references": "<p>Baidoo-anu, D. & Owusu Ansah, L. (2023). Education in the Era of Generative Artificial Intelligence (AI): Understanding the Potential Benefits of ChatGPT in Promoting Teaching and Learning. Journal of AI, 7 (1), 52-62. Retrieved from <a href=\"https://dergipark.org.tr/en/pub/jai/issue/77844/1337500\" target=\"_blank\" rel=\"noreferrer\">https://dergipark.org.tr/en/pub/jai/issue/77844/1337500</a></p>\n<p>Kohnke, L., Moorhouse, B. L., & Zou, D. (2023). Exploring generative artificial intelligence preparedness among university language instructors: A case study. Computers and Education: Artificial Intelligence, 5. <a href=\"https://doi.org/10.1016/j.caeai.2023.100156\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1016/j.caeai.2023.100156</a></p>\n<p>Liu, M., Ren, Y., Nyagoga, L. M., Stonier, F., Wu, Z., & Yu, L. (2023). Future of education in the era of generative artificial intelligence: Consensus among Chinese scholars on applications of ChatGPT in schools. Future in Educational Research.</p>",
+        "keywords": "Creatividad, educación, multimedia",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/88153655526",
+        "youTubeurl": "NevC0U9DsKo",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 2,
+                "name": "Omar Terrazas Razo",
+                "email": "omar_terrazas@cuaed.unam.mx",
+                "bio": "Es doctorante del programa de Doctorado en Ambientes y Sistemas Educativos Multimodales, Maestro en Ingeniería de Sistemas, Ingeniero en Computación y cuenta con un nanogrado en Deep Learning.  Ha impartido las asignaturas de Sistemas de Información y Temas Especiales de Programación en la carrera de Ingeniería en Computación de la Facultad de Estudios Superiores Aragón. Actualmente es Subdirector de planeación, evaluación y mejora del Bachillerato a distancia de la UNAM.",
+                "photo": "omar-terrazas.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:43:43.000Z",
+                    "updatedAt": "2023-09-26T00:43:43.000Z",
+                    "workshopId": 2,
+                    "speakerId": 2
+                }
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "title": "Tu asistente IA en la investigación B",
+        "tools": "<p>Crear cuentas gratuitas en:</p>\r\n<ul>\r\n  <li><a href=\"https://www.researchaide.org\">ResearchAIde</a></li>\r\n  <li><a href=\"https://elicit.org\">Elicit</a></li>\r\n  <li><a href=\"https://www.researchrabbit.ai\">Research Rabbit</a></li>\r\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien curse el taller identificará cómo utilizar con sus estudiantes algunas herramientas de IA en actividades de investigación.",
+        "themes": "<ul>\r\n  <li>Ayudar a los estudiantes a plantear preguntas de investigación con herramientas de IA</li>\r\n  <li>Realizar síntesis o extraer información específica de documentos en PDF</li>\r\n  <li>Realizar mapas para estudios bibliométricos</li>\r\n</ul>",
+        "product": "Ejemplos de actividades para realizar con sus estudiantes, utilizando un asistente IA en la investigación.",
+        "references": "<p>Office of Educational Technology. (May, 2023). Artificial Intelligence and the future of teaching and learning. Insights and recommendations. Department of education. United Estates of America. <a href=\"https://tech.ed.gov/ai-future-of-teaching-and-learning/\" target=\"_blank\" rel=\"noreferrer\">https://tech.ed.gov/ai-future-of-teaching-and-learning/</a></p>\r\n<p>Universidad de Sevilla (2023) Monográfico No. 41. Inteligencia artificial en la investigación y la docencia universitaria. <a href=\"https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf\" target=\"_blank\" rel=\"noreferrer\">https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf</a></p>\r\n<p>UNESCO. (2023). La Inteligencia Artificial en la Educación. <a href=\"https://es.unesco.org/themes/tic-educacion/inteligencia-artificial\" target=\"_blank\" rel=\"noreferrer\">https://es.unesco.org/themes/tic-educacion/inteligencia-artificial</a></p>\r\n<p>UNESCO. (2023). ¿Cómo la inteligencia artificial puede reforzar la educación? <a href=\"https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion\" target=\"_blank\" rel=\"noreferrer\">https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion</a></p>",
+        "keywords": "Investigación, Preguntas de Investigación, Asistentes de IA",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/81780386804?pwd=SUwrZitPdWRNOVZKeVA2OUNSRFgrZz09",
+        "youTubeurl": "0Q6vBC_Jd8g",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 8,
+                "name": "Marina Kriscautzky Laxague",
+                "email": "mkriscau@gmail.com",
+                "bio": "Los talleristas son académicos de la DGTIC adscritos a la Dirección de Innovación en Tecnologías para la Educación con una amplia experiencia en la formación docente y en el uso e integración de tecnologías para la ducación.",
+                "photo": "marina-kriscautzky.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1779,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:45:19.000Z",
+                    "updatedAt": "2023-09-26T00:45:19.000Z",
+                    "workshopId": 32,
+                    "speakerId": 8
+                }
+            },
+            {
+                "id": 10,
+                "name": "María Elizabeth Martínez Sánchez",
+                "email": "elymarsa@unam.mx",
+                "bio": null,
+                "photo": "elizabeth-martinez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 267,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:45:53.000Z",
+                    "updatedAt": "2023-09-26T00:45:53.000Z",
+                    "workshopId": 32,
+                    "speakerId": 10
+                }
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Aprendiendo a comunicarme con la IAG",
+        "tools": "<ul>\n  <li>ChatGPT 3.5</li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien toma el taller aprenderá a diseñar prompts para incorporar la Inteligencia Artificial Generativa en su trabajo docente.",
+        "themes": "<ul>\n  <li>Principios pedagógicos para el uso de la IAG</li>\n  <li>Diseño de prompts</li>\n  <li>IAG aplicada a la planificación, diseño y evaluación del aprendizaje</li>\n</ul>",
+        "product": "En este taller se les presentará el modelo para el diseño de prompts educativos así como el instrumento generador de prompts. Al finalizar el taller cada participante habrá elaborado con base en este modelo y el instrumento generador de prompts al menos un prompt o cadena de prompts relacionados con la planificación, diseño de actividades o evaluación del aprendizaje de sus estudiantes.",
+        "references": "<p>U.S. Department of Education, Office of Educational Technology (2023). Artificial Intelligence and Future of Teaching and Learning: Insights and Recommendations. <a href=\"https://www2.ed.gov/documents/ai-report/ai-report.pdf\" target=\"_blank\" rel=\"noreferrer\">https://www2.ed.gov/documents/ai-report/ai-report.pdf</a></p>\n<p>Unesco (2023). ChatGPT e Inteligencia Artificial en Educación Superior. Guía de inicio rápido. <a href=\"https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa\" target=\"_blank\" rel=\"noreferrer\">https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa</a></p>\n<p>Unesco (2023). Guidance for generative AI in education and research. <a href=\"https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research\" target=\"_blank\" rel=\"noreferrer\">https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research</a></p>",
+        "keywords": "Inteligencia artificial generativa, docencia, aprendizaje",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/89211666637?pwd=WjFQN2xkSjB6cURMTWUySytRRUljdz09",
+        "youTubeurl": "4hVf7utEHUg",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 1,
+                "name": "Mario Alberto Benavides Lara",
+                "email": "mario_benavides@ceide.unam.mx",
+                "bio": "Licenciado y maestro en pedagogía por la UNAM. Estudiante del doctorado en ciencias sociales en la UAM Xochimilco. Se desempeña como coordinador de investigación en educación de la CUAIEED de la UNAM.",
+                "photo": "mario-benavides.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1155,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-21T18:11:00.000Z",
+                    "updatedAt": "2023-09-21T18:11:00.000Z",
+                    "workshopId": 1,
+                    "speakerId": 1
+                }
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Cómo identificar plagio en textos académicos con software de acceso\nlibre.",
+        "tools": "<p>Se empleara software acceso libre para identificar el plagio o similitudes en textos académicos como:</p>\n<ul>\n  <li><a href=\"https://www.copyscape.com/\" target=\"_blank\" rel=\"noreferrer\">Copyscape</a></li>\n  <li><a href=\"https://www.grammarly.com/\" target=\"_blank\" rel=\"noreferrer\">Grammarly</a></li>\n  <li><a href=\"https://github.com/jplag/JPlag\" target=\"_blank\" rel=\"noreferrer\">Jplag</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Posgrado",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Los participantes conocerán algunos software de acceso libre que se emplean\npara identificar el plagio en los textos académicos.",
+        "themes": "<ol>\n  <li>Definiciones: ¿Qué es el plagio? ¿Qué es similitud de textos?</li>\n  <li>Cómo se utilizan el software de acceso abierto para detección de plagio</li>\n  <li>Definir los lineamientos que se pueden aplicar en la detección de similitudes en\n    los textos académicos</li>\n</ol>",
+        "product": "Los participantes podrán utilizar el software de acceso libre utilizado para la\ndetección de plagio en documentos académicos .",
+        "references": "<p>Elkhatat, A. M., Elsaid, K., & Almeer, S. (2023). Evaluating the efficacy of AI content detection tools in differentiating between human and AI-generated text. International Journal for Educational Integrity, 19(1), 1–16. <a href=\"https://doi.org/10.1007/s40979-023-00140-5\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1007/s40979-023-00140-5</a></p>\n<p>Elkhatat, A. M. (2023). Evaluating the authenticity of ChatGPT responses: a study on text-matching capabilities. International Journal for Educational Integrity, 19(1), 1-23. <a href=\"https://doi.org/10.1007/s40979-023-00137-0\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1007/s40979-023-00137-0</a></p>\n<p>Drisko, J. W. (2023). What Is Plagiarism, How to Identify It, and How to Educate to Avoid It. Journal of Social Work Education, 59(3), 744-755. <a href=\"https://doi.org/10.1080/10437797.2022.2119358\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1080/10437797.2022.2119358</a></p>",
+        "keywords": "Plagio, Similitud de textos, Inteligencia artificial, Software antiplagio",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/84231476199?pwd=WDExMi9WdG9DeUVlQmNYZy9pdkxaZz09",
+        "youTubeurl": "nhABI92n4Xo",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 17,
+                "name": "Antonio Sánchez Pereyra",
+                "email": null,
+                "bio": "Antonio Sánchez Pereyra, es doctor en Relaciones Internacionales por la UNAM. con una trayectoria como especialista en proyectos como Latindex y SciELO-México, así como instructor en el acceso y empleo de bases de datos para investigadores. Desde octubre de 2019, se desempeña como Subdirector de Servicios de Información Especializada de la Dirección General de Bibliotecas y Servicios Digitales de Información de la UNAM.",
+                "photo": "antonio-sanchez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 31,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:48:31.000Z",
+                    "updatedAt": "2023-09-26T00:48:31.000Z",
+                    "workshopId": 12,
+                    "speakerId": 17
+                }
+            },
+            {
+                "id": 18,
+                "name": "Alma Delia Contreras Hernández",
+                "email": "adcontrerash@dgb.unam.mx",
+                "bio": "Alma Delia Contreras Hernández, es maestra en Ciencias de la Información por el Tecnológico de Monterrey, cuenta con más de 25 años de experiencia en la administración y organización de Unidades de Información. Actualmente es la responsable del Área de Recursos Electrónicos, en la Subdirección de Servicios de Información Especializada de la Dirección General de Bibliotecas.",
+                "photo": "alma-contreras.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 33,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:49:14.000Z",
+                    "updatedAt": "2023-09-26T00:49:14.000Z",
+                    "workshopId": 12,
+                    "speakerId": 18
+                }
+            },
+            {
+                "id": 19,
+                "name": "Sergio Márquez Rangel",
+                "email": "smarquez@dgb.unam.mx",
+                "bio": "Sergio Márquez Rangel, es maestro en Bibliotecología por la UNAM, cuenta con más de 25 años de experiencia en la administración y organización de Unidades de Información, con especial interés en las actividades de desarrollo de habilidades informativas y evaluación de colecciones. Actualmente es Jefe del Departamento de Bases de Datos y Revistas Científicas y Técnicas.",
+                "photo": "sergio-marquez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2059,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:49:14.000Z",
+                    "updatedAt": "2023-09-26T00:49:14.000Z",
+                    "workshopId": 12,
+                    "speakerId": 19
+                }
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Búsqueda de Información en Herramientas con IA Generativa",
+        "tools": "<p>Abrir una cuenta en las siguientes herramientas:</p>\n<ul>\n  <li><a href=\"https://www.perplexity.ai/\" target=\"_blank\" rel=\"noreferrer\">PERPLEXITY</a></li>\n  <li><a href=\"https://you.com/\" target=\"_blank\" rel=\"noreferrer\">YOU</a></li>\n  <li><a href=\"https://elicit.com/\" target=\"_blank\" rel=\"noreferrer\">ELICIT</a></li>\n  <li><a href=\"https://typeset.io/\" target=\"_blank\" rel=\"noreferrer\">SCISPACE</a></li>\n  <li><a href=\"https://chat.openai.com\" target=\"_blank\" rel=\"noreferrer\">CHATGPT 3.5</a></li>\n</ul>\n<p>Nota: para registrarse en estos sitios la mayoría se puede hacer vía cuenta de Google</p>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Capacitar a profesores y alumnos universitarios en el uso efectivo de herramientas de IA Generativa para mejorar la búsqueda y análisis de información académica.",
+        "themes": "<ul>\n  <li>Introducción a la IA Generativa: Conceptos básicos y relevancia.</li>\n  <li>Fundamentos de las Herramientas: Exploración de las herramientas seleccionadas.</li>\n  <li>Estrategias de Búsqueda Efectiva: Mejores prácticas.</li>\n</ul>",
+        "product": "Los participantes se llevarán de este taller es una comprensión sólida y práctica de cómo utilizar herramientas de IA Generativa para mejorar su búsqueda de información y análisis de datos.",
+        "references": "<p>Australian National University. (2023). Chat GPT and other generative AI tools: What ANU academics need to know. <a href=\"https://teaching.weblogs.anu.edu.au/files/2023/02/Chat_GPT_FAQ-1.pdf\" target=\"_blank\" rel=\"noreferrer\"></a></p>\n<p>OpenAI. (2023). GPT-4 Technical Report (arXiv:2303.08774). arXiv. <a href=\"https://doi.org/10.48550/arXiv.2303.08774\" target=\"_blank\" rel=\"noreferrer\"></a></p>\n<p>Sabzalieva, Z., & ValenDni, N. (2023). The impact of generative AI on education: Opportunities and challenges. Journal of Educational Computing Research, 50(1), 1-26.</p>",
+        "keywords": "IA Generativa, Búsqueda de Información, Herramientas Tecnológicas, Educación Universitaria, Análisis de Información",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/81570472302?pwd=TTZHNjlmL1JBZ0haODM4YWcxSFhvZz09",
+        "youTubeurl": "bbuvVALXiK0",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 15,
+                "name": "Federico Russell Turnbull Muñoz",
+                "email": "fturnbullm@dgb.unam.mx",
+                "bio": "Ingeniero Químico graduado en la Universidad Veracruzana con una Maestría en Ciencias en Información Científica del Illinois Institute of Technology. Ha tenido una amplia experiencia en el campo de la información científica, incluyendo roles en la UNAM y empresas de información. También ha sido profesor y conferencista en múltiples países y es miembro de varias asociaciones profesionales. En la actualidad, ocupa el cargo de Jefe del Departamento de Información y Servicios Documentales de la DGBSDI en la UNAM.",
+                "photo": "federico-turnbull.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 32,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:47:58.000Z",
+                    "updatedAt": "2023-09-26T00:47:58.000Z",
+                    "workshopId": 11,
+                    "speakerId": 15
+                }
+            },
+            {
+                "id": 16,
+                "name": "Ricardo Tavira Sánchez",
+                "email": null,
+                "bio": "Maestro en Bibliotecología y Estudios de la Información. Su valiosa experiencia como profesor y bibliotecario lo ha llevado a compartir su amplio conocimiento, explorar tecnologías para mejorar el acceso a la información y demostrar un compromiso sólido con la educación y la búsqueda de conocimiento.",
+                "photo": "ricardo-tavira.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 484,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:48:31.000Z",
+                    "updatedAt": "2023-09-26T00:48:31.000Z",
+                    "workshopId": 11,
+                    "speakerId": 16
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Lineamientos sobre IA en el aula",
+        "tools": "<p>Contar con una cuenta de <a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noreferrer\">ChatGPT</a></p>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien toma el taller conocerá los beneficios, riesgos, y recomendaciones éticas sobre IAG en educacón y podrá redactar lineamientos de uso para sus estudiantes.",
+        "themes": "<ul>\n  <li>Beneficios y riesgos del uso de inteligencia artificial generativa en educación.</li>\n  <li>Revisión de recomendaciones para el uso ético de la inteligencia artificial.</li>\n  <li>Redacción de lineamientos de uso de inteligencia artificial para los estudiantes.</li>\n</ul>",
+        "product": "Lista de lineamientos de uso de inteligencia artificial dirigido a sus estudiantes.",
+        "references": "<p>Foltynek, T., Bjelobaba, S., Glendinning, I., Khan, Z. R., Santos, R., Pavletic, P., & Kravjar, J. (2023). ENAI Recommendations on the ethical use of Artificial Intelligence in Education. International Journal for Educational Integrity, 19(1), 12.</p>\n<p>Hilliger, I., Ruipérez-Valiente, J. A., Alexandron, G., & Gašević, D. (2022). Trustworthy remote assessments: A typology of pedagogical and technological strategies. Journal of computer assisted learning, 38(6), 1507-1520.</p>\n<p>Rudolph, J., Tan, S., & Tan, S. (2023). ChatGPT: Bullshit spewer or the end of traditional assessments in higher education?. Journal of Applied Learning and Teaching, 6(1).</p>",
+        "keywords": "Políticas de uso, ética de la inteligencia artificial, lineamientos de uso",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/81019287270?pwd=bjhoSGd5SDBLVDdVUWFIVUhqcnFtUT09",
+        "youTubeurl": "NPJ1K7jZggg",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 14,
+                "name": "Joaquin Navarro Perales",
+                "email": "joaquin_navarro@cuaed.unam.mx",
+                "bio": "Maestro en Ciencias en Ingeniería Eléctrica por el CINVESTAV y académico en la CUAIEED-UNAM donde sus líneas de investigación comprenden: inteligencia artificial en educación, agentes conversacionales y aprendizaje autónomo, además de impartir cursos de profesionalización docente sobre inteligencia artificial y educación basada en evidencias.",
+                "photo": "joaquin-navarro.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2046,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:47:58.000Z",
+                    "updatedAt": "2023-09-26T00:47:58.000Z",
+                    "workshopId": 10,
+                    "speakerId": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Herramientas de creación de cursos con IAGen",
+        "tools": "<ul>\n  <li><a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noreferrer\">Chat GPT</a></li>\n  <li><a href=\"https://fliki.ai/\" target=\"_blank\" rel=\"noreferrer\">Fliki Ai</a></li>\n  <li><a href=\"https://studio.ai/\" target=\"_blank\" rel=\"noreferrer\">Studio.Ai</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Los participantes en el taller conocerán de qué manera Chat GPT, Fliki Ai y Studio.Ai se utilizan como asistentes para el diseño instruccional y de contenidos.",
+        "themes": "<ul>\n  <li>Elementos del diseño instruccional</li>\n  <li>Chatp GPT</li>\n  <li>Herramientas de creación de contenido</li>\n  <li>Fliki Ai</li>\n  <li>Studio. Ai</li>\n</ul>",
+        "product": "Formato con ideas preliminares para el diseño de una clase a partir de las herramientas de IAGen.",
+        "references": "<p>Fengchun, M. & Wayne H., (2023) Guidance for generative AI in education and research. UNESCO. ISBN 978-92-3-100612-8 <a href=\"https://unesdoc.unesco.org/ark:/48223/pf0000386693?posInSet=11&queryId=N-34228cec-a282-4247-b8d5-0161134ee6b4\" target=\"_blank\" rel=\"noreferrer\">https://unesdoc.unesco.org/ark:/48223/pf0000386693?posInSet=11&queryId=N-34228cec-a282-4247-b8d5-0161134ee6b4</a></p>\n<p>Gibson, R. (2023) 10 Ways Artificial Intelligence is transforming instructional design. EDUCAUSE <a href=\"https://er.educause.edu/articles/2023/8/10-ways-artificial-intelligence-is-transforming-instructional-design\" target=\"_blank\" rel=\"noreferrer\">https://er.educause.edu/articles/2023/8/10-ways-artificial-intelligence-is-transforming-instructional-design</a></p>\n<p>Dickey, E. & Bejarano, A. (2023) A Model for Integrating Generative AI into Course Content Development. ArXiv DOI <a href=\"https://doi.org/10.48550/arXiv.2308.12276\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.48550/arXiv.2308.12276</a></p>",
+        "keywords": "Diseño instruccional, Inteligencia artificial generativa, creación de contenido",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/89435769387?pwd=Y3BLUkNSTTRmcUtMY3JZRElJdE5vUT09",
+        "youTubeurl": "8TSE2DuZhk0",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 13,
+                "name": "Verónica Luna de la Luz",
+                "email": "veronica_luna@ceide.unam.mx",
+                "bio": "Maestra en Ciencias de la Educación y licenciada en Psicología por la UNAM. Es profesora de Informática Biomédica y Docencia en Ciencias de la Salud, y subdirectora de innovación educativa en la CUAIEED, integrante del equipo de investigación sobre las analíticas del aprendizaje en la UNAM y fue organizadora del Laboratorio de Inteligencia Artificial en Educación Superior del 2022.",
+                "photo": "veronica-luna.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1999,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:47:32.000Z",
+                    "updatedAt": "2023-09-26T00:47:32.000Z",
+                    "workshopId": 9,
+                    "speakerId": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Evaluación de textos académicos realizados con IAGen",
+        "tools": "Herramienta de IAGen (texto a texto), se puede usar la versión gratuita.",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Cada participante de este taller desarrollará un instrumento de evaluación que tome en cuenta la interacción con una herramienta de inteligencia artificial generativa texto a texto para la creación de un escrito académico.",
+        "themes": "<ul>\n  <li>Creación de textos académicos con IAGen</li>\n  <li>Características de las interacciones productivas</li>\n  <li>Elaboración de un instrumento de evaluación</li>\n</ul>",
+        "product": "Instrumento de evaluación",
+        "references": "<p>Alshater, M. (2022). Exploring the Role of Artificial Intelligence in Enhancing Academic Performance: A Case Study of ChatGPT (SSRN Scholarly Paper Núm. 4312358). <a href=\"https://doi.org/10.2139/ssrn.4312358\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.2139/ssrn.4312358</a></p>\n<p>Mills, A. (2023, marzo 23). Advice | ChatGPT Just Got Better. What Does That Mean for Our Writing Assignments? The Chronicle of Higher Education. <a href=\"https://www.chronicle.com/article/chatgpt-just-got-better-what-does-that-mean-for-our-writing-assignments\" target=\"_blank\" rel=\"noreferrer\">https://www.chronicle.com/article/chatgpt-just-got-better-what-does-that-mean-for-our-writing-assignments</a></p>",
+        "keywords": "texto académico, IAGen, escritura con apoyo de IAGen, evaluación de textos creados con IAGen",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/82026337935",
+        "youTubeurl": "MLj48AdvKZo",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 12,
+                "name": "Karen Matías",
+                "email": "karen_matias@ceide.unam.mx",
+                "bio": "Pedagoga especialista en diseño de experiencias de aprendizaje y evaluación educativa, parte de la subdirección de innovación educativa en la CUAIEED, trabaja temas de desarrollo de habilidades de pensamiento crítico y usos éticos de herramientas de IA para propósitos de formación y de procesos de enseñanza y de aprendizaje.",
+                "photo": null,
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2037,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:47:32.000Z",
+                    "updatedAt": "2023-09-26T00:47:32.000Z",
+                    "workshopId": 8,
+                    "speakerId": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Tu asistente IA en la investigación A",
+        "tools": "<p>Crear cuentas gratuitas en:</p>\n<ul>\n  <li><a href=\"https://www.researchaide.org\">ResearchAIde</a></li>\n  <li><a href=\"https://elicit.org\">Elicit</a></li>\n  <li><a href=\"https://www.researchrabbit.ai\">Research Rabbit</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien curse el taller identificará cómo utilizar con sus estudiantes algunas herramientas de IA en actividades de investigación.",
+        "themes": "<ul>\n  <li>Ayudar a los estudiantes a plantear preguntas de investigación con herramientas de IA</li>\n  <li>Realizar síntesis o extraer información específica de documentos en PDF</li>\n  <li>Realizar mapas para estudios bibliométricos</li>\n</ul>",
+        "product": "Ejemplos de actividades para realizar con sus estudiantes, utilizando un asistente IA en la investigación.",
+        "references": "<p>Office of Educational Technology. (May, 2023). Artificial Intelligence and the future of teaching and learning. Insights and recommendations. Department of education. United Estates of America. <a href=\"https://tech.ed.gov/ai-future-of-teaching-and-learning/\" target=\"_blank\" rel=\"noreferrer\">https://tech.ed.gov/ai-future-of-teaching-and-learning/</a></p>\n<p>Universidad de Sevilla (2023) Monográfico No. 41. Inteligencia artificial en la investigación y la docencia universitaria. <a href=\"https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf\" target=\"_blank\" rel=\"noreferrer\">https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf</a></p>\n<p>UNESCO. (2023). La Inteligencia Artificial en la Educación. <a href=\"https://es.unesco.org/themes/tic-educacion/inteligencia-artificial\" target=\"_blank\" rel=\"noreferrer\">https://es.unesco.org/themes/tic-educacion/inteligencia-artificial</a></p>\n<p>UNESCO. (2023). ¿Cómo la inteligencia artificial puede reforzar la educación? <a href=\"https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion\" target=\"_blank\" rel=\"noreferrer\">https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion</a></p>",
+        "keywords": "Investigación, Preguntas de Investigación, Asistentes de IA",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/87384896514?pwd=WXduSTdJck9HVWh6NFhMNURvakxNUT09",
+        "youTubeurl": "MXk3oeXYJdc",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 9,
+                "name": "Stephen García Garibay",
+                "email": "sgg@unam.mx",
+                "bio": null,
+                "photo": "stephen-garcia.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1405,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:45:19.000Z",
+                    "updatedAt": "2023-09-26T00:45:19.000Z",
+                    "workshopId": 7,
+                    "speakerId": 9
+                }
+            },
+            {
+                "id": 11,
+                "name": "Arturo Muñiz Colunga",
+                "email": "artmcolunga@educatic.unam.mx",
+                "bio": null,
+                "photo": "arturo-muniz.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 926,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:45:53.000Z",
+                    "updatedAt": "2023-09-26T00:45:53.000Z",
+                    "workshopId": 7,
+                    "speakerId": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Lineamientos de trabajo para usar IAGen en el aula",
+        "tools": "Únicamente un procesador de texto",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "A partir de la revisión de ejemplos, cada participante de este taller redactará lineamientos claros y específicos para el trabajo con una herramienta de inteligencia artificial generativa en su asignatura.",
+        "themes": "Necesidad del trabajo con lineamientos de uso de IAGen en el aula\nRevisión de ejemplos\nIdentificación de estrategias para lograr lineamientos claros y específicos\nCompartir y aprender de otros lineamientos generados en el taller",
+        "product": "Lineamientos de trabajo",
+        "references": "<p>Alshater, M. (2022). Exploring the Role of Artificial Intelligence in Enhancing Academic Performance: A Case Study of ChatGPT (SSRN Scholarly Paper Núm. 4312358). <a href=\"https://doi.org/10.2139/ssrn.4312358\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.2139/ssrn.4312358</a></p>\n<p>Fyfe, P. (2022). How to cheat on your final paper: Assigning AI for student writing. AI & SOCIETY. <a href=\"https://doi.org/10.1007/s00146-022-01397-z\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1007/s00146-022-01397-z</a></p>\n<p>Gašević, D., Siemens, G., & Sadiq, S. (2023). Empowering learners for the age of artificial intelligence. Computers and Education: Artificial Intelligence, 100130. <a href=\"\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1016/j.caeai.2023.100130</a></p>",
+        "keywords": "Lineamientos, IAGen en el aula, estrategias para lineamientos claros y específicos, políticas para el uso de IAGen en el aula",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/87924460320?pwd=cWFPZS9uSkRHR1pQQk9iTVY0NjlBUT09",
+        "youTubeurl": "aUJKgPCGTJI",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 7,
+                "name": "Jackeline Bucio García",
+                "email": "jackeline_bucio@cuaed.unam.mx",
+                "bio": "Jackeline Bucio es doctora en Lingüística por la UNAM, maestra en Estudios de Asia y África por El Colegio de México y licenciada en Lengua y Literaturas Hispánicas por la UNAM. Actualmente es subdirectora del área de Bachillerato a distancia (B@UNAM) y Cursos Masivos Abiertos en Línea (MOOC), de la Coordinación de Universidad Abierta, Innovación Educativa y Educación a Distancia (CUAIEED), en la UNAM. Junto con el equipo de esta área trabaja en el diseño curricular de sistemas educativos híbridos y a distancia, y en la elaboración de recursos educativos abiertos.",
+                "photo": "jackeline-bucio.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:44:52.000Z",
+                    "updatedAt": "2023-09-26T00:44:52.000Z",
+                    "workshopId": 6,
+                    "speakerId": 7
+                }
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Investigar en el aula con IA I",
+        "tools": "ChatGPT 3.5 y Bard (para ambas solo se necesita tener cuenta de correo electrónico)",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien tome este taller conocerá y aplicará los conceptos básicos de investigación apoyados en IA para identificar y delimitar temáticas de interés a través de la problematización, la construcción de preguntas de investigación, y el formato de citación como parte de las consideraciones éticas en los procesos de indagación; para desarrollar un primer planteamiento de investigación.",
+        "themes": "<ul>\n  <li>Planteamiento de una situación problemática (Problematización)</li>\n  <li>Redactar preguntas de investigación</li>\n  <li>Citar a una IA en APA</li>\n</ul>",
+        "product": "El producto final debe presentar el tema de investigación (problematización), la o las preguntas de investigación y una propuesta de incorporación de la IA al proceso. Además, debe incluir la cita de la herramienta de IA de la que hicieron uso.",
+        "references": "<p>Bahroun, Z., Anane, C., Ahmed, V., & Zacca, A. (2023). Transforming Education: A Comprehensive Review of Generative Artificial Intelligence in Educational Settings through Bibliometric and Content Analysis. Sustainability, 15(17), 12983. <a href=\"https://doi.org/10.3390/su151712983\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.3390/su151712983</a></p>\n<p>Shane, J. (Abril, 2019). The danger of AI is weirder than you think [Video]. TED Conferences. <a href=\"https://www.ted.com/talks/janelle_shane_the_danger_of_ai_is_weirder_than_you_think\" target=\"_blank\" rel=\"noreferrer\">https://www.ted.com/talks/janelle_shane_the_danger_of_ai_is_weirder_than_you_think</a></p>\n<p>Wu, R., & Yu, Z. (2023). Do AI chatbots improve students learning outcomes? Evidence from a meta-analysis. British Journal of Educational Technology. <a href=\"https://doi.org/10.1111/bjet.13334\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1111/bjet.13334</a></p>",
+        "keywords": "Investigación, Inteligencia Artificial, Pregunta de investigación, Problematizar.",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/89162768065?pwd=SXhhR1VOOHpBWlVaYVhNWG9qejJPdz09",
+        "youTubeurl": "LAiOucSNyqc",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 5,
+                "name": "María de los Ángeles Gutiérrez Lovera",
+                "email": "angeles_gutierrez@ceide.unam.mx",
+                "bio": "Licenciada en Psicología Social egresada de la Universidad Autónoma Metropolitana (UAM). Actualmente Líder de Proyecto en la Subdirección de Investigación de la Coordinación de Universidad Abierta, Innovación Educativa y Educación a Distancia (CUAIEED) de la UNAM, apoyando en el desarrollo de proyectos de investigación educativa para la comunidad universitaria. Dentro de sus líneas de investigación se incluye el trabajo con jóvenes de la Ciudad de México y sus experiencias durante la pandemia por Covid-19, así como las expectativas y prospectivas de estudiantes y docentes para el retorno a las actividades presenciales en la UNAM.",
+                "photo": "angeles-gutierrez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 977,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:44:17.000Z",
+                    "updatedAt": "2023-09-26T00:44:17.000Z",
+                    "workshopId": 5,
+                    "speakerId": 5
+                }
+            },
+            {
+                "id": 6,
+                "name": "Maura Pompa Mansilla",
+                "email": "maura_pompa@ceide.unam.mx",
+                "bio": "Licenciada en Pedagogía por la Facultad de Filosofía y Letras de la UNAM. Fue investigadora durante ocho años en el Centro de Estudios Educativos A. C. (CEE). Se ha desempeñado primordialmente realizando investigación en educación en temas relacionados con formación y desempeño docente, identidad del profesorado, educación basada en evidencias, equidad en la educación, educación indígena, inter y multiculturalidad, e inclusión de TIC en el aula. Es docente de posgrado y actualmente se desempeña como Jefa del Departamento de Investigación Traslacional en Educación en la Coordinación de Universidad Abierta, Innovación Educativa y Educación a Distancia (CUAIEED).",
+                "photo": "maura-pompa.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 983,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:44:52.000Z",
+                    "updatedAt": "2023-09-26T00:44:52.000Z",
+                    "workshopId": 5,
+                    "speakerId": 6
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Prompts básicos para obtener textos",
+        "tools": "<p>ChatGPT. Cada participante debe abrir o tener una cuenta (de acceso abierto) en <a href=\"https://openai.com/\" target=\"_blank\" rel=\"noreferrer\">openai.com</a></p>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Experimentar algunas posibilidades del Chat GPT para conseguir mejores documentos académicos, en menos tiempo.",
+        "themes": "<ol>\n  <li>Los prompts o llamados a la acción</li>\n  <li>\"De ahora en adelante...\"</li>\n  <li>Mejora mi prompt</li>\n  <li>Contesta como si fueras X</li>\n  <li>Explícalo a x tipo de persona</li>\n  <li>Ejemplos de pocas tomas (few-shot examples)</li>\n</ol>",
+        "product": "<p>Cada participante tendrá:</p>\n<ol type=\"a\">\n  <li>Al menos 3 textos redactados por la IAGen generados a partir de los prompts o llamados a la acción que le solicitó, y</li>\n  <li>La satisfacción de tener los textos en menos tiempo y buena calidad.</li>\n</ol>",
+        "references": "<p>Hwang, G. J., & Chen, N.S. (2023). Editorial position paper. Exploring the potential of generative artificial Intelligence in Education: Applications, challenges, and future research directions. Educational Technology & Society, 26(2). <a href=\"https://doi.org/10.30191/ETS.202304_26(2).0014\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.30191/ETS.202304_26(2).0014</a></p>\n<p>Spasić, A.J. y Janković, D.S. (2023). Using ChatGPT Standard Prompt Engineering Techniques in Lesson Preparation: Role, Instructions and Seed-Word Prompts. 58th International Scientific Conference on Information, Communication and Energy Systems and Technologies (ICEST). DOI: 10.1109/ICEST58410.2023.10187269</p>\n<p>White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Eluashar, A., Spencer-Smith, J. y Schmidt, D.C. (2023). A prompt pattern catalog to enhance prompt engineering with ChatGPT. arXiv:2302.11382. <a href=\"https://doi.org/10.48550/arXiv.2302.11382\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.48550/arXiv.2302.11382</a></p>",
+        "keywords": "texto a texto, prompts, Chat GPT, patrones",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/83349321431?pwd=UG52Mk9FM0VSdDFqQmN1WmtCa3paZz09",
+        "youTubeurl": "z5F1eyxX1OQ",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 4,
+                "name": "Guadalupe Vadillo",
+                "email": "guadalupe.vadillo@gmail.com",
+                "bio": "Psicóloga con máster y doctorado en educación. Su interés central es el aprendizaje en línea y los factores que lo promueven. Es Directora del Bachillerato a Distancia y MOOC de la UNAM, así como de la Revista Mexicana de Bachillerato a Distancia.",
+                "photo": "guadalupe-vadillo.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 3,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:44:17.000Z",
+                    "updatedAt": "2023-09-26T00:44:17.000Z",
+                    "workshopId": 4,
+                    "speakerId": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Búsquedas de literatura científica con IA",
+        "tools": "<p>En este taller se ocuparan tres herramientas de IA en su versión gratuita, les solicitamos a los participantes se registren y generen una cuenta:</p>\n<ol>\n  <li><a href=\"https://elicit.com/users/auth?show=signup\" target=\"_blank\" rel=\"noreferrer\">Elicit</a></li>\n  <li><a href=\"https://consensus.app/sign-up/#/?redirect_url=/search/\" target=\"_blank\" rel=\"noreferrer\">Consensus</a></li>\n  <li><a href=\"https://app.litmaps.com/?auth=sign-up\" target=\"_blank\" rel=\"noreferrer\">Litmaps</a></li>\n</ol>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Los participantes conocerán y usarán tres herramientas de IA enfocadas en buscar y analizar literatura científica publicada y revisada por pares",
+        "themes": "<ul>\n  <li>Alfabetización informacional</li>\n  <li>Recuperación de Información</li>\n  <li>Artículos de investigación revisados por pares</li>\n  <li>Análisis de información</li>\n  <li>Evaluación de literatura</li>\n  <li>Métricas</li>\n</ul>",
+        "product": "Cada participante se llevará una búsqueda construida de su tema de interés y con los resultados que devuelven tres herramientas de inteligencia artificial",
+        "references": "<p>Affum, Mark Quaye, (2023). Investigating the Potential Impact of Artificial Intelligence in Librarianship. Library Philosophy and Practice (e-journal). 7849. <a href=\"https://digitalcommons.unl.edu/libphilprac/7849\" target=\"_blank\" rel=\"noreferrer\">https://digitalcommons.unl.edu/libphilprac/7849</a></p>\n<p>Barsha, S. and Munshi, S.A. (2023), Implementing artificial intelligence in library services: a review of current prospects and challenges of developing countries, Library Hi Tech News. <a href=\"https://doi.org/10.1108/LHTN-07-2023-0126\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1108/LHTN-07-2023-0126</a></p>\n<p>Gusenbauer, M. (2019). Google Scholar to overshadow them all? Comparing the sizes of 12 academic search engines and bibliographic databases. Scientometrics 118, 177-214. <a href=\"https://doi.org/10.1007/s11192-018-2958-5\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1007/s11192-018-2958-5</a></p>\n<p>Kung JY. (2023) Elicit. J Can Health Libr Assoc. Apr 1;44(1):15-8. doi: 10.29173/jchla29657. PMCID: PMC10089336</p>\n<p>Liu, J., Liu, J., Chen, Y. (2022). Application of Artificial Intelligence Technology in Information Retrieval of University Library. In: Hung, J.C., Chang, JW., Pei, Y., Wu, WC. (eds) Innovative Computing . Lecture Notes in Electrical Engineering, vol 791. Springer, Singapore. <a href=\"https://doi.org/10.1007/978-981-16-4258-6_28\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1007/978-981-16-4258-6_28</a></p>",
+        "keywords": "análisis de información, artículos de investigación, búsquedas en la Web, recuperación de información, revisión de literatura",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/83217958286?pwd=Y1JsRjhkY05tbDZuY3ZWVEw5QnlaZz09",
+        "youTubeurl": "rdTpvK8lcto",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 3,
+                "name": "Roberto Santos Solórzano",
+                "email": "roberto_santos@ceide.unam.mx",
+                "bio": "Es Coordinador de Diseño de Experiencias de Aprendizaje en la CUAIEED y colaborador del laboratorio de Bioinformación de la Facultad de Ciencias. Tiene más de 10 años de experiencia docente. Es autor y coautor de publicaciones sobre tendencias en educación. Sus líneas de investigación contemplan: la cienciometría y las analíticas del aprendizaje.",
+                "photo": "roberto-santos.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2012,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:43:43.000Z",
+                    "updatedAt": "2023-09-26T00:43:43.000Z",
+                    "workshopId": 3,
+                    "speakerId": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Investigar en el aula con IA: II",
+        "tools": "<p>Una cuenta en <a href=\"https://app.litmaps.com/\" target=\"_blank\" rel=\"noreferrer\">LitMaps</a></p>",
+        "level": 2,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Conocer recursos de Inteligencia Artificial que pueden usarse en el proceso de investigar, de forma específica en el momento de sistematizar información.",
+        "themes": "<ul>\n  <li>Profundizar en resultados de búsqueda de información.</li>\n  <li>Realizar estrategias de búsqueda focalizada.</li>\n  <li>Revisión y valoración de evidencias científicas.</li>\n  <li>Organización de resultados seleccionados de búsqueda.</li>\n</ul>",
+        "product": "Matriz de sistematización de resultados de búsquedas, completada con información seleccionada y recuperada de análisis individuales de investigación.",
+        "references": "<p>Buchali, V. (2019). Desarrollo del estado del arte en investigación: una herramienta basada en inteligencia artificial. Revista Politécnica, 15(30). 70-81. <a href=\"https://doi.org/10.33571/rpolitec.v15n30a7\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.33571/rpolitec.v15n30a7</a></p>\n<p>Xu, Y.,Liu, X., Cao, X., Huang, C., Liu, E., Qian, S & Liu, X. (2021). Artificial Intelligence: A Powerful Paradigm for Scientific Research. The Innovation, 2(4). 708-727.\n  DOI: 10.1016/j.xinn.2021.100179</p>\n<p>Atkinson, C. (2023).Cheap, Quick, and Rigorous: Artificial Intelligence and the Systematic Literature Review. Social Science Computer Review. <a href=\"https://doi.org/10.1177/08944393231196281\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1177/08944393231196281</a></p>",
+        "keywords": "Investigación, Sistematización de información, Información e Inteligencia artificial",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/84789803824?pwd=cEpiblJLR3BLdm1ISk9vYkdaZnBGUT09",
+        "youTubeurl": "5Ay5sfRisH8",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 20,
+                "name": "Víctor Jesús Rendón Cazales",
+                "email": "victor_rendon@cuaieed.unam.mx",
+                "bio": "Coordinador de Investigación Traslacional en Educación en la CUAIEED, investiga temáticas como la movilización de conocimientos entre la docencia y la investigación, prácticas de lectura y escritura académica, cultura digital, educación basada en evidencias, desarrollo profesional docente y vinculación entre educación formal y no formal.",
+                "photo": "victor-rendon.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 975,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:50:06.000Z",
+                    "updatedAt": "2023-09-26T00:50:06.000Z",
+                    "workshopId": 13,
+                    "speakerId": 20
+                }
+            },
+            {
+                "id": 21,
+                "name": "Miguel Ángel Hernández Alvarado",
+                "email": "miguel_hernandez@ceide.unam.mx",
+                "bio": "Soy pedagogo, investigador de temas educativo y docente a nivel superior en áreas de Educación, Psicología, Administración escolar y Psicopedagogía. Cuento con experiencia clínica de consultorio de apoyo al aprendizaje y publicaciones en revistas y libros. Soy Jefe de Departamento de Investigación en Educación en la CUAIEED de la UNAM.",
+                "photo": "miguel-hernandez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 976,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:50:06.000Z",
+                    "updatedAt": "2023-09-26T00:50:06.000Z",
+                    "workshopId": 13,
+                    "speakerId": 21
+                }
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "title": "De papeles a pixeles. Modelos generativos de imágenes",
+        "tools": "<ol>\n  <li><a href=\"https://openai.com/dall-e-2\" target=\"_blank\" rel=\"noreferrer\">DALEE-2</a></li>\n  <li><a href=\"https://www.midjourney.com/auth/signin/\" target=\"_blank\" rel=\"noreferrer\">Midjourney</a></li>\n  <li><a href=\"https://clipdrop.co/tools\" target=\"_blank\" rel=\"noreferrer\">Stable Diffusion</a></li>\n  <li><a href=\"https://app.leonardo.ai/\" target=\"_blank\" rel=\"noreferrer\">Leonardo.AI</a></li>\n  <li>Microsoft Bing Chat</li>\n</ol>",
+        "level": 2,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Al finalizar este taller, los participantes tendrán las habilidades y conocimientos necesarios para explorar los modelos de visión más comunes y aplicar técnicas intermedias en la generación artificial y transformación digital de imágenes.",
+        "themes": "<ol>\n  <li>IAs de generación de imágenes: DALLE-2, Midjourney y Sable Diffusion.</li>\n  <li>Modelos generativos: GAN's, VAE's y Diffusion models.</li>\n  <li>Prompt tuning.</li>\n  <li>Upscale y downscale.</li>\n  <li>Inpainting y outpainting.</li>\n  <li>Image-to-image.</li>\n  <li>Depth-to-image.</li>\n</ol>",
+        "product": "<ol>\n  <li>Presentación del taller.</li>\n  <li>Manuales y guías de uso.</li>\n  <li>Portafolio de imágenes.</li>\n</ol>",
+        "references": "<p>Liu, J. (2023). How to imagine the world with text? From Text-to-image Generation View. Highlights in Science, Engineering and Technology, 39, 644-650. <a href=\"https://doi.org/10.54097/hset.v39i.6619\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.54097/hset.v39i.6619</a></p>\n<p>Gafni, O., Polyak, A., Ashual, O., Sheynin, S., Parikh, D., & Taigman, Y. (2022). Make-A-Scene: Scene-Based Text-to-Image Generation with human Priors. arXiv (Cornell University). <a href=\"https://doi.org/10.48550/arxiv.2203.13131\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.48550/arxiv.2203.13131</a></p>",
+        "keywords": "IAs de generación de imágenes, modelos de visión, prompt tuning",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/87592280692?pwd=ZWgyaFljMVFZWk5oN2wvTGZpSVp6Zz09",
+        "youTubeurl": "r1gL5t47Puo",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 22,
+                "name": "Erik Carbajal-Degante",
+                "email": "erik_carbajal@cuaed.unam.mx",
+                "bio": "Erik Carbajal-Degante, PhD en Ciencia e Ingeniería de la Computación por la UNAM. Investigador en CUAED, especializado en procesamiento de señales e inteligencia artificial. Experimentado en desarrollo de proyectos y publicación de artículos. Ha sido docente de la facultad de ingeniería y DGAPA. Candidato a investigador por CONAHCYT.",
+                "photo": "erik-carbajal.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 7,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:50:56.000Z",
+                    "updatedAt": "2023-09-26T00:50:56.000Z",
+                    "workshopId": 14,
+                    "speakerId": 22
+                }
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Creación de prompts con Mr. GPT (Gran Productor de Texto).",
+        "tools": "cuenta gratuita de chatGPT (recomendada), bingChat, antropic claude o Bard",
+        "level": 2,
+        "educationLevel": "Licenciatura",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "El participante conocerá las prácticas más comunes para diseñar prompts para la IA generativa del tipo texto a texto, con una dificultad de interacción intermedia. Se revisarán casos específicos para interactuar con chatGPT para sintetizar el contenido de textos, diseñar formatos de salida complejos y controlar la creatividad de la IA en sus contenidos.",
+        "themes": "<ul>\n  <li>Interacción con chatGPT para producción y síntesis de textos extensos.</li>\n  <li>Formatos avanzados de salida (juegos, código fuente, estructuras de datos, LaTex, etc).</li>\n  <li>Plantillas avanzadas e interactivas.</li>\n  <li>Parámetros en los grandes modelos de lenguaje.</li>\n</ul>",
+        "product": "El participante obtendrá un catálogo de ejemplos probados para generar textos avanzados, de propósito especifico y con formatos de salida personalizados.",
+        "references": "<p>White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Elnashar, A., Spencer-Smith, J., & Schmidt, D. C. (2023). A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT</p>\n<p>Zamfirescu-Pereira, J., Wong, R., Hartmann, B., & Yang, Q. (2023). Why Johnny Can’t Prompt: How Non-AI Experts Try (and Fail) to Design LLM Prompts. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems. Association for Computing Machinery</p>\n<p>Si, C., Gan, Z., Yang, Z., Wang, S., Wang, J., Boyd-Graber, J., & Wang, L. (2022). Prompting GPT-3 To Be Reliable</p>",
+        "keywords": "chatGPT, prompting, prompt crafting, interacción, texto a texto, intermedio",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/86193712275?pwd=RnFiakJRcUdkbldQclc2SWMyM2tldz09",
+        "youTubeurl": "ZdIKZdX2L2A",
+        "ocurrenceDay": "Lunes 23 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 23,
+                "name": "Carlos Adrian Sarmiento Gutierrez",
+                "email": "adrian_sarmiento@cuaed.unam.mx",
+                "bio": "Es Doctor en Ciencia e Ingeniería de la Computación por la Universidad Nacional Autónoma de México . Es Maestro en Ingeniería Eléctrica, en el área de Procesamiento Digital de Señales en el Posgrado de Ingeniería de la misma universidad,  e Ingeniero en Electrónica egresado de la Universidad Autónoma Metropolitana (UAM). Se especializó durante sus estudios de doctorado en aprendizaje de máquina, visión por computadora, aprendizaje por refuerzo, aprendizaje profundo, redes neuronales artificiales, modelos probabilísticos como son los modelos ocultos de Markov y en la teoría de campos aleatorios . Participó en competencias internacionales de robótica como es la RoboCup del año 2018 y 2019 en la categoría @Home y en el World Robot Summit de 2018 celebrado en Tokio. Actualmente ocupa el cargo de ​C​oordinador de investigación e innovación académica del Bachillerato a distancia.",
+                "photo": "adrian-sarmiento.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1957,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:50:56.000Z",
+                    "updatedAt": "2023-09-26T00:50:56.000Z",
+                    "workshopId": 15,
+                    "speakerId": 23
+                }
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "title": "Tu asistente IA en la investigación B",
+        "tools": "<p>Crear cuentas gratuitas en:</p>\r\n<ul>\r\n  <li><a href=\"https://www.researchaide.org\">ResearchAIde</a></li>\r\n  <li><a href=\"https://elicit.org\">Elicit</a></li>\r\n  <li><a href=\"https://www.researchrabbit.ai\">Research Rabbit</a></li>\r\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien curse el taller identificará cómo utilizar con sus estudiantes algunas herramientas de IA en actividades de investigación.",
+        "themes": "<ul>\r\n  <li>Ayudar a los estudiantes a plantear preguntas de investigación con herramientas de IA</li>\r\n  <li>Realizar síntesis o extraer información específica de documentos en PDF</li>\r\n  <li>Realizar mapas para estudios bibliométricos</li>\r\n</ul>",
+        "product": "Ejemplos de actividades para realizar con sus estudiantes, utilizando un asistente IA en la investigación.",
+        "references": "<p>Office of Educational Technology. (May, 2023). Artificial Intelligence and the future of teaching and learning. Insights and recommendations. Department of education. United Estates of America. <a href=\"https://tech.ed.gov/ai-future-of-teaching-and-learning/\" target=\"_blank\" rel=\"noreferrer\">https://tech.ed.gov/ai-future-of-teaching-and-learning/</a></p>\r\n<p>Universidad de Sevilla (2023) Monográfico No. 41. Inteligencia artificial en la investigación y la docencia universitaria. <a href=\"https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf\" target=\"_blank\" rel=\"noreferrer\">https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf</a></p>\r\n<p>UNESCO. (2023). La Inteligencia Artificial en la Educación. <a href=\"https://es.unesco.org/themes/tic-educacion/inteligencia-artificial\" target=\"_blank\" rel=\"noreferrer\">https://es.unesco.org/themes/tic-educacion/inteligencia-artificial</a></p>\r\n<p>UNESCO. (2023). ¿Cómo la inteligencia artificial puede reforzar la educación? <a href=\"https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion\" target=\"_blank\" rel=\"noreferrer\">https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion</a></p>",
+        "keywords": "Investigación, Preguntas de Investigación, Asistentes de IA",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/86722242213?pwd=TWlZRzBhdTFsQ2RpaGJkaE1uZGVMdz09",
+        "youTubeurl": "iIvbs58C_vo",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 9,
+                "name": "Stephen García Garibay",
+                "email": "sgg@unam.mx",
+                "bio": null,
+                "photo": "stephen-garcia.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1405,
+                "workshopspeakers": {
+                    "createdAt": "2023-10-05T19:37:21.000Z",
+                    "updatedAt": "2023-10-05T19:37:21.000Z",
+                    "workshopId": 33,
+                    "speakerId": 9
+                }
+            },
+            {
+                "id": 11,
+                "name": "Arturo Muñiz Colunga",
+                "email": "artmcolunga@educatic.unam.mx",
+                "bio": null,
+                "photo": "arturo-muniz.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 926,
+                "workshopspeakers": {
+                    "createdAt": "2023-10-05T19:37:21.000Z",
+                    "updatedAt": "2023-10-05T19:37:21.000Z",
+                    "workshopId": 33,
+                    "speakerId": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "title": "Tu asistente IA en la investigación A",
+        "tools": "<p>Crear cuentas gratuitas en:</p>\n<ul>\n  <li><a href=\"https://www.researchaide.org\">ResearchAIde</a></li>\n  <li><a href=\"https://elicit.org\">Elicit</a></li>\n  <li><a href=\"https://www.researchrabbit.ai\">Research Rabbit</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien curse el taller identificará cómo utilizar con sus estudiantes algunas herramientas de IA en actividades de investigación.",
+        "themes": "<ul>\n  <li>Ayudar a los estudiantes a plantear preguntas de investigación con herramientas de IA</li>\n  <li>Realizar síntesis o extraer información específica de documentos en PDF</li>\n  <li>Realizar mapas para estudios bibliométricos</li>\n</ul>",
+        "product": "Ejemplos de actividades para realizar con sus estudiantes, utilizando un asistente IA en la investigación.",
+        "references": "<p>Office of Educational Technology. (May, 2023). Artificial Intelligence and the future of teaching and learning. Insights and recommendations. Department of education. United Estates of America. <a href=\"https://tech.ed.gov/ai-future-of-teaching-and-learning/\" target=\"_blank\" rel=\"noreferrer\">https://tech.ed.gov/ai-future-of-teaching-and-learning/</a></p>\n<p>Universidad de Sevilla (2023) Monográfico No. 41. Inteligencia artificial en la investigación y la docencia universitaria. <a href=\"https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf\" target=\"_blank\" rel=\"noreferrer\">https://bib.us.es/sites/bib3.us.es/files/investiga41.pdf</a></p>\n<p>UNESCO. (2023). La Inteligencia Artificial en la Educación. <a href=\"https://es.unesco.org/themes/tic-educacion/inteligencia-artificial\" target=\"_blank\" rel=\"noreferrer\">https://es.unesco.org/themes/tic-educacion/inteligencia-artificial</a></p>\n<p>UNESCO. (2023). ¿Cómo la inteligencia artificial puede reforzar la educación? <a href=\"https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion\" target=\"_blank\" rel=\"noreferrer\">https://www.unesco.org/es/articles/como-la-inteligencia-artificial-puede-reforzar-la-educacion</a></p>",
+        "keywords": "Investigación, Preguntas de Investigación, Asistentes de IA",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/84231476199?pwd=WDExMi9WdG9DeUVlQmNYZy9pdkxaZz09",
+        "youTubeurl": "B8qMR6J--XA",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 8,
+                "name": "Marina Kriscautzky Laxague",
+                "email": "mkriscau@gmail.com",
+                "bio": "Los talleristas son académicos de la DGTIC adscritos a la Dirección de Innovación en Tecnologías para la Educación con una amplia experiencia en la formación docente y en el uso e integración de tecnologías para la ducación.",
+                "photo": "marina-kriscautzky.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1779,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:55:42.000Z",
+                    "updatedAt": "2023-09-26T00:55:42.000Z",
+                    "workshopId": 27,
+                    "speakerId": 8
+                }
+            },
+            {
+                "id": 10,
+                "name": "María Elizabeth Martínez Sánchez",
+                "email": "elymarsa@unam.mx",
+                "bio": null,
+                "photo": "elizabeth-martinez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 267,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:56:06.000Z",
+                    "updatedAt": "2023-09-26T00:56:06.000Z",
+                    "workshopId": 27,
+                    "speakerId": 10
+                }
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "title": "Uso de la Inteligencia Artificial (IA) en la docencia",
+        "tools": "<ul>\n  <li><a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noreferrer\">Chat GPT</a></li>\n  <li><a href=\"https://bard.google.com/chat\" target=\"_blank\" rel=\"noreferrer\">Bard</a></li>\n  <li><a href=\"https://www.chatpdf.com/\" target=\"_blank\" rel=\"noreferrer\">Chat PDF</a></li>\n  <li><a href=\"https://you.com/\" target=\"_blank\" rel=\"noreferrer\">you.com</a></li>\n  <li><a href=\"https://www.canva.com/\" target=\"_blank\" rel=\"noreferrer\">Canva</a></li>\n  <li><a href=\"https://leonardo.ai/\" target=\"_blank\" rel=\"noreferrer\">Leonardo.ai</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "El taller se encuentra dirigido a la comunidad universitaria en general, quienes conocerán el contexto actual del uso la inteligencia artificial como parte de la innovación tecnológica actual y su aplicación en el ámbito educativo.\n\n",
+        "themes": "<p>La propuesta temática corresponde a:</p>\n<ol type=\"a\">\n  <li>Reconocer a las nuevas tecnologías y formas de producción de conocimientos.</li>\n  <li>Proponer prácticas innovadoras en el proceso de enseñanza - aprendizaje.</li>\n  <li>Planificar actividades tecnológicas.</li>\n</ol>",
+        "product": "Consiste en el diseño de una secuencia didáctica que conlleve el uso de alguna aplicación de IA.",
+        "references": "<p>Duedahl, P. (2020). Peace in the minds: UNESCO, mental engineering and education. Foro de Educación, 18(2), 23-45. doi: <a href=\"http://dx.doi.org/10.14516/fde.848\" target=\"_blank\" rel=\"noreferrer\">http://dx.doi.org/10.14516/fde.848</a></p>\n<p>Rendón, M. (2023). La inteligencia artificial y sus repercusiones en el proceso de enseñanza-aprendizaje. Gaceta Políticas (296), 9-11.</p>\n<p>Tafoya, E. (2023). IA, retos y desafíos en el proceso de enseñanza-aprendizaje. Gaceta Políticas (296), 4-8.</p>\n<p>UNESCO. (2023). La inteligencia artificial generativa en la educación: ¿Cuáles son las oportunidades y los desafíos?<a href=\"https://www.unesco.org/es/articles/la-inteligencia-artificial-generativa-en-la-educacion-cuales-son-las-oportunidades-y-los-desafios\" target=\"_blank\" rel=\"noreferrer\">https://www.unesco.org/es/articles/la-inteligencia-artificial-generativa-en-la-educacion-cuales-son-las-oportunidades-y-los-desafios</a></p>",
+        "keywords": "Inteligencia artificial, innovación tecnológica, docencia",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/86406495109?pwd=SUNleXlrRWVIRHIzbnRYSWVnOU55dz09",
+        "youTubeurl": "qfdrJ0yR7AI",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 27,
+                "name": "Gabriela González Mejía",
+                "email": "gabriela.gonzalezm@cch.unam.mx",
+                "bio": "Licenciada en Ciencias Políticas y Administración Pública y maestra en Urbanismo por la UNAM. En el sector educativo imparte las asignaturas de Ciencias Políticas y Sociales I y II e Historia de México I y II en el CCH. Fue coordinadora del Programa Institucional de Asesoría del plantel Naucalpan y actualmente colabora como participante y organizadora de diferentes eventos académicos como coloquios, conversatorios, congresos, ciclos de conferencias y talleres del área Histórico – social, también imparte cursos especiales a alumnos y cursos de formación a profesores.",
+                "photo": "gabriela-gonzalez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": null,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:55:02.000Z",
+                    "updatedAt": "2023-09-26T00:55:02.000Z",
+                    "workshopId": 26,
+                    "speakerId": 27
+                }
+            },
+            {
+                "id": 28,
+                "name": "Rogelio Aurelio Rojas Reyes",
+                "email": "rogelio.aurelio@cch.unam.mx",
+                "bio": "Politólogo egresado de Ciencias Políticas y Administración Pública en la UNAM, estudia la carrera de Derecho actualmente en la Facultad de Derecho. Cuenta con el diplomado en Análisis Político Estratégico por el CIDE, así como estudios en políticas públicas para jóvenes y construcción de paz por Naciones Unidas. Es profesor de Ciencias Políticas y Sociales, fue Coordinador del Programa Institucional de Asesoría en el Colegio de Ciencias y Humanidades Plantel Naucalpan y actualmente es Jefe de Sección del Área Histórico-social del mismo plantel.",
+                "photo": "rogelio-aurelio.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": null,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:55:02.000Z",
+                    "updatedAt": "2023-09-26T00:55:02.000Z",
+                    "workshopId": 26,
+                    "speakerId": 28
+                }
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "title": "IA generativa y el pensamiento crítico",
+        "tools": "<ul>\n  <li><a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noreferrer\">ChatGPT</a></li>\n  <li><a href=\"https://www.microsoft.com/es-es/edge?form=MA13FJ\" target=\"_blank\" rel=\"noreferrer\">Navegador Edge</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "El participante conocerá el funcionamiento de la IA Generativa y podrá desarrollar situaciones de aprendizaje que fomenten el análisis crítico de las respuestas que generan dichas tecnologías.",
+        "themes": "<ol>\n  <li>El desarrollo del pensamiento crítico y el diseño preguntas</li>\n  <li>Funcionamiento de la IA Generativa</li>\n  <li>Análisis de la respuesta de una IA Generativa</li>\n</ol>",
+        "product": "Una situación de aprendizaje basada en preguntas que no sean de respuesta directa.",
+        "references": "<p>Alborch Gil, F. (2023). A generativa: herramientas útiles para el personal docente. UOC. consultado 19 de septiembre de 2023. <a href=\"https://blogs.uoc.edu/elearning-innovation-center/es/ia-generativa-herramientas-utiles-para-el-personal-docente/\" target=\"_blank\" rel=\"noreferrer\">https://blogs.uoc.edu/elearning-innovation-center/es/ia-generativa-herramientas-utiles-para-el-personal-docente/</a></p>\n<p>Gozalo-Brizuela, R. & Garrido-Merchán, E. (2023). ChatGPT is not all you need. A State of the Art Review of large Generative AI models. 10.48550/arXiv.2301.04655.</p>\n<p>Lightman, H., Kosaraju, V., Burda, Y., Edwards, H., Baker, B., Lee, T., Leike, J., Schulman, J., Sutskever, I., & Cobbe, K. (2023). Let's Verify Step by Step. ArXiv, abs/2305.20050.</p>\n<p>OpenIA (2023) Teaching with IA. consultado 19 de septiembre de 2023. <a href=\"https://openai.com/blog/teaching-with-ai\" target=\"_blank\" rel=\"noreferrer\">https://openai.com/blog/teaching-with-ai</a></p>\n<p>Sabzalieva, E., Valentini, A. (2023) ChatGPT e inteligencia artificial en la educación superior: guía de inicio rápido. UNESCO. <a href=\"https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa.locale=es\" target=\"_blank\" rel=\"noreferrer\">https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa.locale=es</a></p>",
+        "keywords": "pensamiento crítico, chatGPT, diseño de preguntas, IA generativa",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/89445855385?pwd=cmtPWjBrcmt2ZlpzT0ErOFlVT1Vmdz09",
+        "youTubeurl": "GA7nPgDhwpU",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 26,
+                "name": "Gustavo de la Cruz Martínez",
+                "email": "gustavo.delacruz@icat.unam.mx",
+                "bio": "Gustavo de la Cruz Martínez. Doctor en Ciencias (Computación) por la UNAM. Miembro fundador del proyecto del aula del futuro de la UNAM. De forma regular, imparte cursos de licenciatura y maestría en el área de Inteligencia Artificial y desarrollo de videojuegos, así como diplomados para profesores relacionados con la incorporación de tecnología en el aula.",
+                "photo": "gustavo-delacruz.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": null,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:54:38.000Z",
+                    "updatedAt": "2023-09-26T00:54:38.000Z",
+                    "workshopId": 25,
+                    "speakerId": 26
+                }
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "title": "Evaluación de textos académicos realizados con IAGen",
+        "tools": "Herramienta de IAGen (texto a texto), se puede usar la versión gratuita.",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Cada participante de este taller desarrollará un instrumento de evaluación que tome en cuenta la interacción con una herramienta de inteligencia artificial generativa texto a texto para la creación de un escrito académico.",
+        "themes": "<ul>\n  <li>Creación de textos académicos con IAGen</li>\n  <li>Características de las interacciones productivas</li>\n  <li>Elaboración de un instrumento de evaluación</li>\n</ul>",
+        "product": "Instrumento de evaluación",
+        "references": "<p>Alshater, M. (2022). Exploring the Role of Artificial Intelligence in Enhancing Academic Performance: A Case Study of ChatGPT (SSRN Scholarly Paper Núm. 4312358). <a href=\"https://doi.org/10.2139/ssrn.4312358\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.2139/ssrn.4312358</a></p>\n<p>Mills, A. (2023, marzo 23). Advice | ChatGPT Just Got Better. What Does That Mean for Our Writing Assignments? The Chronicle of Higher Education. <a href=\"https://www.chronicle.com/article/chatgpt-just-got-better-what-does-that-mean-for-our-writing-assignments\" target=\"_blank\" rel=\"noreferrer\">https://www.chronicle.com/article/chatgpt-just-got-better-what-does-that-mean-for-our-writing-assignments</a></p>",
+        "keywords": "texto académico, IAGen, escritura con apoyo de IAGen, evaluación de textos creados con IAGen",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/89346904892?pwd=R09Zbkl5TG5YTjVhM1BQRUE3cmJFQT09",
+        "youTubeurl": "Qjsrb1iShD4",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 12,
+                "name": "Karen Matías",
+                "email": "karen_matias@ceide.unam.mx",
+                "bio": "Pedagoga especialista en diseño de experiencias de aprendizaje y evaluación educativa, parte de la subdirección de innovación educativa en la CUAIEED, trabaja temas de desarrollo de habilidades de pensamiento crítico y usos éticos de herramientas de IA para propósitos de formación y de procesos de enseñanza y de aprendizaje.",
+                "photo": null,
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2037,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:54:09.000Z",
+                    "updatedAt": "2023-09-26T00:54:09.000Z",
+                    "workshopId": 23,
+                    "speakerId": 12
+                }
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "title": "Búsqueda de Información en Herramientas con IA Generativa",
+        "tools": "<p>Abrir una cuenta en las siguientes herramientas:</p>\n<ul>\n  <li><a href=\"https://www.perplexity.ai/\" target=\"_blank\" rel=\"noreferrer\">PERPLEXITY</a></li>\n  <li><a href=\"https://you.com/\" target=\"_blank\" rel=\"noreferrer\">YOU</a></li>\n  <li><a href=\"https://elicit.com/\" target=\"_blank\" rel=\"noreferrer\">ELICIT</a></li>\n  <li><a href=\"https://typeset.io/\" target=\"_blank\" rel=\"noreferrer\">SCISPACE</a></li>\n  <li><a href=\"https://chat.openai.com\" target=\"_blank\" rel=\"noreferrer\">CHATGPT 3.5</a></li>\n</ul>\n<p>Nota: para registrarse en estos sitios la mayoría se puede hacer vía cuenta de Google</p>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Capacitar a profesores y alumnos universitarios en el uso efectivo de herramientas de IA Generativa para mejorar la búsqueda y análisis de información académica.",
+        "themes": "<ul>\n  <li>Introducción a la IA Generativa: Conceptos básicos y relevancia.</li>\n  <li>Fundamentos de las Herramientas: Exploración de las herramientas seleccionadas.</li>\n  <li>Estrategias de Búsqueda Efectiva: Mejores prácticas.</li>\n</ul>",
+        "product": "Los participantes se llevarán de este taller es una comprensión sólida y práctica de cómo utilizar herramientas de IA Generativa para mejorar su búsqueda de información y análisis de datos.",
+        "references": "<p>Australian National University. (2023). Chat GPT and other generative AI tools: What ANU academics need to know. <a href=\"https://teaching.weblogs.anu.edu.au/files/2023/02/Chat_GPT_FAQ-1.pdf\" target=\"_blank\" rel=\"noreferrer\"></a></p>\n<p>OpenAI. (2023). GPT-4 Technical Report (arXiv:2303.08774). arXiv. <a href=\"https://doi.org/10.48550/arXiv.2303.08774\" target=\"_blank\" rel=\"noreferrer\"></a></p>\n<p>Sabzalieva, Z., & ValenDni, N. (2023). The impact of generative AI on education: Opportunities and challenges. Journal of Educational Computing Research, 50(1), 1-26.</p>",
+        "keywords": "IA Generativa, Búsqueda de Información, Herramientas Tecnológicas, Educación Universitaria, Análisis de Información",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/86264299986?pwd=aXJZTVNQK3A0bzFqc0c2SkFwK0Ftdz09",
+        "youTubeurl": "LxncKbuyfZE",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 15,
+                "name": "Federico Russell Turnbull Muñoz",
+                "email": "fturnbullm@dgb.unam.mx",
+                "bio": "Ingeniero Químico graduado en la Universidad Veracruzana con una Maestría en Ciencias en Información Científica del Illinois Institute of Technology. Ha tenido una amplia experiencia en el campo de la información científica, incluyendo roles en la UNAM y empresas de información. También ha sido profesor y conferencista en múltiples países y es miembro de varias asociaciones profesionales. En la actualidad, ocupa el cargo de Jefe del Departamento de Información y Servicios Documentales de la DGBSDI en la UNAM.",
+                "photo": "federico-turnbull.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 32,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:53:31.000Z",
+                    "updatedAt": "2023-09-26T00:53:31.000Z",
+                    "workshopId": 22,
+                    "speakerId": 15
+                }
+            },
+            {
+                "id": 16,
+                "name": "Ricardo Tavira Sánchez",
+                "email": null,
+                "bio": "Maestro en Bibliotecología y Estudios de la Información. Su valiosa experiencia como profesor y bibliotecario lo ha llevado a compartir su amplio conocimiento, explorar tecnologías para mejorar el acceso a la información y demostrar un compromiso sólido con la educación y la búsqueda de conocimiento.",
+                "photo": "ricardo-tavira.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 484,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:53:31.000Z",
+                    "updatedAt": "2023-09-26T00:53:31.000Z",
+                    "workshopId": 22,
+                    "speakerId": 16
+                }
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Lineamientos sobre IA en el aula",
+        "tools": "<p>Contar con una cuenta de <a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noreferrer\">ChatGPT</a></p>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien toma el taller conocerá los beneficios, riesgos, y recomendaciones éticas sobre IAG en educacón y podrá redactar lineamientos de uso para sus estudiantes.",
+        "themes": "<ul>\n  <li>Beneficios y riesgos del uso de inteligencia artificial generativa en educación.</li>\n  <li>Revisión de recomendaciones para el uso ético de la inteligencia artificial.</li>\n  <li>Redacción de lineamientos de uso de inteligencia artificial para los estudiantes.</li>\n</ul>",
+        "product": "Lista de lineamientos de uso de inteligencia artificial dirigido a sus estudiantes.",
+        "references": "<p>Foltynek, T., Bjelobaba, S., Glendinning, I., Khan, Z. R., Santos, R., Pavletic, P., & Kravjar, J. (2023). ENAI Recommendations on the ethical use of Artificial Intelligence in Education. International Journal for Educational Integrity, 19(1), 12.</p>\n<p>Hilliger, I., Ruipérez-Valiente, J. A., Alexandron, G., & Gašević, D. (2022). Trustworthy remote assessments: A typology of pedagogical and technological strategies. Journal of computer assisted learning, 38(6), 1507-1520.</p>\n<p>Rudolph, J., Tan, S., & Tan, S. (2023). ChatGPT: Bullshit spewer or the end of traditional assessments in higher education?. Journal of Applied Learning and Teaching, 6(1).</p>",
+        "keywords": "Políticas de uso, ética de la inteligencia artificial, lineamientos de uso",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/89583127255",
+        "youTubeurl": "toXVj4UnqS0",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 14,
+                "name": "Joaquin Navarro Perales",
+                "email": "joaquin_navarro@cuaed.unam.mx",
+                "bio": "Maestro en Ciencias en Ingeniería Eléctrica por el CINVESTAV y académico en la CUAIEED-UNAM donde sus líneas de investigación comprenden: inteligencia artificial en educación, agentes conversacionales y aprendizaje autónomo, además de impartir cursos de profesionalización docente sobre inteligencia artificial y educación basada en evidencias.",
+                "photo": "joaquin-navarro.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2046,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:53:04.000Z",
+                    "updatedAt": "2023-09-26T00:53:04.000Z",
+                    "workshopId": 21,
+                    "speakerId": 14
+                }
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Prompts básicos para obtener textos",
+        "tools": "<p>ChatGPT. Cada participante debe abrir o tener una cuenta (de acceso abierto) en <a href=\"https://openai.com/\" target=\"_blank\" rel=\"noreferrer\">openai.com</a></p>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Experimentar algunas posibilidades del Chat GPT para conseguir mejores documentos académicos, en menos tiempo.",
+        "themes": "<ol>\n  <li>Los prompts o llamados a la acción</li>\n  <li>\"De ahora en adelante...\"</li>\n  <li>Mejora mi prompt</li>\n  <li>Contesta como si fueras X</li>\n  <li>Explícalo a x tipo de persona</li>\n  <li>Ejemplos de pocas tomas (few-shot examples)</li>\n</ol>",
+        "product": "<p>Cada participante tendrá:</p>\n<ol type=\"a\">\n  <li>Al menos 3 textos redactados por la IAGen generados a partir de los prompts o llamados a la acción que le solicitó, y</li>\n  <li>La satisfacción de tener los textos en menos tiempo y buena calidad.</li>\n</ol>",
+        "references": "<p>Hwang, G. J., & Chen, N.S. (2023). Editorial position paper. Exploring the potential of generative artificial Intelligence in Education: Applications, challenges, and future research directions. Educational Technology & Society, 26(2). <a href=\"https://doi.org/10.30191/ETS.202304_26(2).0014\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.30191/ETS.202304_26(2).0014</a></p>\n<p>Spasić, A.J. y Janković, D.S. (2023). Using ChatGPT Standard Prompt Engineering Techniques in Lesson Preparation: Role, Instructions and Seed-Word Prompts. 58th International Scientific Conference on Information, Communication and Energy Systems and Technologies (ICEST). DOI: 10.1109/ICEST58410.2023.10187269</p>\n<p>White, J., Fu, Q., Hays, S., Sandborn, M., Olea, C., Gilbert, H., Eluashar, A., Spencer-Smith, J. y Schmidt, D.C. (2023). A prompt pattern catalog to enhance prompt engineering with ChatGPT. arXiv:2302.11382. <a href=\"https://doi.org/10.48550/arXiv.2302.11382\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.48550/arXiv.2302.11382</a></p>",
+        "keywords": "texto a texto, prompts, Chat GPT, patrones",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/84193274851?pwd=MmZXU3pLQkRTc2FkY1VSRHV6dkZVdz09",
+        "youTubeurl": "Gt2KTSInJHE",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 4,
+                "name": "Guadalupe Vadillo",
+                "email": "guadalupe.vadillo@gmail.com",
+                "bio": "Psicóloga con máster y doctorado en educación. Su interés central es el aprendizaje en línea y los factores que lo promueven. Es Directora del Bachillerato a Distancia y MOOC de la UNAM, así como de la Revista Mexicana de Bachillerato a Distancia.",
+                "photo": "guadalupe-vadillo.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 3,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:53:04.000Z",
+                    "updatedAt": "2023-09-26T00:53:04.000Z",
+                    "workshopId": 20,
+                    "speakerId": 4
+                }
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "title": "Búsquedas de literatura científica con IA",
+        "tools": "<p>En este taller se ocuparan tres herramientas de IA en su versión gratuita, les solicitamos a los participantes se registren y generen una cuenta:</p>\n<ol>\n  <li><a href=\"https://elicit.com/users/auth?show=signup\" target=\"_blank\" rel=\"noreferrer\">Elicit</a></li>\n  <li><a href=\"https://consensus.app/sign-up/#/?redirect_url=/search/\" target=\"_blank\" rel=\"noreferrer\">Consensus</a></li>\n  <li><a href=\"https://app.litmaps.com/?auth=sign-up\" target=\"_blank\" rel=\"noreferrer\">Litmaps</a></li>\n</ol>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Los participantes conocerán y usarán tres herramientas de IA enfocadas en buscar y analizar literatura científica publicada y revisada por pares",
+        "themes": "<ul>\n  <li>Alfabetización informacional</li>\n  <li>Recuperación de Información</li>\n  <li>Artículos de investigación revisados por pares</li>\n  <li>Análisis de información</li>\n  <li>Evaluación de literatura</li>\n  <li>Métricas</li>\n</ul>",
+        "product": "Cada participante se llevará una búsqueda construida de su tema de interés y con los resultados que devuelven tres herramientas de inteligencia artificial",
+        "references": "<p>Affum, Mark Quaye, (2023). Investigating the Potential Impact of Artificial Intelligence in Librarianship. Library Philosophy and Practice (e-journal). 7849. <a href=\"https://digitalcommons.unl.edu/libphilprac/7849\" target=\"_blank\" rel=\"noreferrer\">https://digitalcommons.unl.edu/libphilprac/7849</a></p>\n<p>Barsha, S. and Munshi, S.A. (2023), Implementing artificial intelligence in library services: a review of current prospects and challenges of developing countries, Library Hi Tech News. <a href=\"https://doi.org/10.1108/LHTN-07-2023-0126\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1108/LHTN-07-2023-0126</a></p>\n<p>Gusenbauer, M. (2019). Google Scholar to overshadow them all? Comparing the sizes of 12 academic search engines and bibliographic databases. Scientometrics 118, 177-214. <a href=\"https://doi.org/10.1007/s11192-018-2958-5\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1007/s11192-018-2958-5</a></p>\n<p>Kung JY. (2023) Elicit. J Can Health Libr Assoc. Apr 1;44(1):15-8. doi: 10.29173/jchla29657. PMCID: PMC10089336</p>\n<p>Liu, J., Liu, J., Chen, Y. (2022). Application of Artificial Intelligence Technology in Information Retrieval of University Library. In: Hung, J.C., Chang, JW., Pei, Y., Wu, WC. (eds) Innovative Computing . Lecture Notes in Electrical Engineering, vol 791. Springer, Singapore. <a href=\"https://doi.org/10.1007/978-981-16-4258-6_28\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1007/978-981-16-4258-6_28</a></p>",
+        "keywords": "análisis de información, artículos de investigación, búsquedas en la Web, recuperación de información, revisión de literatura",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/88944236678?pwd=Zm5PQmxucjNvc0dNcktmNXM3dU5Ldz09",
+        "youTubeurl": "ujKwTCWrOvs",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 3,
+                "name": "Roberto Santos Solórzano",
+                "email": "roberto_santos@ceide.unam.mx",
+                "bio": "Es Coordinador de Diseño de Experiencias de Aprendizaje en la CUAIEED y colaborador del laboratorio de Bioinformación de la Facultad de Ciencias. Tiene más de 10 años de experiencia docente. Es autor y coautor de publicaciones sobre tendencias en educación. Sus líneas de investigación contemplan: la cienciometría y las analíticas del aprendizaje.",
+                "photo": "roberto-santos.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 2012,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:52:29.000Z",
+                    "updatedAt": "2023-09-26T00:52:29.000Z",
+                    "workshopId": 19,
+                    "speakerId": 3
+                }
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "title": "De IA Generativa a multimedia: un viaje creativo",
+        "tools": "<p>Durante el taller se explorarán las herramientas:</p>\n<ul>\n  <li><a href=\"https://app.artflow.ai/\" target=\"_blank\" rel=\"noreferrer\">artflow</a></li>\n  <li><a href=\"https://gamma.app/\" target=\"_blank\" rel=\"noreferrer\">Gamma App</a></li>\n  <li><a href=\"https://leonardo.ai/\" target=\"_blank\" rel=\"noreferrer\">Leonardo.ai</a></li>\n  <li><a href=\"https://clipdrop.co/stable-diffusion/\" target=\"_blank\" rel=\"noreferrer\">Clipdrop</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Fomentar el uso de la inteligencia artificial generativa para generar recursos multimedia innovadores y aplicarlos a la práctica educativa",
+        "themes": "<ul>\n  <li>Introducción a las herramientas de IA Generativa de texto a imagen, video y presentación.</li>\n  <li>Exploración de las herramientas de IA Generativa de texto a imagen y recomendaciones para obtener mejores resultados.</li>\n  <li>Exploración de las herramientas de IA Generativa de texto a video y recomendaciones para obtener mejores resultados.</li>\n  <li>Exploración de las herramientas de IA Generativa de texto a presentación y recomendaciones para obtener mejores resultados.</li>\n  <li>Desarrollo de una presentación a partir de las herramientas de IA Generativa.</li>\n</ul>",
+        "product": "Presentación creada a partir de las herramientas de IA Generativa",
+        "references": "<p>Baidoo-anu, D. & Owusu Ansah, L. (2023). Education in the Era of Generative Artificial Intelligence (AI): Understanding the Potential Benefits of ChatGPT in Promoting Teaching and Learning. Journal of AI, 7 (1), 52-62. Retrieved from <a href=\"https://dergipark.org.tr/en/pub/jai/issue/77844/1337500\" target=\"_blank\" rel=\"noreferrer\">https://dergipark.org.tr/en/pub/jai/issue/77844/1337500</a></p>\n<p>Kohnke, L., Moorhouse, B. L., & Zou, D. (2023). Exploring generative artificial intelligence preparedness among university language instructors: A case study. Computers and Education: Artificial Intelligence, 5. <a href=\"https://doi.org/10.1016/j.caeai.2023.100156\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.1016/j.caeai.2023.100156</a></p>\n<p>Liu, M., Ren, Y., Nyagoga, L. M., Stonier, F., Wu, Z., & Yu, L. (2023). Future of education in the era of generative artificial intelligence: Consensus among Chinese scholars on applications of ChatGPT in schools. Future in Educational Research.</p>",
+        "keywords": "Creatividad, educación, multimedia",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/84471084247",
+        "youTubeurl": "KfSMaUACmBQ",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 2,
+                "name": "Omar Terrazas Razo",
+                "email": "omar_terrazas@cuaed.unam.mx",
+                "bio": "Es doctorante del programa de Doctorado en Ambientes y Sistemas Educativos Multimodales, Maestro en Ingeniería de Sistemas, Ingeniero en Computación y cuenta con un nanogrado en Deep Learning.  Ha impartido las asignaturas de Sistemas de Información y Temas Especiales de Programación en la carrera de Ingeniería en Computación de la Facultad de Estudios Superiores Aragón. Actualmente es Subdirector de planeación, evaluación y mejora del Bachillerato a distancia de la UNAM.",
+                "photo": "omar-terrazas.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:52:29.000Z",
+                    "updatedAt": "2023-09-26T00:52:29.000Z",
+                    "workshopId": 18,
+                    "speakerId": 2
+                }
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Aprendiendo a comunicarme con la IAG",
+        "tools": "<ul>\n  <li>ChatGPT 3.5</li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien toma el taller aprenderá a diseñar prompts para incorporar la Inteligencia Artificial Generativa en su trabajo docente.",
+        "themes": "<ul>\n  <li>Principios pedagógicos para el uso de la IAG</li>\n  <li>Diseño de prompts</li>\n  <li>IAG aplicada a la planificación, diseño y evaluación del aprendizaje</li>\n</ul>",
+        "product": "En este taller se les presentará el modelo para el diseño de prompts educativos así como el instrumento generador de prompts. Al finalizar el taller cada participante habrá elaborado con base en este modelo y el instrumento generador de prompts al menos un prompt o cadena de prompts relacionados con la planificación, diseño de actividades o evaluación del aprendizaje de sus estudiantes.",
+        "references": "<p>U.S. Department of Education, Office of Educational Technology (2023). Artificial Intelligence and Future of Teaching and Learning: Insights and Recommendations. <a href=\"https://www2.ed.gov/documents/ai-report/ai-report.pdf\" target=\"_blank\" rel=\"noreferrer\">https://www2.ed.gov/documents/ai-report/ai-report.pdf</a></p>\n<p>Unesco (2023). ChatGPT e Inteligencia Artificial en Educación Superior. Guía de inicio rápido. <a href=\"https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa\" target=\"_blank\" rel=\"noreferrer\">https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa</a></p>\n<p>Unesco (2023). Guidance for generative AI in education and research. <a href=\"https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research\" target=\"_blank\" rel=\"noreferrer\">https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research</a></p>",
+        "keywords": "Inteligencia artificial generativa, docencia, aprendizaje",
+        "participants": 30,
+        "zoomSession": " https://cuaieed-unam.zoom.us/j/83530559046?pwd=elFPSlZhdHhIbXgvNGZNNWRicm5aZz09",
+        "youTubeurl": "aR2b_jxkrfM",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 1,
+                "name": "Mario Alberto Benavides Lara",
+                "email": "mario_benavides@ceide.unam.mx",
+                "bio": "Licenciado y maestro en pedagogía por la UNAM. Estudiante del doctorado en ciencias sociales en la UAM Xochimilco. Se desempeña como coordinador de investigación en educación de la CUAIEED de la UNAM.",
+                "photo": "mario-benavides.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1155,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:51:28.000Z",
+                    "updatedAt": "2023-09-26T00:51:28.000Z",
+                    "workshopId": 17,
+                    "speakerId": 1
+                }
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Herramientas de creación de cursos con IAGen",
+        "tools": "<ul>\n  <li><a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noreferrer\">Chat GPT</a></li>\n  <li><a href=\"https://fliki.ai/\" target=\"_blank\" rel=\"noreferrer\">Fliki Ai</a></li>\n  <li><a href=\"https://studio.ai/\" target=\"_blank\" rel=\"noreferrer\">Studio.Ai</a></li>\n</ul>",
+        "level": 1,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Los participantes en el taller conocerán de qué manera Chat GPT, Fliki Ai y Studio.Ai se utilizan como asistentes para el diseño instruccional y de contenidos.",
+        "themes": "<ul>\n  <li>Elementos del diseño instruccional</li>\n  <li>Chatp GPT</li>\n  <li>Herramientas de creación de contenido</li>\n  <li>Fliki Ai</li>\n  <li>Studio. Ai</li>\n</ul>",
+        "product": "Formato con ideas preliminares para el diseño de una clase a partir de las herramientas de IAGen.",
+        "references": "<p>Fengchun, M. & Wayne H., (2023) Guidance for generative AI in education and research. UNESCO. ISBN 978-92-3-100612-8 <a href=\"https://unesdoc.unesco.org/ark:/48223/pf0000386693?posInSet=11&queryId=N-34228cec-a282-4247-b8d5-0161134ee6b4\" target=\"_blank\" rel=\"noreferrer\">https://unesdoc.unesco.org/ark:/48223/pf0000386693?posInSet=11&queryId=N-34228cec-a282-4247-b8d5-0161134ee6b4</a></p>\n<p>Gibson, R. (2023) 10 Ways Artificial Intelligence is transforming instructional design. EDUCAUSE <a href=\"https://er.educause.edu/articles/2023/8/10-ways-artificial-intelligence-is-transforming-instructional-design\" target=\"_blank\" rel=\"noreferrer\">https://er.educause.edu/articles/2023/8/10-ways-artificial-intelligence-is-transforming-instructional-design</a></p>\n<p>Dickey, E. & Bejarano, A. (2023) A Model for Integrating Generative AI into Course Content Development. ArXiv DOI <a href=\"https://doi.org/10.48550/arXiv.2308.12276\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.48550/arXiv.2308.12276</a></p>",
+        "keywords": "Diseño instruccional, Inteligencia artificial generativa, creación de contenido",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/84447405907?pwd=bm4xSWR2SFBTTlhKSDhGazFxK0pOZz09",
+        "youTubeurl": "B4eRV-PLYSE",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 13,
+                "name": "Verónica Luna de la Luz",
+                "email": "veronica_luna@ceide.unam.mx",
+                "bio": "Maestra en Ciencias de la Educación y licenciada en Psicología por la UNAM. Es profesora de Informática Biomédica y Docencia en Ciencias de la Salud, y subdirectora de innovación educativa en la CUAIEED, integrante del equipo de investigación sobre las analíticas del aprendizaje en la UNAM y fue organizadora del Laboratorio de Inteligencia Artificial en Educación Superior del 2022.",
+                "photo": "veronica-luna.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1999,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:51:28.000Z",
+                    "updatedAt": "2023-09-26T00:51:28.000Z",
+                    "workshopId": 16,
+                    "speakerId": 13
+                }
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "title": "IA Generativa en Diseño Gráfico",
+        "tools": "<p>Instalar:</p>\n<ul>\n  <li><a href=\"https://git-scm.com/book/en/v2/Getting-Started-Installing-Git\" target=\"_blank\" rel=\"noreferrer\">Git</a></li>\n  <li><a href=\"https://www.python.org/downloads/\" target=\"_blank\" rel=\"noreferrer\">Python 3.10.6</a></li>\n</ul>\n<p>Stable diffusion models:</p>\n<ul>\n  <li>sd_xl_base_1.0.safetensors</li>\n  <li>sd_xl_base_1.0_0.9vae.safetensors</li>\n</ul>\n<p>Ambos están disponibles en <a href=\"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main\" target=\"_blank\" rel=\"noreferrer\">hugginface</a></p>",
+        "level": 3,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Humanidades y artes",
+        "purpouse": "Quien toma el taller conocerá las características más relevantes de la última versión del modelo stable diffusion SDXL y conocerá el proceso para instalar el modelo en un equipo local en el SO Ubuntu 22.04.3 LTS",
+        "themes": "<ol>\n  <li>Introducción a Stable Diffusion</li>\n  <li>Comparación con Otros Generadores de Imágenes AI</li>\n  <li>Entendiendo los Generadores de Imágenes AI</li>\n  <li>Versiones de Modelos de Stable Diffusion</li>\n  <li>Interfaces de Usuario Web para Stable Diffusion</li>\n  <li>Explorando Diferentes Tipos de prompts (Indicaciones)</li>\n  <li>Características de la Imagen</li>\n  <li>Interrogando una Imagen</li>\n  <li>Incorporando Arte</li>\n  <li>Descubriendo Ejemplos de Indicaciones</li>\n  <li>Creación de Estilos</li>\n  <li>Métodos de muestreo (sampling methods) y Steps</li>\n  <li>Escala CFG</li>\n  <li>Técnicas de Denoising</li>\n  <li>Refinamiento de Ideas</li>\n</ol>",
+        "product": "El conocimiento necesario para instalar y utilizar el modelo Stable Diffusion SDXT por medio de la aplicación AUTOMATIC1111.",
+        "references": "<p>Dehouche, N., &amp; Dehouche, K. (2023). What’s in a text-to-image prompt? The potential of\n  stable diffusion in visual arts education. Heliyon.</p>\n<p>Li, A. C., Prabhudesai, M., Duggal, S., Brown, E., &amp; Pathak, D. (2023). Your diffusion model is\n  secretly a zero-shot classifier. arXiv preprint arXiv:2303.16203.</p>\n<p>Zhang, C., Zhang, C., Zhang, M., &amp; Kweon, I. S. (2023). Text-to-image diffusion model in\n  generative ai: A survey. arXiv preprint arXiv:2303.07909.</p>",
+        "keywords": "Stable diffusion, diseño gráfico, contenido web.",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/89065866995?pwd=cjBaRklMeVV4SEY2Q0tqUVJOL2VIZz09",
+        "youTubeurl": "QrYJFp2mTT8",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 24,
+                "name": "Víctor Manuel Corza Vargas",
+                "email": "victor_corza@cecav.unam.mx",
+                "bio": "Víctor Manuel Corza Vargas, es Maestro en Ciencias de la Computación por la UNAM. En la actualidad trabaja en el Centro de Estudios en Computación Avanzada, impulsando la investigación y difusión científica y tecnológica, sus áreas de interés son la visión computacional y la analítica del aprendizaje.",
+                "photo": "victor-corza.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1853,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:54:09.000Z",
+                    "updatedAt": "2023-09-26T00:54:09.000Z",
+                    "workshopId": 24,
+                    "speakerId": 24
+                }
+            },
+            {
+                "id": 25,
+                "name": "Jimena Olveres Montiel",
+                "email": "jolveres@cecav.unam.mx ",
+                "bio": "La Dra. Jimena Olveres Montiel, destacada en visión computacional y aprendizaje profundo, es miembro del Sistema Nacional de Investigadores y Coordinadora Académica del CECAv en la UNAM. Sus intereses de investigación son inteligencia artificial en visión computacional y formación de estudiantes en el área de computación y afines.",
+                "photo": "jimena-olveres.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 6,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:54:38.000Z",
+                    "updatedAt": "2023-09-26T00:54:38.000Z",
+                    "workshopId": 24,
+                    "speakerId": 25
+                }
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "title": "Modelos de visión generativos para desarrolladores",
+        "tools": "<ol>\n  <li><a href=\"https://openai.com/dall-e-2\" target=\"_blank\" rel=\"noreferrer\">DALEE-2</a></li>\n  <li><a href=\"https://www.midjourney.com/auth/signin/\" target=\"_blank\" rel=\"noreferrer\">Midjourney</a></li>\n  <li><a href=\"https://clipdrop.co/tools\" target=\"_blank\" rel=\"noreferrer\">Stable Diffusion</a></li>\n  <li><a href=\"https://huggingface.co/\" target=\"_blank\" rel=\"noreferrer\">HuggingFace</a></li>\n  <li><a href=\"https://github.com/\" target=\"_blank\" rel=\"noreferrer\">Github</a></li>\n  <li><a href=\"https://colab.research.google.com/\" target=\"_blank\" rel=\"noreferrer\">Google Colab</a></li>\n  <li>Python instalación local</li>\n</ol>",
+        "level": 3,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Al finalizar este taller, los participantes tendrán las habilidades y conocimientos avanzados para manejar los modelos de visión e implementarlos en sus propios proyectos y creación de aplicaciones.",
+        "themes": "<ul>\n  <li>Redes Vision Transformers (ViT)</li>\n  <li>Modelos de Visión por API</li>\n  <li>Modelos de Visión Locales</li>\n  <li>Fine Tuning</li>\n  <li>Transfer Learning</li>\n  <li>Aplicaciones web</li>\n  <li>Futuro de la IA generativa</li>\n</ul>",
+        "product": "<ol>\n  <li>Presentación del taller</li>\n  <li>Manuales y guías de uso</li>\n  <li>Portafolio de códigos</li>\n</ol>",
+        "references": "<p>Rombach, R. (2021, 20 diciembre). High-Resolution image synthesis with latent diffusion models. arXiv.org. <a href=\"https://arxiv.org/abs/2112.10752\" target=\"_blank\" rel=\"noreferrer\">https://arxiv.org/abs/2112.10752</a></p>\n<p>Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., & Bengio, Y. (2014). Generative adversarial networks. arXiv (Cornell University). <a href=\"https://doi.org/10.48550/arxiv.1406.2661\" target=\"_blank\" rel=\"noreferrer\">https://doi.org/10.48550/arxiv.1406.2661</a></p>",
+        "keywords": "Vision transformers (ViT), modelos de visión por API, modelos de visión por GPU",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/84789803824?pwd=cEpiblJLR3BLdm1ISk9vYkdaZnBGUT09",
+        "youTubeurl": "UWIy-0by3vM",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 22,
+                "name": "Erik Carbajal-Degante",
+                "email": "erik_carbajal@cuaed.unam.mx",
+                "bio": "Erik Carbajal-Degante, PhD en Ciencia e Ingeniería de la Computación por la UNAM. Investigador en CUAED, especializado en procesamiento de señales e inteligencia artificial. Experimentado en desarrollo de proyectos y publicación de artículos. Ha sido docente de la facultad de ingeniería y DGAPA. Candidato a investigador por CONAHCYT.",
+                "photo": "erik-carbajal.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 7,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:56:32.000Z",
+                    "updatedAt": "2023-09-26T00:56:32.000Z",
+                    "workshopId": 28,
+                    "speakerId": 22
+                }
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "title": "Investigar en el aula con IA: III",
+        "tools": "<ul>\n  <li><a href=\"https://chat.openai.com/\" target=\"_blank\" rel=\"noreferrer\">ChatGPT</a></li>\n  <li><a href=\"https://bard.google.com/chat?hl=es\" target=\"_blank\" rel=\"noreferrer\">Bard</a></li>\n  <li>Microsoft Office (Excel)</li>\n</ul>",
+        "level": 3,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "Quien toma el taller \"Investigar en el aula con IA: III\", conocerá una forma de realizar el análisis cualitativo de las interacciones y entrevistas apoyado con IAGen.",
+        "themes": "<p>Este taller abordará una manera de analizar cualitativamente las interacciones derivadas de registros de observación y el discurso expresado a través de entrevistas, con apoyo del uso de herramientas de IAGen como ChatGPT y Bard, así como la hoja de cálculo adaptada para el análisis cualitativo.</p>\n<p>Entre los temas que se desarrollarán se encuentran los siguientes:</p>\n<ol>\n  <li>El análisis de datos cualitativos como un proceso de investigación.</li>\n  <li>Herramientas de IAGen que apoyan el proceso analítico.</li>\n  <li>Naturaleza de los datos discursivos y las acciones.</li>\n  <li>Construcción de categorías analíticas.</li>\n  <li>Primeras interpretaciones.</li>\n</ol>",
+        "product": "Al finalizar el curso los participantes elaborarán una primera lista de códigos de los datos cualitativos derivados de las observaciones y entrevistas.",
+        "references": "<p>Atkinson, C. F. (2023). Cheap, Quick, and Rigorous: Artificial Intelligence and the Systematic Literature Review. Social Science Computer Review, 08944393231196281.\n  Kalman, J., & Rendón, V. (2016). Uso de la hoja de cálculo para analizar datos cualitativos. Magis. Revista Internacional de Investigación en Educación, 9(18),29-48. <a href=\"https://www.redalyc.org/articulo.oa?id=281049122003\" target=\"_blank\" rel=\"noreferrer\">https://www.redalyc.org/articulo.oa?id=281049122003</a></p>\n<p>Kasperiuniene, J. (2021). The Use of Artificial Intelligence in Social Research: Multidisciplinary Challenges. In Computer Supported Qualitative Research: New Trends in Qualitative Research (WCQR2021) 5 (pp. 312-324). Springer International Publishing.</p>\n<p>Lennon, R. P., Fraleigh, R., Van Scoy, L. J., Keshaviah, A., Hu, X. C., Snyder, B. L., & Griffin, C. (2021). Developing and testing an automated qualitative assistant (AQUA) to support qualitative analysis. Family Medicine and Community Health, 9(Suppl 1).</p>\n<p>Lopezosa, C., Codina, L., & Boté-Vericad, J. J. (2023). Testeando ATLAS. ti con OpenAI: hacia un nuevo paradigma para el análisis cualitativo de entrevistas con inteligencia artificial. DigiDoc Research Group.</p>\n<p>Mesec, B. (2023). The language model of artificial inteligence chatgpt-a tool of qualitative analysis of texts.</p>\n<p>Zhang, T., Moody, M., Nelon, J. P., Boyer, D. M., Smith, D. H., & Visser, R. D. (2019, April). Using Natural Language Processing to Accelerate Deep Analysis of Open-Ended Survey Data. In 2019 SoutheastCon (pp. 1-3). IEEE.</p>",
+        "keywords": "IAGen, ChatGPT, Análisis cualitativo, Interacciones, Observación, Entrevistas",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/87592280692?pwd=ZWgyaFljMVFZWk5oN2wvTGZpSVp6Zz09",
+        "youTubeurl": "HVKgYHVEQ9k",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 20,
+                "name": "Víctor Jesús Rendón Cazales",
+                "email": "victor_rendon@cuaieed.unam.mx",
+                "bio": "Coordinador de Investigación Traslacional en Educación en la CUAIEED, investiga temáticas como la movilización de conocimientos entre la docencia y la investigación, prácticas de lectura y escritura académica, cultura digital, educación basada en evidencias, desarrollo profesional docente y vinculación entre educación formal y no formal.",
+                "photo": "victor-rendon.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 975,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:56:32.000Z",
+                    "updatedAt": "2023-09-26T00:56:32.000Z",
+                    "workshopId": 29,
+                    "speakerId": 20
+                }
+            },
+            {
+                "id": 21,
+                "name": "Miguel Ángel Hernández Alvarado",
+                "email": "miguel_hernandez@ceide.unam.mx",
+                "bio": "Soy pedagogo, investigador de temas educativo y docente a nivel superior en áreas de Educación, Psicología, Administración escolar y Psicopedagogía. Cuento con experiencia clínica de consultorio de apoyo al aprendizaje y publicaciones en revistas y libros. Soy Jefe de Departamento de Investigación en Educación en la CUAIEED de la UNAM.",
+                "photo": "miguel-hernandez.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 976,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:57:03.000Z",
+                    "updatedAt": "2023-09-26T00:57:03.000Z",
+                    "workshopId": 29,
+                    "speakerId": 21
+                }
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "title": "ChatGPT DataLab: visualiza y comprende",
+        "tools": "<ul>\n  <li>ChatGPT-3.5 (abrir cuenta)</li>\n  <li>Google colab o instalación local de Python y Jupyter notebook (se recomienda Python y Jupyter notebook instalado, pero también funciona bien con Google Colab)</li>\n</ul>",
+        "level": 3,
+        "educationLevel": "Cualquiera",
+        "knowledgeArea": "Matemáticas e ingenierías",
+        "purpouse": "Quien tome el taller conocerá las capacidades de ChatGPT-3.5 para realizar análisis de datos en ingeniería para limpiar y visualizar datos utilizando Python, Matplotlib y Seaborn.",
+        "themes": "- Variación de semillas para el Refinamiento de Ideas",
+        "product": "Una libreta de Jupyter notebook con el procedimiento de carga, estrategia de análisis y visualización de datos de consumo de agua usando pandas, matplotlib y seaborn.",
+        "references": "<p>Matplotlib Development Team. (2023). What's new in Matplotlib 3.8.0. Recuperado el  19 de septiembre 2023 de <a href=\"https://matplotlib.org/\" target=\"_blank\" rel=\"noreferrer\">https://matplotlib.org/</a></p>\n<p>Pandas Development Team. (2023). What's new in pandas 2.1.0. Recuperado el 19 de septiembre de 2023 de <a href=\"https://pandas.pydata.org/\" target=\"_blank\" rel=\"noreferrer\">https://pandas.pydata.org/</a></p>\n<p>Jupyter Development Team. (2023). Jupyter Notebook User Documentation, Version 7.0.3. Recuperado el  19 de septiembre 2023 de <a href=\"https://jupyter-notebook.readthedocs.io/en/latest/user-documentation.html\" target=\"_blank\" rel=\"noreferrer\">https://jupyter-notebook.readthedocs.io/en/latest/user-documentation.html</a></p>",
+        "keywords": "datos, visualizacion, python",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/86193712275?pwd=RnFiakJRcUdkbldQclc2SWMyM2tldz09",
+        "youTubeurl": "68slk_W63wU",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 29,
+                "name": "Guillermo Barrios del Valle",
+                "email": "gbv@ier.unam.mx",
+                "bio": "Maestro y doctor en ingeniería por la UNAM, experto en transferencia de calor y métodos numéricos, desarrolló EnerHabitat herramienta online para evaluar el desempeño térmico en edificaciones y coautor de dos patentes. Especialista en análisis de datos de edificaciones y autor del curso Python para ingeniería del IER-UNAM. Procafeína con dataviz.",
+                "photo": "guillermo-barrios.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": null,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:57:03.000Z",
+                    "updatedAt": "2023-09-26T00:57:03.000Z",
+                    "workshopId": 30,
+                    "speakerId": 29
+                }
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "title": "Aplicaciones avanzadas y limitaciones de Mr. GPT (Gran Productor de Textos)",
+        "tools": "cuenta gratuita de chatGPT, Bard, bingChat o anthropic claude",
+        "level": 3,
+        "educationLevel": "Licenciatura",
+        "knowledgeArea": "Varias o todas las anteriores",
+        "purpouse": "El participante aprenderá las limitaciones en el entrenamiento, uso y algunos fallos de seguridad en la forma de interactuar con las IAs generativas de texto a texto. Se revisará un catálogo práctico de prompts para obtener un comportamiento de la IA con creatividad limitada y condicionada por el usuario.",
+        "themes": "<ul>\n  <li>Ensamble de prompts</li>\n  <li>Técnicas de mejora de la fiabilidad</li>\n  <li>Arquitecturas generales y parámetros de los GML</li>\n  <li>Jailbreak y seguridad</li>\n</ul>",
+        "product": "El participante obtendrá un catalogo de ejemplos para probar la fiabilidad y seguridad en IAs generativas de texto a texto. Aprenderá conceptos básicos de las arquitecturas de los GML más comunes y sus parámetros.",
+        "references": "<p>Zou, A., Wang, Z., Kolter, J. Z., & Fredrikson, M. (2023). Universal and transferable adversarial attacks on aligned language models. arXiv preprint arXiv:2307.15043.</p>\n<p>Huang, Y., Zhuo, T., Xu, Q., Hu, H., Yuan, X., & Chen, C. (2023). Training-Free Lexical Backdoor Attacks on Language Models. In Proceedings of the ACM Web Conference 2023 (pp. 2198–2208). Association for Computing Machinery.</p>\n<p>Si, C., Gan, Z., Yang, Z., Wang, S., Wang, J., Boyd-Graber, J., & Wang, L. (2022). Prompting GPT-3 To Be Reliable.</p>",
+        "keywords": "chatGPT, prompting, prompt crafting, interacción, texto a texto, avanzado, jailbreak,LLMs",
+        "participants": 30,
+        "zoomSession": "https://cuaieed-unam.zoom.us/j/81780386804?pwd=SUwrZitPdWRNOVZKeVA2OUNSRFgrZz09",
+        "youTubeurl": "hlbdxnsQLDY",
+        "ocurrenceDay": "Martes 24 de octubre 2023",
+        "createdAt": "2023-09-21T18:11:00.000Z",
+        "updatedAt": "2023-09-21T18:11:00.000Z",
+        "speakers": [
+            {
+                "id": 23,
+                "name": "Carlos Adrian Sarmiento Gutierrez",
+                "email": "adrian_sarmiento@cuaed.unam.mx",
+                "bio": "Es Doctor en Ciencia e Ingeniería de la Computación por la Universidad Nacional Autónoma de México . Es Maestro en Ingeniería Eléctrica, en el área de Procesamiento Digital de Señales en el Posgrado de Ingeniería de la misma universidad,  e Ingeniero en Electrónica egresado de la Universidad Autónoma Metropolitana (UAM). Se especializó durante sus estudios de doctorado en aprendizaje de máquina, visión por computadora, aprendizaje por refuerzo, aprendizaje profundo, redes neuronales artificiales, modelos probabilísticos como son los modelos ocultos de Markov y en la teoría de campos aleatorios . Participó en competencias internacionales de robótica como es la RoboCup del año 2018 y 2019 en la categoría @Home y en el World Robot Summit de 2018 celebrado en Tokio. Actualmente ocupa el cargo de ​C​oordinador de investigación e innovación académica del Bachillerato a distancia.",
+                "photo": "adrian-sarmiento.jpg",
+                "createdAt": "2023-09-21T18:11:00.000Z",
+                "updatedAt": "2023-09-21T18:11:00.000Z",
+                "userId": 1957,
+                "workshopspeakers": {
+                    "createdAt": "2023-09-26T00:57:33.000Z",
+                    "updatedAt": "2023-09-26T00:57:33.000Z",
+                    "workshopId": 31,
+                    "speakerId": 23
+                }
+            }
+        ]
+    }
+]
