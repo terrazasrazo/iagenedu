@@ -17,7 +17,6 @@ import Workshops from "../Workshops";
 import WorkshopDetails from "../WorkshopDetails";
 import InterestingResources from "../InterestingResources";
 import Findings from "../Findings";
-import Keywords from "../Keywords";
 
 const AppRoutes = () => {
   return useRoutes([
@@ -60,7 +59,6 @@ const AppRoutes = () => {
     { path: "/workshops/:id", element: <WorkshopDetails /> },
     { path: "/resources", element: <InterestingResources /> },
     { path: "/recomendaciones", element: <Findings />},
-    { path: "/keywords/", element: <Keywords /> },
     { path: "*", element: <NotFound /> },
   ]);
 };

@@ -3,7 +3,7 @@ const Speaker = (data) => {
     <article className="flex flex-row my-2 py-2 xl:w-2/3 border-b border-gray-300">
       <div className="w-1/3 lg:w-1/6">
         <img
-          src={`${import.meta.env.VITE_API_URL}/static/speakers/${data.data.photo}`}
+          src={`${import.meta.env.VITE_BASE_URL}/images/speakers/${data.data.photo}`}
           alt={data.data.name}
           className="rounded shadow"
         />
