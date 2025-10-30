@@ -1,6 +1,4 @@
-# IAGenEdu – 2a Jornada
-
-Sitio web de la 2ª Jornada de Inteligencia Artificial Generativa en la Educación (UNAM).
+# 2ª Jornada de Inteligencia Artificial Generativa en Educación UNAM 2024
 
 Construido con React + Vite y TailwindCSS. Incluye páginas informativas, agenda y un directorio de talleres con filtros por nivel y fecha, ordenados por día de ocurrencia y nivel. La vista de detalle de cada taller se resuelve por `id`.
 
