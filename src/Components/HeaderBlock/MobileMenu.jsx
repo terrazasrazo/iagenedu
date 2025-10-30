@@ -54,18 +54,7 @@ const MobileMenu = () => {
               <NavLink to="/2a-jornada/workshops" className="nav__mobile--item">
                 Talleres
               </NavLink>
-              <a
-                href="https://iagenedu.unam.mx/resources"
-                className="nav__mobile--item"
-              >
-                Recursos
-              </a>
-              <a
-                href="https://iagenedu.unam.mx/recomendaciones"
-                className="nav__mobile--item"
-              >
-                Recomendaciones
-              </a>
+              <NavLink to="/resources" className="nav__mobile--item">Recursos</NavLink>
             </div>
           </div>
         </div>

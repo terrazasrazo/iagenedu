@@ -13,7 +13,7 @@ function HeaderBlock() {
     <header>
       <nav aria-label="Global">
         <div className="nav__logo">
-          <a href="/">
+          <a href={`${import.meta.env.VITE_HOME_URL}`} className="nav__logo--link">
             <span className="sr-only">IAGen en Educación UNAM</span>
             <img
               src="/images/iagen-unam.png"

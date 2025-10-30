@@ -1,20 +1,14 @@
-import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./WorkshopDetails.css";
 import Speaker from "../../Speaker/";
+import workshops from "../../../Pages/Workshops/Workshops.json";
 
 function WorkshopDetails() {
-  const [items, setItems] = useState(0);
   const { workshopId } = useParams();
-  const API_URL = import.meta.env.VITE_API_URL;
-
-  useEffect(() => {
-    fetch(`${API_URL}/workshops/${workshopId}`)
-      .then((response) => response.json())
-      .then((data) => setItems(data));
-  }, [workshopId]);
+  const items = workshops.filter((w) => String(w.id) === String(workshopId));
 
   const workshopContent = (content) => {
+    if (!content) return null;
     const htmlContent = { __html: content };
     return <div dangerouslySetInnerHTML={htmlContent}></div>;
   };
@@ -23,15 +17,16 @@ function WorkshopDetails() {
     <>
       {items &&
         items.map((item) => {
+          const speakers = item.speakers || [];
           let speakerLabel = "Tallerista";
-          if (item.speakers.length > 1) speakerLabel = "Talleristas";
+          if (speakers.length > 1) speakerLabel = "Talleristas";
 
           let workshopLevel = "";
           if (item.level === 1) workshopLevel = "bg-blue-400";
           if (item.level === 2) workshopLevel = "bg-blue-600";
           if (item.level === 3) workshopLevel = "bg-blue-900";
 
-          const keywordsArray = item.keywords.split(",");
+          const keywordsArray = item.keywords ? item.keywords.split(",") : [];
 
           return (
             <section key={item.id} id="workshop-details">
@@ -44,18 +39,20 @@ function WorkshopDetails() {
                   </h2>
                 </header>
                 <main className="lg:flex lg:flex-row">
-                  <section className="workshop-video">
-                    <div className="video">
-                      <iframe
-                        width="560"
-                        height="315"
-                        src={`https://www.youtube.com/embed/${item.youTubeurl}`}
-                        title={item.title}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
-                  </section>
+                  {item.youTubeurl && (
+                    <section className="workshop-video">
+                      <div className="video">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src={`https://www.youtube.com/embed/${item.youTubeurl}`}
+                          title={item.title}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                    </section>
+                  )}
                   <section className="workshop-data">
                     <section className="workshop-description">
                       <div>
@@ -121,9 +118,9 @@ function WorkshopDetails() {
                     <h3 className="text-2xl text-orange_unam my-2">
                       {speakerLabel}
                     </h3>
-                    {item.speakers.map((speaker) => {
-                      return <Speaker key={speaker.id} data={speaker} />;
-                    })}
+                    {speakers.map((speaker) => (
+                      <Speaker key={speaker.id} data={speaker} />
+                    ))}
                   </div>
                   <div
                     id="workshop-references"

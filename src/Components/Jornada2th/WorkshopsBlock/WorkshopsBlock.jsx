@@ -1,20 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Card from "../../Card";
 import "./Workshops.css";
+import workshops from "../../../Pages/Workshops/Workshops.json";
 
 const WorkshopsBlock = () => {
-  const API_URL = import.meta.env.VITE_API_URL;
-  const [items, setItems] = useState(null);
-  const [filteredItems, setFilteredItems] = useState(null);
+  const items = workshops;
+  const [filteredItems, setFilteredItems] = useState(workshops);
 
-  useEffect(() => {
-    fetch(`${API_URL}/workshopassistants`)
-      .then((response) => response.json())
-      .then((data) => {
-        setItems(data)
-        setFilteredItems(data)
-      });
-  }, []);
+  const compareWorkshops = (a, b) => {
+    const dayA = a.ocurrenceDay || "";
+    const dayB = b.ocurrenceDay || "";
+    const dayCmp = dayA.localeCompare(dayB, "es", { sensitivity: "base" });
+    if (dayCmp !== 0) return dayCmp;
+
+    const levelA = Number(a.level ?? 0);
+    const levelB = Number(b.level ?? 0);
+    if (levelA !== levelB) return levelA - levelB;
+
+    return (a.title || "").localeCompare(b.title || "", "es", { sensitivity: "base" });
+  };
 
   return (
     <>
@@ -79,11 +83,11 @@ const WorkshopsBlock = () => {
       </section>
       <section className="announcement">
         <a href="https://padlet.com/innovacion_educativa1/galer-a-de-prompts-educativos-unam-f288ckj4t5sqjnsz" target="_blank" rel="noopener noreferrer">
-          <img src="/2a-jornada/images/workshops/padlet-prompts.jpg" alt="Galería de Prompts educativos UNAM" />
+          <img src={`${import.meta.env.VITE_BASE_URL}images/workshops/padlet-prompts.jpg`} alt="Galería de Prompts educativos UNAM" />
         </a>
       </section>
       <section className="container sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
-        {filteredItems?.map((item) => {
+        {filteredItems?.slice().sort(compareWorkshops).map((item) => {
           return <Card key={item.id} data={item} />;
         })}
       </section>

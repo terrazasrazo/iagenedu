@@ -28,8 +28,8 @@
 .workshop__tags--item {
     @apply text-center;
 }
-.workshop__tags--item span {
-    @apply bg-iagen_orange hover:bg-iagen_orangehover text-white inline-block p-1 m-1 rounded text-sm;
+.workshop__tags--item {
+    @apply bg-iagen_orange  text-white inline-block p-1 m-1 rounded text-sm;
 }
 
 .workshop-levels span {

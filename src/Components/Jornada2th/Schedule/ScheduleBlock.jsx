@@ -12,7 +12,7 @@ const Schedule = () => {
             return (
               <NavLink
                 key={index}
-                to={`/2a-jornada/conference/${item.link}`}
+                to={`/conference/${item.link}`}
                 className="schedule__item"
               >
                 <div>
@@ -28,7 +28,7 @@ const Schedule = () => {
             return (
               <NavLink
                 key={index}
-                to={`/2a-jornada/conference/${item.link}`}
+                to={`/conference/${item.link}`}
                 className="schedule__item"
               >
                 <div>

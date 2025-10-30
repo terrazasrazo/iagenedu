@@ -43,7 +43,7 @@ function Conference() {
         </div>
       </article>
       <p className="back-to-program">
-        <NavLink to="/2a-jornada/">Volver al programa</NavLink>
+        <NavLink to="/">Volver al programa</NavLink>
       </p>
     </section>
   );

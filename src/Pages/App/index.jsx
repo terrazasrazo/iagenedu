@@ -7,21 +7,25 @@ import Jornada2th from "../Jornada2th";
 import Conference from "../Conference";
 import Workshops from "../Workshops";
 import Workshop from "../Workshop/Workshop";
+import InterestingResources from "../InterestingResources/InterestingResources";
 import NotFound from "../NotFound";
 
 const AppRoutes = () => {
   return useRoutes([
-    { path: "/2a-jornada/", element: <Jornada2th /> },
-    { path: "/2a-jornada/conference/:conferenceName?", element: <Conference /> },
-    { path: "/2a-jornada/workshops", element: <Workshops /> },
-    { path: "/2a-jornada/workshop/:workshopId", element: <Workshop /> },
+    { path: "/", element: <Jornada2th /> },
+    { path: "/conference/:conferenceName?", element: <Conference /> },
+    { path: "/workshops", element: <Workshops /> },
+    { path: "/workshop/:workshopId", element: <Workshop /> },
+    { path: "/resources", element: <InterestingResources /> },
     { path: "*", element: <NotFound /> },
   ]);
 };
 
 function App() {
+  const baseName = import.meta.env.VITE_BASE_URL || "/";
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={baseName}>
       <Routes>
         <Route
           path="*"
